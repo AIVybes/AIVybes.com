@@ -1340,204 +1340,27 @@
 </div>
 
 <script>
-const tools = [
-  {
-    name: "ChatGPT",
-    category: "Writing",
-    icon: "🤖",
-    iconBg: "#e8f4ff",
-    desc: "The world's leading conversational AI. Handles writing, coding, analysis, research, and much more with remarkable versatility.",
-    tags: ["Chatbot", "Writing", "Coding"],
-    pricing: "Freemium",
-    rating: "4.9",
-    stars: "★★★★★",
-    badge: "Top",
-    overview: "ChatGPT by OpenAI is the most widely-used AI chatbot in the world. It's capable of generating text, writing code, analyzing documents, browsing the web, and even generating images with DALL·E. The GPT-4o model offers a powerful free tier, with ChatGPT Plus providing even faster performance and more features.",
-    pros: ["Extremely versatile", "Huge plugin ecosystem", "Strong free tier", "Excellent code generation"],
-    cons: ["Can hallucinate facts", "Knowledge cutoff", "Privacy concerns"],
-    pricingDetail: "Free plan available. ChatGPT Plus at $20/month. API pricing from $0.002/1K tokens."
-  },
-  {
-    name: "Midjourney",
-    category: "Image",
-    icon: "🎨",
-    iconBg: "#fff0e8",
-    desc: "The gold standard for AI image generation. Creates stunning, photorealistic and artistic visuals from text prompts.",
-    tags: ["Art", "Design", "Creative"],
-    pricing: "Paid",
-    rating: "4.8",
-    stars: "★★★★★",
-    badge: "Top",
-    overview: "Midjourney is widely regarded as the most artistically capable image generation AI. Running through Discord, it produces breathtaking results across photography, illustration, concept art, and abstract styles. Version 6 brought major realism improvements.",
-    pros: ["Stunning image quality", "Unique artistic style", "Active community", "Fast generation"],
-    cons: ["No free tier", "Discord-only interface", "Limited editing control"],
-    pricingDetail: "Basic plan from $10/month. Standard $30/month. Pro $60/month."
-  },
-  {
-    name: "Claude",
-    category: "Writing",
-    icon: "🌊",
-    iconBg: "#f0f8ff",
-    desc: "Anthropic's thoughtful AI assistant. Exceptional for long-form writing, document analysis, and nuanced reasoning tasks.",
-    tags: ["Chatbot", "Writing", "Analysis"],
-    pricing: "Freemium",
-    rating: "4.8",
-    stars: "★★★★★",
-    badge: "New",
-    overview: "Claude by Anthropic stands out for its exceptional writing quality, huge 200k token context window, and focus on safety and honesty. It's particularly strong for document analysis, long-form content, coding, and tasks requiring careful reasoning. Claude tends to be more thoughtful and less prone to making things up.",
-    pros: ["200k context window", "Excellent writing quality", "Honest and direct", "Strong document analysis"],
-    cons: ["No image generation", "Fewer integrations than GPT", "Slower updates"],
-    pricingDetail: "Free tier available. Claude Pro at $20/month. API available for developers."
-  },
-  {
-    name: "Jasper AI",
-    category: "Writing",
-    icon: "✍️",
-    iconBg: "#e8f5e9",
-    desc: "Enterprise AI writing platform with 50+ templates. Built for marketing teams and professional content creators.",
-    tags: ["Marketing", "Content", "SEO"],
-    pricing: "Paid",
-    rating: "4.5",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Jasper is the leading enterprise AI writing tool, purpose-built for marketing and content teams. It offers 50+ writing templates, brand voice customization, SEO integration, and team collaboration features. Best for businesses that produce large volumes of marketing content.",
-    pros: ["50+ templates", "Brand voice training", "SEO integrations", "Team collaboration"],
-    cons: ["Expensive", "Quality varies by template", "Learning curve"],
-    pricingDetail: "Creator plan at $49/month. Teams from $125/month. Business pricing available."
-  },
-  {
-    name: "Cursor",
-    category: "Coding",
-    icon: "💻",
-    iconBg: "#f3e8ff",
-    desc: "AI-first code editor built on VS Code. Write, edit, and debug code with AI that understands your entire codebase.",
-    tags: ["Coding", "IDE", "Productivity"],
-    pricing: "Freemium",
-    rating: "4.7",
-    stars: "★★★★★",
-    badge: "New",
-    overview: "Cursor is an AI-powered code editor that has taken the developer community by storm. Built on VS Code, it adds powerful AI features including codebase-aware chat, multi-file editing, and intelligent autocomplete. It feels like pair programming with a senior developer.",
-    pros: ["Codebase-aware AI", "Built on VS Code", "Multi-file editing", "Fast autocomplete"],
-    cons: ["Subscription cost", "Occasional hallucinations", "Privacy considerations for codebases"],
-    pricingDetail: "Free tier (2000 completions/month). Pro at $20/month. Business at $40/user/month."
-  },
-  {
-    name: "ElevenLabs",
-    category: "Audio",
-    icon: "🎙️",
-    iconBg: "#fff8e1",
-    desc: "The most realistic AI voice synthesis available. Clone voices, create audiobooks, and build voice apps.",
-    tags: ["Voice", "Audio", "TTS"],
-    pricing: "Freemium",
-    rating: "4.7",
-    stars: "★★★★★",
-    badge: "Top",
-    overview: "ElevenLabs produces the most realistic text-to-speech and voice cloning available today. Used by podcasters, publishers, game developers, and enterprises. Their voices are nearly indistinguishable from real humans, with full control over emotion and pacing.",
-    pros: ["Incredibly realistic voices", "Voice cloning", "Many languages", "API access"],
-    cons: ["Free tier limited", "Ethical concerns with cloning", "Expensive at scale"],
-    pricingDetail: "Free tier (10,000 chars/month). Starter at $5/month. Creator at $22/month."
-  },
-  {
-    name: "Runway ML",
-    category: "Video",
-    icon: "🎬",
-    iconBg: "#fce4ec",
-    desc: "AI video generation and editing suite. Create professional video content from text prompts or images.",
-    tags: ["Video", "Creative", "Editing"],
-    pricing: "Freemium",
-    rating: "4.6",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Runway is the leading AI creative platform for video. Their Gen-2 and Gen-3 models can generate stunning video from text or images. They also offer powerful AI-powered video editing tools like background removal, inpainting, and motion tracking.",
-    pros: ["State-of-art video gen", "Full editing suite", "Active development", "Good community"],
-    cons: ["Credits deplete fast", "Inconsistent quality", "Expensive for heavy use"],
-    pricingDetail: "Free tier (125 credits). Standard at $15/month. Pro at $35/month."
-  },
-  {
-    name: "Perplexity",
-    category: "Research",
-    icon: "🦅",
-    iconBg: "#e0f7fa",
-    desc: "AI-powered search engine that actually cites its sources. Get research-quality answers with real-time web access.",
-    tags: ["Search", "Research", "Citations"],
-    pricing: "Freemium",
-    rating: "4.5",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Perplexity is the best AI tool for research and fact-checking. Unlike ChatGPT, it always cites its sources and pulls from real-time web data. It's become the go-to research tool for journalists, students, and professionals who need accurate, verifiable information.",
-    pros: ["Always cites sources", "Real-time web data", "Great mobile app", "Free tier generous"],
-    cons: ["Limited creative tasks", "Less conversational", "Pro features locked"],
-    pricingDetail: "Free tier available. Perplexity Pro at $20/month with access to advanced models."
-  },
-  {
-    name: "Notion AI",
-    category: "Productivity",
-    icon: "📝",
-    iconBg: "#f5f5f5",
-    desc: "AI embedded directly in your Notion workspace. Summarize, write, translate, and analyze without leaving your notes.",
-    tags: ["Notes", "Productivity", "Writing"],
-    pricing: "Freemium",
-    rating: "4.3",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Notion AI brings powerful AI capabilities directly into the Notion workspace millions already use. You can write, summarize, translate, fix grammar, and extract action items from your documents without switching apps. The context-awareness of your own notes makes it uniquely useful.",
-    pros: ["Integrated in Notion", "Context-aware", "Easy to use", "Good for summarizing"],
-    cons: ["Extra cost on top of Notion", "Limited vs standalone AI", "Dependent on Notion"],
-    pricingDetail: "Notion AI adds $10/member/month on top of existing Notion plan."
-  },
-  {
-    name: "Copy.ai",
-    category: "Marketing",
-    icon: "📣",
-    iconBg: "#fff3e0",
-    desc: "Marketing-focused AI that generates ads, emails, product descriptions, and social content at scale.",
-    tags: ["Marketing", "Copy", "Ads"],
-    pricing: "Freemium",
-    rating: "4.2",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Copy.ai is purpose-built for marketers and e-commerce teams that need to generate large volumes of marketing copy. Specializes in ad copy, email campaigns, product descriptions, and social media content with a workflow-based approach that scales.",
-    pros: ["Marketing-focused templates", "Workflow automation", "Free tier", "Good for e-commerce"],
-    cons: ["Repetitive outputs", "Less powerful than GPT-4", "Templates feel templated"],
-    pricingDetail: "Free plan (2,000 words/month). Pro at $49/month. Team plans available."
-  },
-  {
-    name: "Stable Diffusion",
-    category: "Image",
-    icon: "🖼️",
-    iconBg: "#ede7f6",
-    desc: "Open-source image generation you can run locally. Maximum control and customization for power users and developers.",
-    tags: ["Image", "Open Source", "Local"],
-    pricing: "Free",
-    rating: "4.4",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Stable Diffusion is the open-source powerhouse of image generation. Unlike Midjourney, you can run it locally, fine-tune it on your own images, and have complete control over the output. The community has built thousands of custom models and extensions.",
-    pros: ["Completely free", "Runs locally", "Fully customizable", "Huge community"],
-    cons: ["Technical setup required", "Needs good hardware", "Less polished than Midjourney"],
-    pricingDetail: "Completely free and open-source. Run locally or use cloud services from $0."
-  },
-  {
-    name: "Gemini",
-    category: "Writing",
-    icon: "💎",
-    iconBg: "#e8eaf6",
-    desc: "Google's flagship AI model. Multimodal, fast, and deeply integrated with Google's ecosystem and services.",
-    tags: ["Chatbot", "Multimodal", "Google"],
-    pricing: "Freemium",
-    rating: "4.6",
-    stars: "★★★★☆",
-    badge: null,
-    overview: "Gemini is Google's most capable AI model, available in Ultra, Pro, and Flash variants. It has a 1 million token context window, native multimodal understanding, and deep integration with Google Workspace. Gemini Advanced offers Claude/GPT-4 level performance with Google's ecosystem advantages.",
-    pros: ["1M token context", "Google integration", "Fast response", "Multimodal by default"],
-    cons: ["Quality inconsistent", "Privacy concerns", "Still catching up on reasoning"],
-    pricingDetail: "Free tier in Google products. Gemini Advanced at $20/month via Google One."
-  }
-];
-
+let tools = [];
 let activeFilter = 'All';
 let activeCategory = 'All';
 let searchQuery = '';
+
+// Load tools from tools.json — the only file you ever need to update
+async function loadTools() {
+  try {
+    const res = await fetch('tools.json');
+    if (!res.ok) throw new Error('not found');
+    tools = await res.json();
+  } catch(e) {
+    // Fallback: show a helpful message if tools.json is missing
+    document.getElementById('toolsGrid').innerHTML =
+      '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1">' +
+      '⚠️ <strong>tools.json not found.</strong> Export your tools from the admin panel and place <code>tools.json</code> in the same folder as this file.' +
+      '</div>';
+    return;
+  }
+  renderTools();
+}
 
 function renderTools() {
   const grid = document.getElementById('toolsGrid');
@@ -1559,29 +1382,33 @@ function renderTools() {
     return matchSearch && matchFilter && matchCat;
   });
 
-  grid.innerHTML = filtered.map((t, i) => `
-    <div class="tool-card" onclick="openModal(${tools.indexOf(t)})">
+  grid.innerHTML = filtered.map((t, i) => {
+    const r = parseFloat(t.rating) || 0;
+    const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
+    const idx = tools.indexOf(t);
+    return `
+    <div class="tool-card" onclick="openModal(${idx})">
       <div class="tc-top">
-        <div class="tc-icon" style="background:${t.iconBg}">${t.icon}</div>
+        <div class="tc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
         <div class="tc-badges">
-          ${t.badge === 'New' ? '<span class="badge badge-new">New</span>' : ''}
-          ${t.badge === 'Top' ? '<span class="badge badge-top">Top Pick</span>' : ''}
-          <span class="badge badge-${t.pricing.toLowerCase()}">${t.pricing}</span>
+          ${t.badge === 'New' || t.status === 'new' ? '<span class="badge badge-new">New</span>' : ''}
+          ${t.badge === 'Top' || t.status === 'featured' ? '<span class="badge badge-top">Top Pick</span>' : ''}
+          <span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>
         </div>
       </div>
       <div class="tc-name">${t.name}</div>
-      <div class="tc-category">${t.category}</div>
-      <div class="tc-desc">${t.desc}</div>
-      <div class="tc-tags">${t.tags.map(tag => `<span class="tc-tag">${tag}</span>`).join('')}</div>
+      <div class="tc-category">${t.category||''}</div>
+      <div class="tc-desc">${t.desc||''}</div>
+      <div class="tc-tags">${(t.tags||[]).map(tag => `<span class="tc-tag">${tag}</span>`).join('')}</div>
       <div class="tc-footer">
         <div class="tc-rating">
-          <span class="stars">${t.stars}</span>
-          <span class="rating-num">${t.rating}</span>
+          <span class="stars">${stars}</span>
+          <span class="rating-num">${r.toFixed(1)}</span>
         </div>
-        <a class="tc-cta" href="#">Try Free →</a>
+        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener">Try Free →</a>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
   if (filtered.length === 0) {
     grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;">No tools found. Try a different search.</div>';
@@ -1614,16 +1441,19 @@ function filterTools() {
 
 function openModal(index) {
   const t = tools[index];
-  document.getElementById('m-icon').style.background = t.iconBg;
-  document.getElementById('m-icon').textContent = t.icon;
+  const r = parseFloat(t.rating) || 0;
+  const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
+  document.getElementById('m-icon').style.background = t.iconBg || '#eee';
+  document.getElementById('m-icon').textContent = t.icon || '🔧';
   document.getElementById('m-name').textContent = t.name;
   document.getElementById('m-cat').textContent = t.category;
-  document.getElementById('m-rating').innerHTML = `<span style="color:var(--gold)">${t.stars}</span> <strong>${t.rating}</strong> / 5`;
-  document.getElementById('m-overview').textContent = t.overview;
-  document.getElementById('m-pricing').textContent = t.pricingDetail;
+  document.getElementById('m-rating').innerHTML = `<span style="color:var(--gold)">${stars}</span> <strong>${r.toFixed(1)}</strong> / 5`;
+  document.getElementById('m-overview').textContent = t.overview || t.desc || '';
+  document.getElementById('m-pricing').textContent = t.pricingDetail || t.pricing || '';
+  document.getElementById('m-cta').href = t.affiliateUrl || t.websiteUrl || '#';
   document.getElementById('m-proscons').innerHTML = `
-    <div class="pros"><h5>Pros</h5><ul>${t.pros.map(p => `<li>${p}</li>`).join('')}</ul></div>
-    <div class="cons"><h5>Cons</h5><ul>${t.cons.map(c => `<li>${c}</li>`).join('')}</ul></div>
+    <div class="pros"><h5>Pros</h5><ul>${(t.pros||[]).map(p => `<li>${p}</li>`).join('')}</ul></div>
+    <div class="cons"><h5>Cons</h5><ul>${(t.cons||[]).map(c => `<li>${c}</li>`).join('')}</ul></div>
   `;
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1647,7 +1477,7 @@ document.querySelectorAll('.sort-btn').forEach(btn => {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-renderTools();
+loadTools();
 </script>
 </body>
 </html>
