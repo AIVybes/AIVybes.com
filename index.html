@@ -1462,14 +1462,14 @@ function filterTools() {
 function updateCounts() {
   const cats = {
     'All Tools':        tools.length,
-    'Writing':          tools.filter(t => t.category === 'Writing').length,
-    'Image Generation': tools.filter(t => t.category === 'Image').length,
-    'Coding':           tools.filter(t => t.category === 'Coding').length,
-    'Video':            tools.filter(t => t.category === 'Video').length,
-    'Audio & Voice':    tools.filter(t => t.category === 'Audio').length,
-    'Productivity':     tools.filter(t => t.category === 'Productivity').length,
-    'Marketing':        tools.filter(t => t.category === 'Marketing').length,
-    'Research':         tools.filter(t => t.category === 'Research').length,
+    'Business & Productivity':          tools.filter(t => t.category === 'Business & Productivity').length,
+    'General Purpose': tools.filter(t => t.category === 'General Purpose').length,
+    'Image & Design':           tools.filter(t => t.category === 'Image & Design').length,
+    'Knowledge & Research':            tools.filter(t => t.category === 'Knowledge & Research').length,
+    'Sales, Marketing & CRM':    tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
+    'Video & Audio':     tools.filter(t => t.category === 'Video & Audio').length,
+    'Writing & Content':        tools.filter(t => t.category === 'Writing & Content').length,
+    'Experimental':         tools.filter(t => t.category === 'Experimental').length,
   };
   document.querySelectorAll('.category-item').forEach(item => {
     const nameEl = item.querySelector('.cat-name');
