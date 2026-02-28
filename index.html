@@ -1088,9 +1088,9 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Pricing</div>
-      <a class="category-item" href="#" onclick="filterByTag('Free'); return false;"><span class="cat-name">Free tools</span></a>
-      <a class="category-item" href="#" onclick="filterByTag('Freemium'); return false;"><span class="cat-name">Freemium</span></a>
-      <a class="category-item" href="#" onclick="filterByTag('Paid'); return false;"><span class="cat-name">Paid only</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Free'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Free tools</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Top Lists</div>
@@ -1356,6 +1356,7 @@ async function loadTools() {
       '</div>';
     return;
   }
+  updateCounts();
   renderTools();
 }
 
@@ -1416,24 +1417,67 @@ function setActiveFilter(el, filter) {
   document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
   el.classList.add('active');
   activeFilter = filter;
+  // If filtering by pricing tag, clear sidebar active state
+  if (['Free','Freemium','Paid'].includes(filter)) {
+    document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+    activeCategory = 'All';
+  }
   renderTools();
 }
 
 function filterByCategory(cat) {
-  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
-  event.target.closest('.category-item').classList.add('active');
+  // Reset both filters cleanly
   activeCategory = cat;
+  activeFilter = 'All';
+  // Update sidebar active highlight
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.category-item').forEach(c => {
+    const name = c.querySelector('.cat-name');
+    if (!name) return;
+    const text = name.textContent.trim();
+    if (cat === 'All' && text === 'All Tools') c.classList.add('active');
+    else if (text === cat) c.classList.add('active');
+  });
+  // Reset filter tags back to All
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+  const allTag = document.querySelector('.filter-tag');
+  if (allTag) allTag.classList.add('active');
   renderTools();
+  updateCounts();
 }
 
 function filterByTag(tag) {
   activeFilter = tag;
+  activeCategory = 'All';
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
   renderTools();
 }
 
 function filterTools() {
   searchQuery = document.getElementById('searchInput').value;
   renderTools();
+}
+
+function updateCounts() {
+  const cats = {
+    'All Tools':        tools.length,
+    'Writing':          tools.filter(t => t.category === 'Writing').length,
+    'Image Generation': tools.filter(t => t.category === 'Image').length,
+    'Coding':           tools.filter(t => t.category === 'Coding').length,
+    'Video':            tools.filter(t => t.category === 'Video').length,
+    'Audio & Voice':    tools.filter(t => t.category === 'Audio').length,
+    'Productivity':     tools.filter(t => t.category === 'Productivity').length,
+    'Marketing':        tools.filter(t => t.category === 'Marketing').length,
+    'Research':         tools.filter(t => t.category === 'Research').length,
+  };
+  document.querySelectorAll('.category-item').forEach(item => {
+    const nameEl = item.querySelector('.cat-name');
+    const countEl = item.querySelector('.cat-count');
+    if (nameEl && countEl && cats[nameEl.textContent.trim()] !== undefined) {
+      countEl.textContent = cats[nameEl.textContent.trim()];
+    }
+  });
 }
 
 function openModal(index) {
