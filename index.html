@@ -1403,7 +1403,7 @@ function renderTools() {
           <span class="stars">${stars}</span>
           <span class="rating-num">${r.toFixed(1)}</span>
         </div>
-        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener">Try Free →</a>
+        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Try Free →</a>
       </div>
     </div>`;
   }).join('');
@@ -1492,6 +1492,8 @@ function openModal(index) {
   document.getElementById('m-overview').textContent = t.overview || t.desc || '';
   document.getElementById('m-pricing').textContent = t.pricingDetail || t.pricing || '';
   document.getElementById('m-cta').href = t.affiliateUrl || t.websiteUrl || '#';
+  document.getElementById('m-cta').target = '_blank';
+  document.getElementById('m-cta').rel = 'noopener sponsored';
   document.getElementById('m-proscons').innerHTML = `
     <div class="pros"><h5>Pros</h5><ul>${(t.pros||[]).map(p => `<li>${p}</li>`).join('')}</ul></div>
     <div class="cons"><h5>Cons</h5><ul>${(t.cons||[]).map(c => `<li>${c}</li>`).join('')}</ul></div>
