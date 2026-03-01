@@ -1,8 +1,9 @@
 [
   {
-    "name": "WriteinaClick",
+    "name": "Write in a Click",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://writeinaclick.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -10,13 +11,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7424,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.025,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
-    "name": "theimmersivesaga",
+    "name": "TheImmersiveSaga",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://theimmersivesaga.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -24,13 +26,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.4219,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.8364,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "SidekickWriter",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://www.sidekickwriter.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -38,13 +41,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.6638,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7214,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "scene2",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://rivereditor.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -52,13 +56,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7332,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.504,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
-    "name": "Rivereditor",
+    "name": "River",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://rivereditor.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -66,13 +71,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7876,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.8264,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
-    "name": "plotdrive",
+    "name": "Plotdrive",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://plotdrive.com/?utm_source=chatgpt.com",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -80,13 +86,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.3242,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7039,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Novarrium",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://www.novarrium.com/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -94,13 +101,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7673,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.6235,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Bookswriter",
     "category": "Writing & Content",
     "icon": "✍️",
+    "websiteUrl": "https://bookswriter.xyz/en/",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -108,8 +116,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.422,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.604,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Wispr Flow",
@@ -129,8 +137,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.4692,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7456,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Eleven Labs",
@@ -144,14 +152,15 @@
       "audio",
       "generative voice"
     ],
+    "affiliateUrl": "https://try.elevenlabs.io/9bus82n11ex2",
     "websiteUrl": "https://elevenlabs.io/",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.6995,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.742,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Clay",
@@ -170,8 +179,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.8142,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.8875,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Attio",
@@ -190,8 +199,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7524,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7297,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Firecrawl",
@@ -210,8 +219,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.7527,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.1492,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Zite",
@@ -230,8 +239,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.0562,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.0283,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Airtable AI",
@@ -251,8 +260,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.6133,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7366,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Gumloop",
@@ -271,13 +280,14 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.215,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.506,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Microsoft Designer",
     "category": "Image & Design",
     "icon": "🎨",
+    "websiteUrl": "https://designer.microsoft.com/?utm_source=chatgpt.com",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -285,8 +295,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.1199,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.8284,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Google Nano Banana",
@@ -305,8 +315,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.5908,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.723,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Notion AI",
@@ -326,8 +336,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.528,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.8962,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Circleback",
@@ -346,8 +356,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.8523,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.7393,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Claude",
@@ -367,8 +377,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.3162,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.9954,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Superhuman",
@@ -382,8 +392,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.2988,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996562.4673,
+    "createdAt": "2026-03-01T00:13:16.562Z"
   },
   {
     "name": "Saner",
@@ -397,8 +407,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.4668,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.458,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Reclaim",
@@ -414,8 +424,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.244,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.1606,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Perplexity",
@@ -429,8 +439,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.6492,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.966,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Otter",
@@ -444,8 +454,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.1978,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.9998,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Motion",
@@ -459,8 +469,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.3557,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.9966,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Microsoft Copilot",
@@ -474,8 +484,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.007,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.0505,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Mem",
@@ -491,8 +501,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.1682,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.092,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Lindy",
@@ -511,8 +521,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320885.5752,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.2214,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Google Gemini",
@@ -526,8 +536,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.552,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.986,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "ChatGPT",
@@ -541,8 +551,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320885.4924,
-    "createdAt": "2026-02-28T20:42:00.885Z"
+    "id": 1772323996561.9646,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Akiflow",
@@ -558,8 +568,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.0537,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.253,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Anthropic Prompt Generator",
@@ -578,8 +588,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.528,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.2524,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Airtop",
@@ -597,8 +607,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.7434,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.1914,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Zapier",
@@ -618,8 +628,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.4585,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.2354,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Relay.app",
@@ -638,8 +648,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.867,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.2786,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "n8n",
@@ -659,8 +669,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.833,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.7268,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Make",
@@ -680,8 +690,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.8792,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.225,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Super",
@@ -700,8 +710,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.8093,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.2136,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Relevance AI",
@@ -720,8 +730,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.3787,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.4375,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Cassidy AI",
@@ -740,8 +750,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.1665,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.3352,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Marbalism",
@@ -755,8 +765,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772311320884.1794,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.4604,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   },
   {
     "name": "Google AI Studio",
@@ -775,7 +785,7 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772311320884.886,
-    "createdAt": "2026-02-28T20:42:00.884Z"
+    "id": 1772323996561.8044,
+    "createdAt": "2026-03-01T00:13:16.561Z"
   }
 ]
