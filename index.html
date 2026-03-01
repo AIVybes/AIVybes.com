@@ -1119,6 +1119,11 @@
       <span class="filter-tag" onclick="setActiveFilter(this, 'Free')">Free</span>
       <span class="filter-tag" onclick="setActiveFilter(this, 'Freemium')">Freemium</span>
       <span class="filter-tag" onclick="setActiveFilter(this, 'Paid')">Paid</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Writing')">Writing</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Image')">Image</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Coding')">Coding</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Video')">Video</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Audio')">Audio</span>
     </div>
 
     <div class="tools-grid" id="toolsGrid"></div>
@@ -1385,7 +1390,7 @@ function renderTools() {
         <div class="tc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
         <div class="tc-badges">
           ${t.badge === 'New' || t.status === 'new' ? '<span class="badge badge-new">New</span>' : ''}
-          ${t.badge === 'Top' || t.status === 'featured' ? '<span class="badge badge-top">Top Pick</span>' : ''}
+          ${t.badge === 'Top' || t.status === "featured" || t.status === "Editor's Pick" ? '<span class="badge badge-top">★ Editor\'s Pick</span>' : ''}
           <span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>
         </div>
       </div>
