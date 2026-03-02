@@ -979,39 +979,7 @@
   <div class="hero-right">
     <div class="hero-bg-text">AI</div>
 
-    <div class="featured-card" onclick="openModal(0)">
-      <div class="fc-badge">★ Editor's Pick</div>
-      <div class="fc-icon" style="background:#e8f4ff;">🤖</div>
-      <div class="fc-name">ChatGPT</div>
-      <div class="fc-category">Conversational AI</div>
-      <div class="fc-desc">The world's leading AI chatbot. Versatile, powerful, and now with image generation built in.</div>
-      <div class="fc-footer">
-        <div class="fc-stars">★★★★★ 4.9</div>
-        <a href="#" class="fc-link">Try it →</a>
-      </div>
-    </div>
-
-    <div class="featured-card" onclick="openModal(1)">
-      <div class="fc-icon" style="background:#fff0e8;">🎨</div>
-      <div class="fc-name">Midjourney</div>
-      <div class="fc-category">Image Generation</div>
-      <div class="fc-desc">Breathtaking AI art generation. The gold standard for creative professionals and designers.</div>
-      <div class="fc-footer">
-        <div class="fc-stars">★★★★★ 4.8</div>
-        <a href="#" class="fc-link">Try it →</a>
-      </div>
-    </div>
-
-    <div class="featured-card" onclick="openModal(3)">
-      <div class="fc-icon" style="background:#e8f5e9;">✍️</div>
-      <div class="fc-name">Jasper AI</div>
-      <div class="fc-category">Content Writing</div>
-      <div class="fc-desc">Enterprise-grade AI writing assistant. 50+ templates for every content type imaginable.</div>
-      <div class="fc-footer">
-        <div class="fc-stars">★★★★☆ 4.5</div>
-        <a href="#" class="fc-link">Try it →</a>
-      </div>
-    </div>
+    <div id="heroCards"></div>
   </div>
 </section>
 
@@ -1357,7 +1325,40 @@ async function loadTools() {
     return;
   }
   updateCounts();
+  renderHeroCards();
   renderTools();
+}
+
+function renderHeroCards() {
+  const container = document.getElementById('heroCards');
+  if (!container) return;
+
+  // Get all Editor's Pick tools, shuffle, take 3
+  const picks = tools.filter(t => t.tier === "Editor's Pick");
+  const shuffled = picks.sort(() => Math.random() - 0.5).slice(0, 3);
+
+  if (!shuffled.length) {
+    container.innerHTML = '';
+    return;
+  }
+
+  container.innerHTML = shuffled.map((t, i) => {
+    const r = parseFloat(t.rating) || 0;
+    const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
+    const idx = tools.indexOf(t);
+    return `
+    <div class="featured-card" onclick="openModal(${idx})" style="animation-delay:${0.1 + i * 0.1}s">
+      <div class="fc-badge">★ Editor's Pick</div>
+      <div class="fc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
+      <div class="fc-name">${t.name}</div>
+      <div class="fc-category">${t.category||''}</div>
+      <div class="fc-desc">${t.desc||''}</div>
+      <div class="fc-footer">
+        <div class="fc-stars">${stars} ${r.toFixed(1)}</div>
+        <a href="${t.affiliateUrl||t.websiteUrl||'#'}" class="fc-link" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Try it →</a>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function renderTools() {
