@@ -1389,8 +1389,8 @@ function renderTools() {
       <div class="tc-top">
         <div class="tc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
         <div class="tc-badges">
-          ${t.badge === 'New' || t.status === 'new' ? '<span class="badge badge-new">New</span>' : ''}
-          ${t.badge === 'Top' || t.status === "featured" || t.status === "Editor's Pick" ? '<span class="badge badge-top">★ Editor\'s Pick</span>' : ''}
+          ${t.tier === "Editor's Pick" ? '<span class="badge badge-top">★ Editor\'s Pick</span>' : ''}
+          ${t.tier === 'New' ? '<span class="badge badge-new">New</span>' : ''}
           <span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>
         </div>
       </div>
