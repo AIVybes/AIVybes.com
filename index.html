@@ -1076,7 +1076,22 @@
       <div class="sort-bar">
         <button class="sort-btn active">Popular</button>
         <button class="sort-btn">Newest</button>
+        <button class="sort-btn">Rating</button>
       </div>
+    </div>
+
+    <div class="filter-tags" id="filterTags">
+      <span class="filter-tag active" onclick="setActiveFilter(this, 'All')">All</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'New')">🔥 New</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Top')">⭐ Top Rated</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Free')">Free</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Freemium')">Freemium</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Paid')">Paid</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Writing')">Writing</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Image')">Image</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Coding')">Coding</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Video')">Video</span>
+      <span class="filter-tag" onclick="setActiveFilter(this, 'Audio')">Audio</span>
     </div>
 
     <div class="tools-grid" id="toolsGrid"></div>
@@ -1328,8 +1343,6 @@ function renderHeroCards() {
   }
 
   container.innerHTML = shuffled.map((t, i) => {
-    const r = parseFloat(t.rating) || 0;
-    const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
     const idx = tools.indexOf(t);
     return `
     <div class="featured-card" onclick="openModal(${idx})" style="animation-delay:${0.1 + i * 0.1}s">
@@ -1339,8 +1352,7 @@ function renderHeroCards() {
       <div class="fc-category">${t.category||''}</div>
       <div class="fc-desc">${t.desc||''}</div>
       <div class="fc-footer">
-        <div class="fc-stars">${stars} ${r.toFixed(1)}</div>
-        <a href="${t.affiliateUrl||t.websiteUrl||'#'}" class="fc-link" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Try it →</a>
+        <a href="${t.affiliateUrl||t.websiteUrl||'#'}" class="fc-link" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Visit Tool →</a>
       </div>
     </div>`;
   }).join('');
@@ -1367,8 +1379,6 @@ function renderTools() {
   });
 
   grid.innerHTML = filtered.map((t, i) => {
-    const r = parseFloat(t.rating) || 0;
-    const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
     const idx = tools.indexOf(t);
     return `
     <div class="tool-card" onclick="openModal(${idx})">
@@ -1385,11 +1395,7 @@ function renderTools() {
       <div class="tc-desc">${t.desc||''}</div>
       <div class="tc-tags">${(t.tags||[]).map(tag => `<span class="tc-tag">${tag}</span>`).join('')}</div>
       <div class="tc-footer">
-        <div class="tc-rating">
-          <span class="stars">${stars}</span>
-          <span class="rating-num">${r.toFixed(1)}</span>
-        </div>
-        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Try Free →</a>
+        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Visit Tool →</a>
       </div>
     </div>`;
   }).join('');
