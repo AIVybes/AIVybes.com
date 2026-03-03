@@ -1,80 +1,1485 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIVybes</title>
-    <style>
-        /* Basic styles for improved UX */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .search-container {
-            margin-bottom: 20px;
-        }
-        .error {
-            color: red;
-            display: none; /* Hidden by default */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIVybes — The AI Tools Authority</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0f;
+    --paper: #f5f2ed;
+    --accent: #e8462a;
+    --gold: #c8a84b;
+    --muted: #8a8780;
+    --card: #ffffff;
+    --border: #e2ded8;
+    --tag-bg: #eceae5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NOISE TEXTURE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    background: rgba(245,242,237,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 64px;
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+
+  .nav-cta {
+    background: var(--ink);
+    color: var(--paper) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    font-weight: 500 !important;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 8% 8% 8% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+  }
+  .hero-headline em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 400px;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+  }
+
+  .hero-search {
+    display: flex;
+    border: 1.5px solid var(--ink);
+    background: white;
+    max-width: 420px;
+  }
+  .hero-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 1rem 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    background: transparent;
+  }
+  .hero-search button {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 0 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .hero-search button:hover { background: var(--accent); }
+
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .hero-bg-text {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 22vw;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--border);
+    top: -2%;
+    right: -5%;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Featured cards in hero */
+  .featured-card {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    animation: slideUp 0.6s ease backwards;
+  }
+  .featured-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  }
+  .featured-card:nth-child(1) { animation-delay: 0.1s; margin-left: 0; }
+  .featured-card:nth-child(2) { animation-delay: 0.2s; margin-left: 0; }
+  .featured-card:nth-child(3) { animation-delay: 0.3s; margin-left: 0; }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fc-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--gold);
+    color: white;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .fc-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .fc-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .fc-category {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .fc-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+
+  .fc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  .fc-stars { color: var(--gold); font-size: 0.8rem; }
+  .fc-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* ── MARQUEE ── */
+  .marquee-strip {
+    overflow: hidden;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.8rem 0;
+    white-space: nowrap;
+  }
+  .marquee-inner {
+    display: inline-flex;
+    animation: marquee 25s linear infinite;
+    gap: 0;
+  }
+  .marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2.5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  .marquee-dot { color: var(--accent); font-size: 1.2rem; }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    padding-right: 3rem;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+  }
+
+  .sidebar-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .sidebar-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .category-item:hover, .category-item.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .cat-name { font-size: 0.9rem; }
+  .cat-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--tag-bg);
+    padding: 0.1rem 0.5rem;
+    border-radius: 2px;
+  }
+
+  /* ── TOOLS GRID ── */
+  .tools-area {}
+
+  .tools-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .tools-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .sort-bar {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .sort-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    background: var(--tag-bg);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .sort-btn.active, .sort-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  /* Filter Tags */
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .filter-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.9rem;
+    background: white;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.03em;
+  }
+  .filter-tag.active, .filter-tag:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  /* Tool Cards Grid */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5px;
+    background: var(--border);
+    border: 1.5px solid var(--border);
+  }
+
+  .tool-card {
+    background: white;
+    padding: 1.8rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .tool-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--accent);
+    transition: width 0.3s;
+  }
+  .tool-card:hover { background: #faf9f7; }
+  .tool-card:hover::after { width: 100%; }
+
+  .tc-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+  .tc-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .tc-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-end;
+  }
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+  }
+  .badge-free { background: #e8f5e9; color: #2e7d32; }
+  .badge-paid { background: #fff3e0; color: #e65100; }
+  .badge-freemium { background: #e3f2fd; color: #1565c0; }
+  .badge-new { background: var(--accent); color: white; }
+  .badge-top { background: var(--gold); color: white; }
+
+  .tc-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+  }
+  .tc-category {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .tc-desc {
+    font-size: 0.88rem;
+    color: #4a4845;
+    line-height: 1.55;
+    margin-bottom: 1.2rem;
+  }
+  .tc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .tc-tag {
+    font-size: 0.7rem;
+    background: var(--tag-bg);
+    padding: 0.2rem 0.6rem;
+    color: var(--muted);
+  }
+  .tc-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  .tc-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .stars { color: var(--gold); font-size: 0.75rem; }
+  .rating-num { font-size: 0.8rem; font-weight: 500; }
+  .tc-cta {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+    background: var(--ink);
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  .tc-cta:hover { background: var(--accent); }
+
+  /* ── FEATURED ARTICLE BAND ── */
+  .article-band {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 6rem 10%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .ab-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  .ab-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+  .ab-heading em { color: var(--gold); font-style: italic; }
+
+  .ab-body {
+    color: rgba(245,242,237,0.7);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  .ab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--paper);
+    text-decoration: none;
+    border: 1px solid rgba(245,242,237,0.3);
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .ab-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .ab-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .mini-article {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(245,242,237,0.1);
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .mini-article:hover { border-color: rgba(245,242,237,0.3); }
+  .ma-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgba(245,242,237,0.1);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 2.5rem;
+  }
+  .ma-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .ma-meta {
+    font-size: 0.75rem;
+    color: rgba(245,242,237,0.4);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── NEWSLETTER ── */
+  .newsletter {
+    padding: 5rem 10%;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    border-top: 1px solid var(--border);
+  }
+
+  .nl-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+  }
+  .nl-heading span { color: var(--accent); }
+  .nl-sub { color: var(--muted); line-height: 1.7; font-size: 0.95rem; }
+
+  .nl-form { display: flex; flex-direction: column; gap: 1rem; }
+  .nl-inputs { display: flex; gap: 0; }
+  .nl-input {
+    flex: 1;
+    border: 1.5px solid var(--ink);
+    border-right: none;
+    padding: 1rem 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    background: white;
+  }
+  .nl-submit {
+    background: var(--accent);
+    color: white;
+    border: 1.5px solid var(--accent);
+    padding: 1rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .nl-submit:hover { background: var(--ink); border-color: var(--ink); }
+  .nl-note { font-size: 0.75rem; color: var(--muted); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4rem 10% 2rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+  .footer-brand .nav-logo { font-size: 1.6rem; display: block; margin-bottom: 1rem; color: var(--paper); }
+  .footer-brand p { font-size: 0.875rem; color: rgba(245,242,237,0.5); line-height: 1.7; max-width: 280px; }
+
+  .footer-col h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,242,237,0.4);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(245,242,237,0.1);
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col a {
+    color: rgba(245,242,237,0.6);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--paper); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(245,242,237,0.1);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: rgba(245,242,237,0.3);
+  }
+  .footer-bottom a { color: rgba(245,242,237,0.3); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--paper); }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,10,15,0.85);
+    z-index: 900;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: var(--paper);
+    width: 90%;
+    max-width: 680px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  .modal-header {
+    padding: 2.5rem 2.5rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .modal-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+  .modal-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .modal-cat { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.75rem; }
+  .modal-rating { display: flex; align-items: center; gap: 0.5rem; }
+  .modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--muted);
+    line-height: 1;
+  }
+  .modal-body { padding: 2rem 2.5rem; }
+  .modal-section { margin-bottom: 2rem; }
+  .modal-section h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .modal-section p { font-size: 0.95rem; line-height: 1.7; color: #4a4845; }
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .pros, .cons {
+    padding: 1.2rem;
+    background: white;
+    border: 1px solid var(--border);
+  }
+  .pros h5 { color: #2e7d32; font-size: 0.8rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .cons h5 { color: var(--accent); font-size: 0.8rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pros li, .cons li { font-size: 0.85rem; color: #4a4845; margin-bottom: 0.4rem; list-style: none; padding-left: 1rem; position: relative; }
+  .pros li::before { content: '+'; position: absolute; left: 0; color: #2e7d32; font-weight: 700; }
+  .cons li::before { content: '−'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .modal-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .btn-primary {
+    flex: 1;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--ink); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1.5px solid var(--ink);
+    padding: 1rem 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+  /* Comparison Table */
+  .compare-section {
+    padding: 4rem 10%;
+    border-top: 1px solid var(--border);
+  }
+  .compare-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .compare-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .compare-table th {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .compare-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+    background: white;
+    vertical-align: middle;
+  }
+  .compare-table tr:hover td { background: #faf9f7; }
+  .compare-table .tool-cell { display: flex; align-items: center; gap: 0.75rem; }
+  .compare-table .tool-emoji { font-size: 1.2rem; }
+  .compare-table .tool-cell-name { font-weight: 500; font-family: 'Playfair Display', serif; }
+  .check { color: #2e7d32; font-weight: 700; }
+  .cross { color: var(--accent); }
+  .compare-link {
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .main-layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; margin-bottom: 2rem; }
+    .article-band, .newsletter, .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    nav .nav-links { display: none; }
+  }
+</style>
 </head>
 <body>
-    <h1>AIVybes Search</h1>
-    <div class="search-container">
-        <input type="text" id="search" aria-label="Search" placeholder="Search..." />
-        <span class="error" id="error-message">No results found. Please try a different query.</span>
-        <select id="category-filter" aria-label="Filter by category">
-            <option value="">All Categories</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-        </select>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="javascript:void(0)"><span>AI</span>Vybes</a>
+  <ul class="nav-links">
+    <li><a href="#directory">Directory</a></li>
+    <li><a href="#newsletter" class="nav-cta">Newsletter</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">The AI Tools Authority</div>
+    <h1 class="hero-headline">Find the<br><em>perfect</em><br>AI tool.</h1>
+    <p class="hero-sub">Expert-curated directory of 500+ AI tools. Unbiased reviews, real comparisons, and weekly discoveries delivered to your inbox.</p>
+    <div class="hero-search">
+      <input type="text" placeholder="Search tools, categories, use cases…" id="searchInput" oninput="filterTools()" aria-label="Search AI tools">
+      <button aria-label="Submit search">Search</button>
     </div>
-    <ul id="results-list" role="list" aria-live="polite"></ul>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">500+</div>
+        <div class="stat-label">AI Tools</div>
+      </div>
+      <div>
+        <div class="stat-num">48</div>
+        <div class="stat-label">Categories</div>
+      </div>
+      <div>
+        <div class="stat-num">12k</div>
+        <div class="stat-label">Readers</div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        const searchInput = document.getElementById('search');
-        const categoryFilter = document.getElementById('category-filter');
-        const resultsList = document.getElementById('results-list');
-        const errorMessage = document.getElementById('error-message');
+  <div class="hero-right">
+    <div class="hero-bg-text">AI</div>
+    <div id="heroCards"></div>
+  </div>
+</section>
 
-        const data = [
-            // Sample data items
-            { name: 'Item 1', category: 'category1' },
-            { name: 'Item 2', category: 'category2' },
-            // Additional data...
-        ];
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-inner">
+    <span class="marquee-item">ChatGPT <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Midjourney <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Claude <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Gemini <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Stable Diffusion <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Cursor AI <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">ElevenLabs <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Runway <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Perplexity <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Notion AI <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Grammarly <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Copy.ai <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">ChatGPT <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Midjourney <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Claude <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Gemini <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Stable Diffusion <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Cursor AI <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">ElevenLabs <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Runway <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Perplexity <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Notion AI <span class="marquee-dot">◆</span></span>
+  </div>
+</div>
 
-        function filterResults() {
-            const query = searchInput.value.toLowerCase();
-            const category = categoryFilter.value;
-            resultsList.innerHTML = '';
-            let filteredData = data;
+<!-- MAIN DIRECTORY -->
+<section class="main-layout" id="directory">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Categories</div>
+      <a class="category-item active" href="javascript:void(0)" onclick="filterByCategory('All'); return false;">
+        <span class="cat-name">All Tools</span>
+        <span class="cat-count">500</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Business & Productivity'); return false;">
+        <span class="cat-name">Business & Productivity</span>
+        <span class="cat-count">89</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('General Purpose'); return false;">
+        <span class="cat-name">General Purpose</span>
+        <span class="cat-count">67</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Image & Design'); return false;">
+        <span class="cat-name">Image & Design</span>
+        <span class="cat-count">54</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Knowledge & Research'); return false;">
+        <span class="cat-name">Knowledge & Research</span>
+        <span class="cat-count">43</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Sales, Marketing & CRM'); return false;">
+        <span class="cat-name">Sales, Marketing & CRM</span>
+        <span class="cat-count">38</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Video & Audio'); return false;">
+        <span class="cat-name">Video & Audio</span>
+        <span class="cat-count">72</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Writing & Content'); return false;">
+        <span class="cat-name">Writing & Content</span>
+        <span class="cat-count">51</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Experimental'); return false;">
+        <span class="cat-name">Experimental</span>
+        <span class="cat-count">29</span>
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Pricing</div>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Free'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Free tools</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Top Lists</div>
+      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Students</span></a>
+      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Creators</span></a>
+      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Business</span></a>
+      <a class="category-item" href="javascript:void(0)"><span class="cat-name">New This Week</span></a>
+    </div>
+  </aside>
 
-            if (category) {
-                filteredData = filteredData.filter(item => item.category === category);
-            }
+  <!-- TOOLS -->
+  <div class="tools-area">
+    <div class="tools-header">
+      <h2 class="tools-heading">AI Tools Directory</h2>
+    </div>
 
-            const results = filteredData.filter(item => 
-                item.name.toLowerCase().includes(query)
-            );
+    <div class="tools-grid" id="toolsGrid"></div>
+  </div>
+</section>
 
-            if (results.length > 0) {
-                errorMessage.style.display = 'none';
-                results.forEach(item => {
-                    const li = document.createElement('li');
-                    li.textContent = item.name;
-                    resultsList.appendChild(li);
-                });
-            } else {
-                errorMessage.style.display = 'block';
-            }
-        }
+<!-- COMPARISON TABLE -->
+<section class="compare-section" id="compare">
+  <h2 class="compare-heading">Top AI Chatbots Compared</h2>
+  <p class="compare-sub">Side-by-side breakdown of the leading conversational AI tools.</p>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Free Tier</th>
+        <th>API Access</th>
+        <th>Image Gen</th>
+        <th>Web Search</th>
+        <th>Context Window</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="tool-cell"><span class="tool-emoji">🤖</span><span class="tool-cell-name">ChatGPT</span></div></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td>128k</td>
+        <td><span style="color:var(--gold)">★★★★★</span> 4.9</td>
+        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+      </tr>
+      <tr>
+        <td><div class="tool-cell"><span class="tool-emoji">🌊</span><span class="tool-cell-name">Claude</span></div></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="check">✓</span></td>
+        <td>200k</td>
+        <td><span style="color:var(--gold)">★★★★★</span> 4.8</td>
+        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+      </tr>
+      <tr>
+        <td><div class="tool-cell"><span class="tool-emoji">💎</span><span class="tool-cell-name">Gemini</span></div></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td>1M</td>
+        <td><span style="color:var(--gold)">★★★★☆</span> 4.6</td>
+        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+      </tr>
+      <tr>
+        <td><div class="tool-cell"><span class="tool-emoji">🦅</span><span class="tool-cell-name">Perplexity</span></div></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="check">✓</span></td>
+        <td>32k</td>
+        <td><span style="color:var(--gold)">★★★★☆</span> 4.5</td>
+        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+      </tr>
+      <tr>
+        <td><div class="tool-cell"><span class="tool-emoji">🦙</span><span class="tool-cell-name">Llama 3</span></div></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td>128k</td>
+        <td><span style="color:var(--gold)">★★★★☆</span> 4.3</td>
+        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-        searchInput.addEventListener('input', filterResults);
-        categoryFilter.addEventListener('change', filterResults);
-    </script>
+<!-- ARTICLE BAND -->
+<section class="article-band">
+  <div>
+    <div class="ab-label">Latest Guides</div>
+    <h2 class="ab-heading">In-depth reviews from people who actually <em>use</em> the tools.</h2>
+    <p class="ab-body">We spend hours testing every tool before recommending it. No sponsored fluff, no lazy star ratings — just honest analysis from practitioners who understand what these tools can and can't do.</p>
+    <a href="javascript:void(0)" class="ab-btn">Browse all reviews →</a>
+  </div>
+  <div class="ab-articles">
+    <div class="mini-article">
+      <div class="ma-num">01</div>
+      <div>
+        <div class="ma-title">Best AI Writing Tools in 2026: We Tested 30+</div>
+        <div class="ma-meta">Guide · 14 min read · Updated Feb 2026</div>
+      </div>
+    </div>
+    <div class="mini-article">
+      <div class="ma-num">02</div>
+      <div>
+        <div class="ma-title">ChatGPT vs Claude vs Gemini: The Honest Comparison</div>
+        <div class="ma-meta">Comparison · 18 min read · Updated Feb 2026</div>
+      </div>
+    </div>
+    <div class="mini-article">
+      <div class="ma-num">03</div>
+      <div>
+        <div class="ma-title">10 AI Tools That Actually Replaced Software I Was Paying For</div>
+        <div class="ma-meta">List · 8 min read · Feb 2026</div>
+      </div>
+    </div>
+    <div class="mini-article">
+      <div class="ma-num">04</div>
+      <div>
+        <div class="ma-title">Midjourney v7 Review: Still the Best Image AI?</div>
+        <div class="ma-meta">Review · 11 min read · Jan 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <div>
+    <h2 class="nl-heading">The AI tools <span>you need</span> to know about.</h2>
+    <p class="nl-sub">Every Thursday: curated picks, honest reviews, and exclusive deals on the best AI tools. Trusted by 12,000+ builders, creators, and founders.</p>
+  </div>
+  <div class="nl-form">
+    <div class="nl-inputs">
+      <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Enter your email">
+      <button class="nl-submit">Subscribe Free</button>
+    </div>
+    <p class="nl-note">No spam, ever. Unsubscribe in one click. 12,847 subscribers and counting.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="nav-logo" href="javascript:void(0)"><span>AI</span>Vybes</a>
+      <p>The independent AI tools directory. We research, test, and curate the best artificial intelligence tools so you don't have to.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Directory</h4>
+      <ul>
+        <li><a href="javascript:void(0)">Writing Tools</a></li>
+        <li><a href="javascript:void(0)">Image Generation</a></li>
+        <li><a href="javascript:void(0)">Video AI</a></li>
+        <li><a href="javascript:void(0)">Coding Tools</a></li>
+        <li><a href="javascript:void(0)">Audio & Voice</a></li>
+        <li><a href="javascript:void(0)">Productivity</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Content</h4>
+      <ul>
+        <li><a href="javascript:void(0)">Reviews</a></li>
+        <li><a href="javascript:void(0)">Comparisons</a></li>
+        <li><a href="javascript:void(0)">Best Of Lists</a></li>
+        <li><a href="javascript:void(0)">Tutorials</a></li>
+        <li><a href="javascript:void(0)">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Submit a Tool</a></li>
+        <li><a href="javascript:void(0)">Advertise</a></li>
+        <li><a href="javascript:void(0)">Affiliate Disclosure</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AIVybes. All rights reserved.</span>
+    <span>This site contains affiliate links. <a href="javascript:void(0)">Learn more.</a></span>
+    <span><a href="javascript:void(0)">Privacy</a> · <a href="javascript:void(0)">Terms</a></span>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+    <div class="modal-header">
+      <div class="modal-icon" id="m-icon"></div>
+      <div>
+        <div class="modal-name" id="m-name"></div>
+        <div class="modal-cat" id="m-cat"></div>
+        <div class="modal-rating" id="m-rating"></div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p id="m-overview"></p>
+      </div>
+      <div class="modal-section">
+        <h4>Pros & Cons</h4>
+        <div class="pros-cons" id="m-proscons"></div>
+      </div>
+      <div class="modal-section">
+        <h4>Pricing</h4>
+        <p id="m-pricing"></p>
+      </div>
+      <div class="modal-cta">
+        <a href="javascript:void(0)" class="btn-primary" id="m-cta">Visit Website →</a>
+        <button class="btn-secondary">Save to List</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let tools = [];
+let activeFilter = 'All';
+let activeCategory = 'All';
+let searchQuery = '';
+
+// Load tools from tools.json
+async function loadTools() {
+  try {
+    const res = await fetch('tools.json');
+    if (!res.ok) throw new Error('not found');
+    tools = await res.json();
+  } catch(e) {
+    document.getElementById('toolsGrid').innerHTML =
+      '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1">' +
+      '⚠️ <strong>tools.json not found.</strong> Export your tools from the admin panel and place <code>tools.json</code> in the same folder as this file.' +
+      '</div>';
+    return;
+  }
+  updateCounts();
+  renderHeroCards();
+  renderTools();
+}
+
+function renderHeroCards() {
+  const container = document.getElementById('heroCards');
+  if (!container) return;
+
+  const picks = tools.filter(t => t.tier === "Editor's Pick" || t.rating >= 4.8);
+  const shuffled = picks.sort(() => Math.random() - 0.5).slice(0, 3);
+
+  if (!shuffled.length) {
+    container.innerHTML = '';
+    return;
+  }
+
+  container.innerHTML = shuffled.map((t, i) => {
+    const idx = tools.indexOf(t);
+    return `
+    <div class="featured-card" onclick="openModal(${idx})" style="animation-delay:${0.1 + i * 0.1}s">
+      <div class="fc-badge">★ Featured</div>
+      <div class="fc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
+      <div class="fc-name">${t.name}</div>
+      <div class="fc-category">${t.category||''}</div>
+      <div class="fc-desc">${t.desc||''}</div>
+      <div class="fc-footer">
+        <a href="${t.affiliateUrl||t.websiteUrl||'#'}" class="fc-link" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Visit Website →</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderTools() {
+  const grid = document.getElementById('toolsGrid');
+  let filtered = tools.filter(t => {
+    const matchSearch = searchQuery === '' ||
+      t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (t.category && t.category.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (t.desc && t.desc.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (t.tags && t.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))) ||
+      (t.overview && t.overview.toLowerCase().includes(searchQuery.toLowerCase()));
+
+    const matchFilter = activeFilter === 'All' ||
+      (activeFilter === 'New' && t.badge === 'New') ||
+      (activeFilter === 'Top' && t.badge === 'Top') ||
+      (t.pricing && t.pricing === activeFilter);
+
+    const matchCat = activeCategory === 'All' || (t.category && t.category === activeCategory);
+
+    return matchSearch && matchFilter && matchCat;
+  });
+
+  grid.innerHTML = filtered.map((t, i) => {
+    const idx = tools.indexOf(t);
+    return `
+    <div class="tool-card" onclick="openModal(${idx})">
+      <div class="tc-top">
+        <div class="tc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
+        <div class="tc-badges">
+          ${t.tier === "Editor's Pick" ? '<span class="badge badge-top">★ Editor\'s Pick</span>' : ''}
+          ${t.tier === 'New' ? '<span class="badge badge-new">New</span>' : ''}
+          ${t.pricing ? `<span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>` : ''}
+        </div>
+      </div>
+      <div class="tc-name">${t.name}</div>
+      <div class="tc-category">${t.category||''}</div>
+      <div class="tc-desc">${t.desc||''}</div>
+      <div class="tc-tags">${(t.tags||[]).map(tag => `<span class="tc-tag">${tag}</span>`).join('')}</div>
+      <div class="tc-footer">
+        <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Visit Website →</a>
+      </div>
+    </div>`;
+  }).join('');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1;">No tools found. Try a different search or browse all categories.</div>';
+  }
+}
+
+function filterByCategory(cat) {
+  activeCategory = cat;
+  activeFilter = 'All';
+  searchQuery = '';
+  document.getElementById('searchInput').value = '';
+  
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.category-item').forEach(c => {
+    const name = c.querySelector('.cat-name');
+    if (!name) return;
+    const text = name.textContent.trim();
+    if (cat === 'All' && text === 'All Tools') c.classList.add('active');
+    else if (text === cat) c.classList.add('active');
+  });
+  
+  renderTools();
+  updateCounts();
+}
+
+function filterByTag(tag) {
+  activeFilter = tag;
+  activeCategory = 'All';
+  searchQuery = '';
+  document.getElementById('searchInput').value = '';
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  renderTools();
+}
+
+function filterTools() {
+  searchQuery = document.getElementById('searchInput').value;
+  renderTools();
+}
+
+function updateCounts() {
+  const cats = {
+    'All Tools': tools.length,
+    'Business & Productivity': tools.filter(t => t.category === 'Business & Productivity').length,
+    'General Purpose': tools.filter(t => t.category === 'General Purpose').length,
+    'Image & Design': tools.filter(t => t.category === 'Image & Design').length,
+    'Knowledge & Research': tools.filter(t => t.category === 'Knowledge & Research').length,
+    'Sales, Marketing & CRM': tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
+    'Video & Audio': tools.filter(t => t.category === 'Video & Audio').length,
+    'Writing & Content': tools.filter(t => t.category === 'Writing & Content').length,
+    'Experimental': tools.filter(t => t.category === 'Experimental').length,
+  };
+  document.querySelectorAll('.category-item').forEach(item => {
+    const nameEl = item.querySelector('.cat-name');
+    const countEl = item.querySelector('.cat-count');
+    if (nameEl && countEl && cats[nameEl.textContent.trim()] !== undefined) {
+      countEl.textContent = cats[nameEl.textContent.trim()];
+    }
+  });
+}
+
+function openModal(index) {
+  const t = tools[index];
+  if (!t) return;
+  
+  const r = parseFloat(t.rating) || 0;
+  const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
+  document.getElementById('m-icon').style.background = t.iconBg || '#eee';
+  document.getElementById('m-icon').textContent = t.icon || '🔧';
+  document.getElementById('m-name').textContent = t.name;
+  document.getElementById('m-cat').textContent = t.category;
+  document.getElementById('m-rating').innerHTML = `<span style="color:var(--gold)">${stars}</span> <strong>${r.toFixed(1)}</strong> / 5`;
+  document.getElementById('m-overview').textContent = t.overview || t.desc || '';
+  document.getElementById('m-pricing').textContent = t.pricingDetail || t.pricing || '';
+  document.getElementById('m-cta').href = t.affiliateUrl || t.websiteUrl || '#';
+  document.getElementById('m-cta').target = '_blank';
+  document.getElementById('m-cta').rel = 'noopener sponsored';
+  document.getElementById('m-proscons').innerHTML = `
+    <div class="pros"><h5>Pros</h5><ul>${(t.pros||[]).map(p => `<li>${p}</li>`).join('')}</ul></div>
+    <div class="cons"><h5>Cons</h5><ul>${(t.cons||[]).map(c => `<li>${c}</li>`).join('')}</ul></div>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOnBg(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+loadTools();
+</script>
 </body>
 </html>
