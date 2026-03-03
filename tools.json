@@ -1,5 +1,50 @@
 [
   {
+    "name": "WriteinaClick",
+    "category": "Writing & Content",
+    "pricing": "Free",
+    "icon": "✍️",
+    "websiteUrl": "https://writeinaclick.com/",
+    "tags": [
+      "automation",
+      "collaboration",
+      "productivity",
+      "optimization"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=nKuGa_VGpvY",
+    "desc": "Quick AI writing generator for blogs, captions, and short-form content.",
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772545868483.512,
+    "createdAt": "2026-03-03T13:51:08.483Z"
+  },
+  {
+    "name": "Marblism",
+    "category": "Business & Productivity",
+    "pricing": "Paid",
+    "tier": "Editor's Pick",
+    "icon": "📊",
+    "websiteUrl": "https://www.marblism.com/",
+    "tags": [
+      "automation",
+      "collaboration",
+      "productivity",
+      "optimization"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=t1pT4c0v6OQ",
+    "desc": "AI-powered full-stack app generator that builds production-ready SaaS apps from prompts.",
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772545868482.6562,
+    "createdAt": "2026-03-03T13:51:08.482Z"
+  },
+  {
     "name": "Zoho CRM",
     "category": "Sales, Marketing & CRM",
     "pricing": "Free Trial",
