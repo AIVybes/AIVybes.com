@@ -877,7 +877,38 @@
   }
   .btn-secondary:hover { background: var(--ink); color: var(--paper); }
 
-  /* Comparison Table */
+  /* ── VIDEO EMBED ── */
+  .modal-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #000;
+    margin-bottom: 1.5rem;
+  }
+  .modal-video iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+  .modal-video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border);
+    background: white;
+    transition: background 0.2s;
+  }
+  .modal-video-link:hover { background: var(--tag-bg); }
+
   .compare-section {
     padding: 4rem 10%;
     border-top: 1px solid var(--border);
@@ -943,7 +974,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="javascript:void(0)"><span>AI</span>Vybes</a>
+  <a class="nav-logo" href="#"><span>AI</span>Vybes</a>
   <ul class="nav-links">
     <li><a href="#directory">Directory</a></li>
     <li><a href="#newsletter" class="nav-cta">Newsletter</a></li>
@@ -957,8 +988,8 @@
     <h1 class="hero-headline">Find the<br><em>perfect</em><br>AI tool.</h1>
     <p class="hero-sub">Expert-curated directory of 500+ AI tools. Unbiased reviews, real comparisons, and weekly discoveries delivered to your inbox.</p>
     <div class="hero-search">
-      <input type="text" placeholder="Search tools, categories, use cases…" id="searchInput" oninput="filterTools()" aria-label="Search AI tools">
-      <button aria-label="Submit search">Search</button>
+      <input type="text" placeholder="Search tools, categories, use cases…" id="searchInput" oninput="filterTools()">
+      <button>Search</button>
     </div>
     <div class="hero-stats">
       <div>
@@ -978,6 +1009,7 @@
 
   <div class="hero-right">
     <div class="hero-bg-text">AI</div>
+
     <div id="heroCards"></div>
   </div>
 </section>
@@ -1016,55 +1048,55 @@
   <aside class="sidebar">
     <div class="sidebar-section">
       <div class="sidebar-title">Categories</div>
-      <a class="category-item active" href="javascript:void(0)" onclick="filterByCategory('All'); return false;">
+      <a class="category-item active" href="#" onclick="filterByCategory('All'); return false;">
         <span class="cat-name">All Tools</span>
         <span class="cat-count">500</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Business & Productivity'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Business & Productivity'); return false;">
         <span class="cat-name">Business & Productivity</span>
         <span class="cat-count">89</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('General Purpose'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('General Purpose'); return false;">
         <span class="cat-name">General Purpose</span>
         <span class="cat-count">67</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Image & Design'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Image & Design'); return false;">
         <span class="cat-name">Image & Design</span>
         <span class="cat-count">54</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Knowledge & Research'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Knowledge & Research'); return false;">
         <span class="cat-name">Knowledge & Research</span>
         <span class="cat-count">43</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Sales, Marketing & CRM'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Sales, Marketing & CRM'); return false;">
         <span class="cat-name">Sales, Marketing & CRM</span>
         <span class="cat-count">38</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Video & Audio'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Video & Audio'); return false;">
         <span class="cat-name">Video & Audio</span>
         <span class="cat-count">72</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Writing & Content'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Writing & Content'); return false;">
         <span class="cat-name">Writing & Content</span>
         <span class="cat-count">51</span>
       </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Experimental'); return false;">
+      <a class="category-item" href="#" onclick="filterByCategory('Experimental'); return false;">
         <span class="cat-name">Experimental</span>
         <span class="cat-count">29</span>
       </a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Pricing</div>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Free'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Free tools</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Free'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Free tools</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
+      <a class="category-item" href="#" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Top Lists</div>
-      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Students</span></a>
-      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Creators</span></a>
-      <a class="category-item" href="javascript:void(0)"><span class="cat-name">Best for Business</span></a>
-      <a class="category-item" href="javascript:void(0)"><span class="cat-name">New This Week</span></a>
+      <a class="category-item" href="#"><span class="cat-name">Best for Students</span></a>
+      <a class="category-item" href="#"><span class="cat-name">Best for Creators</span></a>
+      <a class="category-item" href="#"><span class="cat-name">Best for Business</span></a>
+      <a class="category-item" href="#"><span class="cat-name">New This Week</span></a>
     </div>
   </aside>
 
@@ -1072,8 +1104,10 @@
   <div class="tools-area">
     <div class="tools-header">
       <h2 class="tools-heading">AI Tools Directory</h2>
+      <div class="sort-bar">
+        <button class="sort-btn" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↕</button>
+      </div>
     </div>
-
     <div class="tools-grid" id="toolsGrid"></div>
   </div>
 </section>
@@ -1104,7 +1138,7 @@
         <td><span class="check">✓</span></td>
         <td>128k</td>
         <td><span style="color:var(--gold)">★★★★★</span> 4.9</td>
-        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+        <td><a class="compare-link" href="#">Try →</a></td>
       </tr>
       <tr>
         <td><div class="tool-cell"><span class="tool-emoji">🌊</span><span class="tool-cell-name">Claude</span></div></td>
@@ -1114,7 +1148,7 @@
         <td><span class="check">✓</span></td>
         <td>200k</td>
         <td><span style="color:var(--gold)">★★★★★</span> 4.8</td>
-        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+        <td><a class="compare-link" href="#">Try →</a></td>
       </tr>
       <tr>
         <td><div class="tool-cell"><span class="tool-emoji">💎</span><span class="tool-cell-name">Gemini</span></div></td>
@@ -1124,7 +1158,7 @@
         <td><span class="check">✓</span></td>
         <td>1M</td>
         <td><span style="color:var(--gold)">★★★★☆</span> 4.6</td>
-        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+        <td><a class="compare-link" href="#">Try →</a></td>
       </tr>
       <tr>
         <td><div class="tool-cell"><span class="tool-emoji">🦅</span><span class="tool-cell-name">Perplexity</span></div></td>
@@ -1134,7 +1168,7 @@
         <td><span class="check">✓</span></td>
         <td>32k</td>
         <td><span style="color:var(--gold)">★★★★☆</span> 4.5</td>
-        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+        <td><a class="compare-link" href="#">Try →</a></td>
       </tr>
       <tr>
         <td><div class="tool-cell"><span class="tool-emoji">🦙</span><span class="tool-cell-name">Llama 3</span></div></td>
@@ -1144,7 +1178,7 @@
         <td><span class="cross">✗</span></td>
         <td>128k</td>
         <td><span style="color:var(--gold)">★★★★☆</span> 4.3</td>
-        <td><a class="compare-link" href="javascript:void(0)">Try →</a></td>
+        <td><a class="compare-link" href="#">Try →</a></td>
       </tr>
     </tbody>
   </table>
@@ -1156,7 +1190,7 @@
     <div class="ab-label">Latest Guides</div>
     <h2 class="ab-heading">In-depth reviews from people who actually <em>use</em> the tools.</h2>
     <p class="ab-body">We spend hours testing every tool before recommending it. No sponsored fluff, no lazy star ratings — just honest analysis from practitioners who understand what these tools can and can't do.</p>
-    <a href="javascript:void(0)" class="ab-btn">Browse all reviews →</a>
+    <a href="#" class="ab-btn">Browse all reviews →</a>
   </div>
   <div class="ab-articles">
     <div class="mini-article">
@@ -1198,7 +1232,7 @@
   </div>
   <div class="nl-form">
     <div class="nl-inputs">
-      <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Enter your email">
+      <input class="nl-input" type="email" placeholder="your@email.com">
       <button class="nl-submit">Subscribe Free</button>
     </div>
     <p class="nl-note">No spam, ever. Unsubscribe in one click. 12,847 subscribers and counting.</p>
@@ -1209,52 +1243,52 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a class="nav-logo" href="javascript:void(0)"><span>AI</span>Vybes</a>
+      <a class="nav-logo" href="#"><span>AI</span>Vybes</a>
       <p>The independent AI tools directory. We research, test, and curate the best artificial intelligence tools so you don't have to.</p>
     </div>
     <div class="footer-col">
       <h4>Directory</h4>
       <ul>
-        <li><a href="javascript:void(0)">Writing Tools</a></li>
-        <li><a href="javascript:void(0)">Image Generation</a></li>
-        <li><a href="javascript:void(0)">Video AI</a></li>
-        <li><a href="javascript:void(0)">Coding Tools</a></li>
-        <li><a href="javascript:void(0)">Audio & Voice</a></li>
-        <li><a href="javascript:void(0)">Productivity</a></li>
+        <li><a href="#">Writing Tools</a></li>
+        <li><a href="#">Image Generation</a></li>
+        <li><a href="#">Video AI</a></li>
+        <li><a href="#">Coding Tools</a></li>
+        <li><a href="#">Audio & Voice</a></li>
+        <li><a href="#">Productivity</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Content</h4>
       <ul>
-        <li><a href="javascript:void(0)">Reviews</a></li>
-        <li><a href="javascript:void(0)">Comparisons</a></li>
-        <li><a href="javascript:void(0)">Best Of Lists</a></li>
-        <li><a href="javascript:void(0)">Tutorials</a></li>
-        <li><a href="javascript:void(0)">Newsletter</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Comparisons</a></li>
+        <li><a href="#">Best Of Lists</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Newsletter</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Submit a Tool</a></li>
-        <li><a href="javascript:void(0)">Advertise</a></li>
-        <li><a href="javascript:void(0)">Affiliate Disclosure</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Submit a Tool</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Affiliate Disclosure</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 AIVybes. All rights reserved.</span>
-    <span>This site contains affiliate links. <a href="javascript:void(0)">Learn more.</a></span>
-    <span><a href="javascript:void(0)">Privacy</a> · <a href="javascript:void(0)">Terms</a></span>
+    <span>This site contains affiliate links. <a href="#">Learn more.</a></span>
+    <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
   </div>
 </footer>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
   <div class="modal" id="modal">
-    <button class="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+    <button class="modal-close" onclick="closeModal()">×</button>
     <div class="modal-header">
       <div class="modal-icon" id="m-icon"></div>
       <div>
@@ -1264,6 +1298,7 @@
       </div>
     </div>
     <div class="modal-body">
+      <div id="m-video"></div>
       <div class="modal-section">
         <h4>Overview</h4>
         <p id="m-overview"></p>
@@ -1277,7 +1312,7 @@
         <p id="m-pricing"></p>
       </div>
       <div class="modal-cta">
-        <a href="javascript:void(0)" class="btn-primary" id="m-cta">Visit Website →</a>
+        <a href="#" class="btn-primary" id="m-cta">Visit Website →</a>
         <button class="btn-secondary">Save to List</button>
       </div>
     </div>
@@ -1289,14 +1324,16 @@ let tools = [];
 let activeFilter = 'All';
 let activeCategory = 'All';
 let searchQuery = '';
+let sortAZ = null; // null = default, 'asc' = A-Z, 'desc' = Z-A
 
-// Load tools from tools.json
+// Load tools from tools.json — the only file you ever need to update
 async function loadTools() {
   try {
     const res = await fetch('tools.json');
     if (!res.ok) throw new Error('not found');
     tools = await res.json();
   } catch(e) {
+    // Fallback: show a helpful message if tools.json is missing
     document.getElementById('toolsGrid').innerHTML =
       '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1">' +
       '⚠️ <strong>tools.json not found.</strong> Export your tools from the admin panel and place <code>tools.json</code> in the same folder as this file.' +
@@ -1312,7 +1349,8 @@ function renderHeroCards() {
   const container = document.getElementById('heroCards');
   if (!container) return;
 
-  const picks = tools.filter(t => t.tier === "Editor's Pick" || t.rating >= 4.8);
+  // Get all Editor's Pick tools, shuffle, take 3
+  const picks = tools.filter(t => t.tier === "Editor's Pick");
   const shuffled = picks.sort(() => Math.random() - 0.5).slice(0, 3);
 
   if (!shuffled.length) {
@@ -1324,7 +1362,7 @@ function renderHeroCards() {
     const idx = tools.indexOf(t);
     return `
     <div class="featured-card" onclick="openModal(${idx})" style="animation-delay:${0.1 + i * 0.1}s">
-      <div class="fc-badge">★ Featured</div>
+      <div class="fc-badge">★ Editor's Pick</div>
       <div class="fc-icon" style="background:${t.iconBg||'#eee'}">${t.icon||'🔧'}</div>
       <div class="fc-name">${t.name}</div>
       <div class="fc-category">${t.category||''}</div>
@@ -1336,25 +1374,40 @@ function renderHeroCards() {
   }).join('');
 }
 
+function toggleSortAZ() {
+  sortAZ = sortAZ === 'asc' ? 'desc' : 'asc';
+  const btn = document.getElementById('sortAZBtn');
+  btn.textContent = sortAZ === 'asc' ? 'A–Z ↑' : 'Z–A ↓';
+  btn.classList.add('active');
+  renderTools();
+}
+
 function renderTools() {
   const grid = document.getElementById('toolsGrid');
   let filtered = tools.filter(t => {
     const matchSearch = searchQuery === '' ||
       t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (t.category && t.category.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (t.desc && t.desc.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (t.tags && t.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))) ||
-      (t.overview && t.overview.toLowerCase().includes(searchQuery.toLowerCase()));
+      t.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t.desc.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchFilter = activeFilter === 'All' ||
       (activeFilter === 'New' && t.badge === 'New') ||
       (activeFilter === 'Top' && t.badge === 'Top') ||
-      (t.pricing && t.pricing === activeFilter);
+      t.pricing === activeFilter ||
+      t.category === activeFilter ||
+      (t.tags||[]).includes(activeFilter);
 
-    const matchCat = activeCategory === 'All' || (t.category && t.category === activeCategory);
+    const matchCat = activeCategory === 'All' || t.category === activeCategory;
 
     return matchSearch && matchFilter && matchCat;
   });
+
+  // Apply A-Z / Z-A sort if active
+  if (sortAZ === 'asc') {
+    filtered = filtered.slice().sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortAZ === 'desc') {
+    filtered = filtered.slice().sort((a, b) => b.name.localeCompare(a.name));
+  }
 
   grid.innerHTML = filtered.map((t, i) => {
     const idx = tools.indexOf(t);
@@ -1365,7 +1418,7 @@ function renderTools() {
         <div class="tc-badges">
           ${t.tier === "Editor's Pick" ? '<span class="badge badge-top">★ Editor\'s Pick</span>' : ''}
           ${t.tier === 'New' ? '<span class="badge badge-new">New</span>' : ''}
-          ${t.pricing ? `<span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>` : ''}
+          <span class="badge badge-${(t.pricing||'').toLowerCase()}">${t.pricing||''}</span>
         </div>
       </div>
       <div class="tc-name">${t.name}</div>
@@ -1379,16 +1432,27 @@ function renderTools() {
   }).join('');
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1;">No tools found. Try a different search or browse all categories.</div>';
+    grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;">No tools found. Try a different search.</div>';
   }
 }
 
+function setActiveFilter(el, filter) {
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  activeFilter = filter;
+  // If filtering by pricing tag, clear sidebar active state
+  if (['Free','Freemium','Paid'].includes(filter)) {
+    document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+    activeCategory = 'All';
+  }
+  renderTools();
+}
+
 function filterByCategory(cat) {
+  // Reset both filters cleanly
   activeCategory = cat;
   activeFilter = 'All';
-  searchQuery = '';
-  document.getElementById('searchInput').value = '';
-  
+  // Update sidebar active highlight
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.category-item').forEach(c => {
     const name = c.querySelector('.cat-name');
@@ -1397,7 +1461,10 @@ function filterByCategory(cat) {
     if (cat === 'All' && text === 'All Tools') c.classList.add('active');
     else if (text === cat) c.classList.add('active');
   });
-  
+  // Reset filter tags back to All
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+  const allTag = document.querySelector('.filter-tag');
+  if (allTag) allTag.classList.add('active');
   renderTools();
   updateCounts();
 }
@@ -1405,9 +1472,8 @@ function filterByCategory(cat) {
 function filterByTag(tag) {
   activeFilter = tag;
   activeCategory = 'All';
-  searchQuery = '';
-  document.getElementById('searchInput').value = '';
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
   renderTools();
 }
 
@@ -1418,15 +1484,15 @@ function filterTools() {
 
 function updateCounts() {
   const cats = {
-    'All Tools': tools.length,
-    'Business & Productivity': tools.filter(t => t.category === 'Business & Productivity').length,
+    'All Tools':        tools.length,
+    'Business & Productivity':          tools.filter(t => t.category === 'Business & Productivity').length,
     'General Purpose': tools.filter(t => t.category === 'General Purpose').length,
-    'Image & Design': tools.filter(t => t.category === 'Image & Design').length,
-    'Knowledge & Research': tools.filter(t => t.category === 'Knowledge & Research').length,
-    'Sales, Marketing & CRM': tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
-    'Video & Audio': tools.filter(t => t.category === 'Video & Audio').length,
-    'Writing & Content': tools.filter(t => t.category === 'Writing & Content').length,
-    'Experimental': tools.filter(t => t.category === 'Experimental').length,
+    'Image & Design':           tools.filter(t => t.category === 'Image & Design').length,
+    'Knowledge & Research':            tools.filter(t => t.category === 'Knowledge & Research').length,
+    'Sales, Marketing & CRM':    tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
+    'Video & Audio':     tools.filter(t => t.category === 'Video & Audio').length,
+    'Writing & Content':        tools.filter(t => t.category === 'Writing & Content').length,
+    'Experimental':         tools.filter(t => t.category === 'Experimental').length,
   };
   document.querySelectorAll('.category-item').forEach(item => {
     const nameEl = item.querySelector('.cat-name');
@@ -1437,17 +1503,34 @@ function updateCounts() {
   });
 }
 
+function getYouTubeEmbedUrl(url) {
+  if (!url) return null;
+  // Match youtube.com/watch?v=ID or youtu.be/ID
+  const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  if (match) return `https://www.youtube.com/embed/${match[1]}?rel=0`;
+  return null;
+}
+
 function openModal(index) {
   const t = tools[index];
-  if (!t) return;
-  
-  const r = parseFloat(t.rating) || 0;
-  const stars = '★'.repeat(Math.round(r)) + '☆'.repeat(5 - Math.round(r));
   document.getElementById('m-icon').style.background = t.iconBg || '#eee';
   document.getElementById('m-icon').textContent = t.icon || '🔧';
   document.getElementById('m-name').textContent = t.name;
   document.getElementById('m-cat').textContent = t.category;
-  document.getElementById('m-rating').innerHTML = `<span style="color:var(--gold)">${stars}</span> <strong>${r.toFixed(1)}</strong> / 5`;
+  document.getElementById('m-rating').innerHTML = '';
+
+  // Video section
+  const videoEl = document.getElementById('m-video');
+  const embedUrl = getYouTubeEmbedUrl(t.videoUrl);
+  if (embedUrl) {
+    videoEl.innerHTML = `<div class="modal-video"><iframe src="${embedUrl}" allowfullscreen loading="lazy"></iframe></div>`;
+  } else if (t.videoUrl) {
+    // Non-YouTube URL (Instagram etc.) — show a link instead
+    videoEl.innerHTML = `<a href="${t.videoUrl}" target="_blank" rel="noopener" class="modal-video-link">▶ Watch Video / Demo →</a>`;
+  } else {
+    videoEl.innerHTML = '';
+  }
+
   document.getElementById('m-overview').textContent = t.overview || t.desc || '';
   document.getElementById('m-pricing').textContent = t.pricingDetail || t.pricing || '';
   document.getElementById('m-cta').href = t.affiliateUrl || t.websiteUrl || '#';
@@ -1464,6 +1547,7 @@ function openModal(index) {
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
   document.body.style.overflow = '';
+  document.getElementById('m-video').innerHTML = ''; // stop video playback
 }
 
 function closeModalOnBg(e) {

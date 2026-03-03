@@ -1,5 +1,99 @@
 [
   {
+    "name": "Github Copilot",
+    "category": "Coding & Developing",
+    "pricing": "Freemium",
+    "icon": "💻",
+    "tags": [
+      "coding",
+      "ai assistant",
+      "workspace"
+    ],
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772503403254.3918,
+    "createdAt": "2026-03-03T02:03:23.254Z"
+  },
+  {
+    "name": "Grammarly",
+    "category": "Writing & Content",
+    "pricing": "Freemium",
+    "icon": "✍️",
+    "tags": [
+      "brainstorming",
+      "writing assistant"
+    ],
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772503403254.1602,
+    "createdAt": "2026-03-03T02:03:23.254Z"
+  },
+  {
+    "name": "Dall-E3",
+    "category": "Image & Design",
+    "pricing": "Freemium",
+    "icon": "🎨",
+    "websiteUrl": "https://openai.com/index/dall-e-3",
+    "tags": [
+      "text-to-image",
+      "text-to-video",
+      "image generation"
+    ],
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772503403254.0745,
+    "createdAt": "2026-03-03T02:03:23.254Z"
+  },
+  {
+    "name": "Canva AI Image Generator",
+    "category": "Image & Design",
+    "pricing": "Free",
+    "icon": "🎨",
+    "websiteUrl": "https://www.canva.com/ai-image-generator",
+    "tags": [
+      "image generation",
+      "graphic design",
+      "text-to-image",
+      "text-to-video",
+      "image editor"
+    ],
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772503403254.1526,
+    "createdAt": "2026-03-03T02:03:23.254Z"
+  },
+  {
+    "name": "Bing AI Creations",
+    "category": "Image & Design",
+    "pricing": "Free",
+    "icon": "🎨",
+    "websiteUrl": "https://www.bing.com/images/",
+    "tags": [
+      "image generation",
+      "graphic design",
+      "text-to-image"
+    ],
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 4,
+    "pros": [],
+    "cons": [],
+    "id": 1772503403254.5867,
+    "createdAt": "2026-03-03T02:03:23.254Z"
+  },
+  {
     "name": "Zoho CRM",
     "category": "Sales, Marketing & CRM",
     "pricing": "Free Trial",
@@ -13,8 +107,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.4714,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.5518,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Zite",
@@ -32,8 +126,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.2156,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.0662,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Zapier",
@@ -54,8 +148,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6328,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.6255,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Write in a Click",
@@ -71,8 +165,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.8726,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8396,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Wispr Flow",
@@ -93,8 +187,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.4927,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.7417,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Immersive Saga",
@@ -110,8 +204,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6772,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8174,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Superhuman",
@@ -127,8 +221,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6484,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.679,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Super",
@@ -146,8 +240,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.1348,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.6946,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Submagic",
@@ -163,8 +257,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.9902,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8086,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "SocialSight",
@@ -180,8 +274,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.0674,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.2073,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "SidekickWriter",
@@ -197,8 +291,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6897,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.7693,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Saner",
@@ -214,8 +308,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.9883,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.616,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Salesforce Einstein",
@@ -231,8 +325,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.1875,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8926,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Runway",
@@ -248,8 +342,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6929,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.5637,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "River",
@@ -265,8 +359,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.2173,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.5452,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Reve",
@@ -282,8 +376,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.409,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.678,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Relevance AI",
@@ -299,8 +393,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.7397,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.7805,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Relay.app",
@@ -319,8 +413,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.7085,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8271,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Recraft",
@@ -336,8 +430,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6821,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.031,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Reclaim",
@@ -355,8 +449,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.3958,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.76,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Plotdrive",
@@ -372,8 +466,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.1821,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.9321,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Perplexity",
@@ -381,16 +475,21 @@
     "pricing": "Freemium",
     "icon": "🧍",
     "websiteUrl": "https://www.perplexity.ai/",
+    "tags": [
+      "ai assistant",
+      "web scraping",
+      "web research",
+      "brainstorming"
+    ],
     "desc": "AI-powered answer engine that delivers cited, real-time research responses.",
     "overview": "Perplexity is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
-    "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.2844,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.5022,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Outreach",
@@ -406,8 +505,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.4841,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.1233,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Otter",
@@ -423,8 +522,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6558,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.0525,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Opus Clip",
@@ -440,8 +539,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.561,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.558,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Novarrium",
@@ -457,8 +556,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.2114,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.2114,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Notion AI",
@@ -476,8 +575,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.249,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8801,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "n8n",
@@ -498,8 +597,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.298,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.9104,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Motion",
@@ -515,8 +614,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.1692,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.6272,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Midjourney",
@@ -532,13 +631,14 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.179,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.3618,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Microsoft Designer",
     "category": "Image & Design",
     "pricing": "Free",
+    "tier": "Best-in-Class",
     "icon": "🎨",
     "websiteUrl": "https://designer.microsoft.com/",
     "desc": "AI graphic design tool that generates social media visuals, marketing assets, and branding content.",
@@ -549,25 +649,30 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.3477,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.0332,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Microsoft Copilot",
     "category": "General Purpose",
     "pricing": "Freemium",
+    "tier": "Best-in-Class",
     "icon": "🧍",
     "websiteUrl": "https://copilot.microsoft.com/",
+    "tags": [
+      "data visualization",
+      "task automation",
+      "integrations"
+    ],
     "desc": "AI assistant embedded across Microsoft 365 apps for writing, data analysis, and workflow automation.",
     "overview": "Microsoft Copilot is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
-    "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.0542,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.3237,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Mem",
@@ -585,8 +690,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6877,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.0308,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Marbalism",
@@ -603,8 +708,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.5347,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.0474,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Make",
@@ -625,8 +730,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6206,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8284,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Lindy",
@@ -645,8 +750,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.8813,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.452,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Leonardo",
@@ -662,8 +767,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.623,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.2896,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Ideogram",
@@ -679,8 +784,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.084,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.7385,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Hubspot CRM",
@@ -696,8 +801,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.4124,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.3904,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Gumloop",
@@ -718,8 +823,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262009.1538,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8538,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Google Gemini",
@@ -728,16 +833,24 @@
     "tier": "Editor's Pick",
     "icon": "🧍",
     "websiteUrl": "https://gemini.google.com/app",
+    "tags": [
+      "ai assistant",
+      "image generation",
+      "analysis",
+      "task automation",
+      "coding",
+      "brainstorming",
+      "writing assistant"
+    ],
     "desc": "Google’s multimodal AI assistant integrated with Workspace for writing, analysis, and research.",
     "overview": "Google Gemini is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
-    "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.2285,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.8118,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Google AI Studio",
@@ -754,8 +867,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.6746,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.5532,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Gong",
@@ -771,8 +884,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262009.9768,
-    "createdAt": "2026-03-02T20:27:42.009Z"
+    "id": 1772503403253.9102,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Flux.2",
@@ -788,8 +901,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.8706,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.5842,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Firecrawl",
@@ -809,8 +922,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.1196,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.722,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Eleven Labs",
@@ -832,8 +945,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.6987,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.4429,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Descript",
@@ -849,8 +962,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.4868,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.9824,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Clay",
@@ -866,18 +979,22 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.7212,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.1677,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
-    "name": "Claude",
+    "name": "Claude AI",
     "category": "General Purpose",
     "pricing": "Freemium",
     "icon": "🧍",
     "websiteUrl": "https://claude.ai/",
     "tags": [
-      "workspace",
+      "ai assistant",
+      "image generation",
       "analysis",
+      "task automation",
+      "coding",
+      "brainstorming",
       "writing assistant"
     ],
     "desc": "Project-based workspace in Claude for organizing long-form reasoning and documents.",
@@ -887,8 +1004,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.828,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.496,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Circleback",
@@ -899,7 +1016,8 @@
     "tags": [
       "meeting assistant",
       "transcription",
-      "summaries"
+      "summaries",
+      "ai assistant"
     ],
     "desc": "AI meeting assistant for recording, transcribing, and summarizing calls.",
     "overview": "Circleback is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
@@ -908,25 +1026,34 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.9685,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.8086,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "ChatGPT",
     "category": "General Purpose",
     "pricing": "Freemium",
+    "tier": "Best-in-class",
     "icon": "🧍",
     "websiteUrl": "https://chatgpt.com/",
+    "tags": [
+      "ai assistant",
+      "image generation",
+      "analysis",
+      "task automation",
+      "coding",
+      "brainstorming",
+      "writing assistant"
+    ],
     "desc": "Advanced conversational AI for writing, coding, research, brainstorming, and task automation.",
     "overview": "ChatGPT is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
-    "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.3687,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.1433,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Cassidy AI",
@@ -942,8 +1069,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.5679,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.1064,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "CapCut",
@@ -959,8 +1086,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.9946,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.3562,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Bookswriter",
@@ -977,8 +1104,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.1523,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.8936,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Attio",
@@ -998,8 +1125,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.8486,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.1052,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Apollo",
@@ -1015,8 +1142,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772483262008.7441,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.9844,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Akiflow",
@@ -1034,8 +1161,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.8735,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.3584,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Airtop",
@@ -1056,8 +1183,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.966,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.5645,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "Airtable AI",
@@ -1080,8 +1207,8 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.2002,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403253.1926,
+    "createdAt": "2026-03-03T02:03:23.253Z"
   },
   {
     "name": "ActiveCampaign",
@@ -1090,7 +1217,6 @@
     "icon": "📈",
     "websiteUrl": "https://www.activecampaign.com/",
     "tags": [
-      "CRM",
       "email templates",
       "social media integrations",
       "email generation",
@@ -1098,12 +1224,13 @@
     ],
     "desc": "Marketing automation platform for email campaigns, customer journeys, and CRM workflows.",
     "overview": "Active Campaign is an AI-powered platform designed to enhance productivity, automate workflows, and generate high-quality outputs using machine learning.",
+    "videoUrl": "https://www.youtube.com/watch?v=BYjHNTSQQvE&list=PLXWxrQgy0XhijMjQknr6ycgU-wUtY4RTk",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772483262008.8098,
-    "createdAt": "2026-03-02T20:27:42.008Z"
+    "id": 1772503403252.4243,
+    "createdAt": "2026-03-03T02:03:23.252Z"
   }
 ]
