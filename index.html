@@ -1105,7 +1105,7 @@
     <div class="tools-header">
       <h2 class="tools-heading">AI Tools Directory</h2>
       <div class="sort-bar">
-        <button class="sort-btn" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↕</button>
+        <button class="sort-btn active" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↑</button>
       </div>
     </div>
     <div class="tools-grid" id="toolsGrid"></div>
@@ -1324,7 +1324,7 @@ let tools = [];
 let activeFilter = 'All';
 let activeCategory = 'All';
 let searchQuery = '';
-let sortAZ = null; // null = default, 'asc' = A-Z, 'desc' = Z-A
+let sortAZ = 'asc'; // default A-Z
 
 // Load tools from tools.json — the only file you ever need to update
 async function loadTools() {
