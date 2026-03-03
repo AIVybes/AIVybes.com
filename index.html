@@ -546,7 +546,12 @@
     background: var(--tag-bg);
     padding: 0.2rem 0.6rem;
     color: var(--muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    user-select: none;
   }
+  .tc-tag:hover { background: var(--ink); color: var(--paper); }
+  .tc-tag.tag-active { background: var(--accent); color: white; }
   .tc-footer {
     display: flex;
     justify-content: space-between;
@@ -1388,7 +1393,8 @@ function renderTools() {
     const matchSearch = searchQuery === '' ||
       t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       t.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      t.desc.toLowerCase().includes(searchQuery.toLowerCase());
+      t.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (t.tags||[]).some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
     const matchFilter = activeFilter === 'All' ||
       (activeFilter === 'New' && t.badge === 'New') ||
@@ -1424,7 +1430,7 @@ function renderTools() {
       <div class="tc-name">${t.name}</div>
       <div class="tc-category">${t.category||''}</div>
       <div class="tc-desc">${t.desc||''}</div>
-      <div class="tc-tags">${(t.tags||[]).slice().sort((a,b) => a.localeCompare(b)).map(tag => `<span class="tc-tag">${tag}</span>`).join('')}</div>
+      <div class="tc-tags">${(t.tags||[]).slice().sort((a,b) => a.localeCompare(b)).map(tag => `<span class="tc-tag" onclick="filterByTagFromCard(event, '${tag}')">${tag}</span>`).join('')}</div>
       <div class="tc-footer">
         <a class="tc-cta" href="${t.affiliateUrl||t.websiteUrl||'#'}" target="_blank" rel="noopener sponsored" onclick="event.stopPropagation()">Visit Website →</a>
       </div>
@@ -1467,6 +1473,33 @@ function filterByCategory(cat) {
   if (allTag) allTag.classList.add('active');
   renderTools();
   updateCounts();
+}
+
+function filterByTagFromCard(event, tag) {
+  event.stopPropagation(); // don't open the modal
+
+  // If clicking the already-active tag, clear the filter
+  if (activeFilter === tag) {
+    activeFilter = 'All';
+    activeCategory = 'All';
+    renderTools();
+    // Clear all active tag highlights
+    document.querySelectorAll('.tc-tag').forEach(el => el.classList.remove('tag-active'));
+    return;
+  }
+
+  activeFilter = tag;
+  activeCategory = 'All';
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  renderTools();
+
+  // Highlight every tag pill with this name across all cards
+  document.querySelectorAll('.tc-tag').forEach(el => {
+    el.classList.toggle('tag-active', el.textContent === tag);
+  });
+
+  // Smooth scroll to the directory section
+  document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function filterByTag(tag) {
