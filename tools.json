@@ -1,75 +1,29 @@
 [
   {
-    "name": "WriteinaClick",
-    "category": "Writing & Content",
-    "pricing": "Free",
-    "icon": "✍️",
-    "websiteUrl": "https://writeinaclick.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=nKuGa_VGpvY",
-    "desc": "Quick AI writing generator for blogs, captions, and short-form content.",
-    "iconBg": "#2a2e45",
-    "status": "active",
-    "rating": 4,
-    "pros": [],
-    "cons": [],
-    "id": 1772545868483.512,
-    "createdAt": "2026-03-03T13:51:08.483Z"
-  },
-  {
-    "name": "Marblism",
-    "category": "Business & Productivity",
-    "pricing": "Paid",
-    "tier": "Editor's Pick",
-    "icon": "📊",
-    "websiteUrl": "https://www.marblism.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=t1pT4c0v6OQ",
-    "desc": "AI-powered full-stack app generator that builds production-ready SaaS apps from prompts.",
-    "iconBg": "#2a2e45",
-    "status": "active",
-    "rating": 4,
-    "pros": [],
-    "cons": [],
-    "id": 1772545868482.6562,
-    "createdAt": "2026-03-03T13:51:08.482Z"
-  },
-  {
     "name": "Zoho CRM",
+    "websiteUrl": "https://www.zoho.com/crm/",
+    "videoUrl": "https://youtu.be/0yVgZWgR2dQ",
+    "tags": [
+      "crm",
+      "lead management",
+      "automation",
+      "sales analytics",
+      "integrations"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Free Trial",
     "icon": "📈",
-    "websiteUrl": "https://www.zoho.com/crm/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Cloud-based CRM platform for managing sales pipelines, customer data, and automation.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.75,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.7131,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Zite",
-    "category": "Knowledge & Research",
-    "pricing": "Freemium",
-    "icon": "📚",
     "websiteUrl": "https://zite.com/",
     "tags": [
       "content organization",
@@ -78,21 +32,22 @@
       "editing",
       "automation"
     ],
+    "category": "Knowledge & Research",
+    "pricing": "Freemium",
+    "icon": "📚",
     "desc": "AI-powered knowledge management and content organization tool.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.291,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.0078,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Zapier",
-    "category": "Business & Productivity",
-    "pricing": "Free Trial",
-    "icon": "📊",
     "websiteUrl": "https://zapier.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=hgLaOBSr9oE",
     "tags": [
       "automation",
       "integrations",
@@ -102,42 +57,43 @@
       "process automation",
       "task automation"
     ],
+    "category": "Business & Productivity",
+    "pricing": "Free Trial",
+    "icon": "📊",
     "desc": "No-code automation platform connecting apps and workflows with AI integrations.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.301,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.1228,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
-    "name": "Write in a Click",
+    "name": "WriteinaClick",
+    "websiteUrl": "https://writeinaclick.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=nKuGa_VGpvY",
+    "tags": [
+      "writing assistant",
+      "email generation",
+      "brainstorming"
+    ],
     "category": "Writing & Content",
     "pricing": "Free",
     "icon": "✍️",
-    "websiteUrl": "https://writeinaclick.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Quick AI writing generator for blogs, captions, and short-form content.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5664,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.2075,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Wispr Flow",
-    "category": "Video & Audio",
-    "pricing": "Free",
-    "icon": "🎬",
     "websiteUrl": "https://wisprflow.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=BEWYvMbKAyw",
     "tags": [
       "voice",
       "dictation",
@@ -145,42 +101,43 @@
       "productivity",
       "automation"
     ],
+    "category": "Video & Audio",
+    "pricing": "Free",
+    "icon": "🎬",
     "desc": "AI-powered voice dictation and speech-to-text tool designed for fast, natural writing.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8276,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.5786,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Superhuman",
+    "websiteUrl": "https://superhuman.com/",
+    "videoUrl": "https://youtu.be/DjR8G1bE5ss",
+    "tags": [
+      "email generation",
+      "productivity",
+      "workspace"
+    ],
     "category": "General Purpose",
     "pricing": "Freemium",
     "icon": "🧍",
-    "websiteUrl": "https://superhuman.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI-enhanced email client designed for ultra-fast inbox management and productivity.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.6807,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.8918,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Super",
-    "category": "Business & Productivity",
-    "pricing": "Paid",
-    "icon": "📊",
     "websiteUrl": "https://super.work/",
+    "videoUrl": "https://www.youtube.com/watch?v=BaR4eeuCpYY",
     "tags": [
       "workspace",
       "automation",
@@ -188,210 +145,215 @@
       "productivity",
       "optimization"
     ],
+    "category": "Business & Productivity",
+    "pricing": "Paid",
+    "icon": "📊",
     "desc": "AI-native workspace for teams to collaborate with integrated AI tools.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.7776,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.151,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "Submagic",
+    "websiteUrl": "https://www.submagic.co/",
+    "tags": [
+      "video editor",
+      "video generator",
+      "transcription"
+    ],
     "category": "Video & Audio",
     "pricing": "Paid",
     "icon": "🎬",
-    "websiteUrl": "https://www.submagic.co/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI captioning tool that creates dynamic subtitles for short-form videos.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.482,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.7139,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "SocialSight",
+    "websiteUrl": "https://socialsight.ai/",
+    "tags": [
+      "social media integrations",
+      "data visualization",
+      "analysis",
+      "sales analytics"
+    ],
     "category": "Image & Design",
     "pricing": "Free",
     "icon": "🎨",
-    "websiteUrl": "https://socialsight.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI social media analytics and monitoring tool for performance insights and engagement tracking.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.431,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298254.492,
+    "createdAt": "2026-03-03T15:21:38.254Z"
   },
   {
     "name": "SidekickWriter",
+    "websiteUrl": "https://www.sidekickwriter.com/",
+    "tags": [
+      "writing assistant",
+      "email generation",
+      "brainstorming"
+    ],
     "category": "Writing & Content",
     "pricing": "Freemium",
     "icon": "✍️",
-    "websiteUrl": "https://www.sidekickwriter.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI content assistant for blogs, marketing copy, and digital publishing.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.4438,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.3992,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Saner",
+    "websiteUrl": "https://www.saner.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=ijv0a93RsY8",
+    "tags": [
+      "notes",
+      "knowledge base",
+      "content organization",
+      "productivity",
+      "workspace"
+    ],
     "category": "General Purpose",
     "pricing": "Freemium",
     "icon": "🧍",
-    "websiteUrl": "https://www.saner.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI personal knowledge assistant that organizes notes and helps retrieve insights instantly.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.0076,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.966,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Salesforce Einstein",
+    "websiteUrl": "https://www.salesforce.com/artificial-intelligence/",
+    "videoUrl": "https://www.youtube.com/watch?v=DcsWagwkvNA",
+    "tags": [
+      "crm",
+      "sales analytics",
+      "automation",
+      "enterprise",
+      "integrations"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Paid",
     "icon": "📈",
-    "websiteUrl": "https://www.salesforce.com/artificial-intelligence/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI layer within Salesforce that provides predictive analytics and automated CRM insights.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.933,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.1758,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Runway",
+    "websiteUrl": "https://runwayml.com/",
+    "videoUrl": "https://youtu.be/fTqgWkHiN0k",
+    "tags": [
+      "video generator",
+      "video editor",
+      "text-to-video",
+      "image editor"
+    ],
     "category": "Video & Audio",
     "pricing": "Free Trial",
     "icon": "🎬",
-    "websiteUrl": "https://runwayml.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Advanced AI video generation and editing platform for creators and filmmakers.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.0278,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.2793,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "River",
+    "websiteUrl": "https://rivereditor.com/",
+    "tags": [
+      "writing assistant",
+      "summaries",
+      "content organization"
+    ],
     "category": "Writing & Content",
     "pricing": "Freemium",
     "icon": "✍️",
-    "websiteUrl": "https://rivereditor.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI writing assistant focused on structured content creation and workflow optimization.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5383,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.2427,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Reve",
+    "websiteUrl": "https://app.reve.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=uxEk3tksSLs",
+    "tags": [
+      "writing assistant",
+      "experimental",
+      "content organization"
+    ],
     "category": "Image & Design",
     "pricing": "Freemium",
     "icon": "🎨",
-    "websiteUrl": "https://app.reve.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI visual generation platform for creating stylized images and creative assets.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2935,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.7925,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Relevance AI",
-    "category": "Business & Productivity",
-    "pricing": "Freemium",
-    "icon": "📊",
     "websiteUrl": "https://relevanceai.com/",
     "tags": [
       "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
+      "workflows",
+      "database",
+      "data extraction",
+      "developer tools",
+      "integrations"
     ],
+    "category": "Business & Productivity",
+    "pricing": "Freemium",
+    "icon": "📊",
     "desc": "Platform for building and deploying custom AI agents for business workflows.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2957,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.3398,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Relay.app",
-    "category": "Business & Productivity",
-    "pricing": "Freemium",
-    "icon": "📊",
     "websiteUrl": "https://relay.app/",
+    "videoUrl": "https://youtu.be/XQt47wxozL8",
     "tags": [
       "automation",
       "workflows",
@@ -399,42 +361,43 @@
       "process automation",
       "task automation"
     ],
+    "category": "Business & Productivity",
+    "pricing": "Freemium",
+    "icon": "📊",
     "desc": "Human-in-the-loop automation platform for structured workflows.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.061,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.1902,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Recraft",
+    "websiteUrl": "https://www.recraft.ai/",
+    "videoUrl": "https://youtu.be/ns30Qj4WTwk",
+    "tags": [
+      "image generation",
+      "graphic design",
+      "image editor"
+    ],
     "category": "Image & Design",
     "pricing": "Freemium",
     "icon": "🎨",
-    "websiteUrl": "https://www.recraft.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI design tool for vector art, branding assets, and scalable graphics.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8735,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.871,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Reclaim",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "icon": "🧍",
     "websiteUrl": "https://reclaim.ai/",
+    "videoUrl": "https://youtu.be/jFGoj916jUE",
     "tags": [
       "calendar",
       "calendar management",
@@ -442,44 +405,45 @@
       "time blocking",
       "automation"
     ],
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "icon": "🧍",
     "desc": "Smart scheduling tool that auto-blocks time for tasks, habits, and meetings in your calendar.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.0527,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.8633,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Plotdrive",
+    "websiteUrl": "https://plotdrive.com/",
+    "tags": [
+      "writing assistant",
+      "content organization",
+      "brainstorming",
+      "workspace"
+    ],
     "category": "Writing & Content",
     "pricing": "Paid",
     "icon": "✍️",
-    "websiteUrl": "https://plotdrive.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI plot and story development tool for structuring novels and long-form narratives.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.1006,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.924,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Perplexity",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "icon": "🧍",
     "websiteUrl": "https://www.perplexity.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=hrggcbweDjc",
     "tags": [
-      "assistant",
+      "ai assistant",
       "web scraping",
       "web research",
       "brainstorming",
@@ -487,105 +451,112 @@
       "analysis",
       "documentation"
     ],
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "icon": "🧍",
     "desc": "AI-powered answer engine that delivers cited, real-time research responses.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.7703,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.4429,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Outreach",
+    "websiteUrl": "https://www.outreach.io/",
+    "videoUrl": "https://youtu.be/fRbqXD6I8Pk",
+    "tags": [
+      "crm",
+      "lead management",
+      "email templates",
+      "email generation",
+      "automation",
+      "sales analytics",
+      "integrations"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Paid",
     "icon": "📈",
-    "websiteUrl": "https://www.outreach.io/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI-powered sales engagement platform for managing outbound campaigns and pipelines.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.3271,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.4707,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Otter",
+    "websiteUrl": "https://otter.ai/",
+    "videoUrl": "https://youtu.be/fBUiu3_pTac",
+    "tags": [
+      "transcription",
+      "speech-to-text",
+      "meeting assistant",
+      "summaries"
+    ],
     "category": "General Purpose",
     "pricing": "Freemium",
     "icon": "🧍",
-    "websiteUrl": "https://otter.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI meeting assistant that records, transcribes, and summarizes conversations in real time.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8848,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.975,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Opus Clip",
+    "websiteUrl": "https://www.opus.pro/",
+    "videoUrl": "https://youtu.be/xoW5l2px7sg",
+    "tags": [
+      "video generator",
+      "video editor",
+      "text-to-video",
+      "transcription"
+    ],
     "category": "Video & Audio",
     "pricing": "Free Trial",
     "icon": "🎬",
-    "websiteUrl": "https://www.opus.pro/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI tool that turns long videos into short-form, social-ready clips automatically.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5305,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.6692,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Novarrium",
+    "websiteUrl": "https://www.novarrium.com/",
+    "tags": [
+      "writing assistant",
+      "content organization",
+      "brainstorming",
+      "workspace"
+    ],
     "category": "Writing & Content",
     "pricing": "Free Trial",
     "icon": "✍️",
-    "websiteUrl": "https://www.novarrium.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI storytelling and worldbuilding platform for interactive fiction and narrative creation.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5432,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.9336,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Notion AI",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "icon": "🧍",
     "websiteUrl": "https://notion.so/",
+    "videoUrl": "https://www.youtube.com/watch?v=FElBbgnNtVA",
     "tags": [
       "writing assistant",
       "automation",
@@ -593,22 +564,22 @@
       "productivity",
       "optimization"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=FElBbgnNtVA",
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "icon": "🧍",
     "desc": "AI assistant built into Notion for writing, summarizing, and task management.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2817,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.9106,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "n8n",
-    "category": "Business & Productivity",
-    "pricing": "Free Trial",
-    "icon": "📊",
     "websiteUrl": "https://n8n.io/",
+    "videoUrl": "https://youtu.be/46fd56yw-8Y",
     "tags": [
       "automation",
       "open-source",
@@ -618,87 +589,87 @@
       "process automation",
       "task automation"
     ],
-    "videoUrl": "https://youtu.be/46fd56yw-8Y",
+    "category": "Business & Productivity",
+    "pricing": "Free Trial",
+    "icon": "📊",
     "desc": "Open-source workflow automation tool for developers and technical teams.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.7832,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.8538,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Motion",
+    "websiteUrl": "https://www.usemotion.com/",
+    "tags": [
+      "calendar",
+      "scheduling",
+      "productivity",
+      "task automation"
+    ],
     "category": "General Purpose",
     "pricing": "Free Trial",
     "icon": "🧍",
-    "websiteUrl": "https://www.usemotion.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI calendar and project manager that automatically schedules tasks based on priority and deadlines.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5117,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.7773,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Midjourney",
+    "websiteUrl": "https://www.midjourney.com/",
+    "tags": [
+      "image generation",
+      "text-to-image",
+      "experimental",
+      "graphic design"
+    ],
     "category": "Image & Design",
     "pricing": "Free",
     "icon": "🎨",
-    "websiteUrl": "https://www.midjourney.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Leading AI image generator known for high-quality, artistic text-to-image outputs.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2676,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.324,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Microsoft Designer",
+    "websiteUrl": "https://designer.microsoft.com/",
+    "tags": [
+      "graphic design",
+      "image generation",
+      "text-to-image",
+      "image editor",
+      "workflow automation"
+    ],
     "category": "Image & Design",
     "pricing": "Free",
     "tier": "Best-in-Class",
     "icon": "🎨",
-    "websiteUrl": "https://designer.microsoft.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI graphic design tool that generates social media visuals, marketing assets, and branding content.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.1885,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.6216,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Microsoft Copilot",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "tier": "Best-in-Class",
-    "icon": "🧍",
     "websiteUrl": "https://copilot.microsoft.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=6hu7hYLiu08&list=PLaD473vhWj8A040W4uj1LReeY7ekFPU4k",
     "tags": [
       "data visualization",
       "task automation",
@@ -709,21 +680,23 @@
       "workflow organization",
       "productivity tracking"
     ],
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "tier": "Best-in-Class",
+    "icon": "🧍",
     "desc": "AI assistant embedded across Microsoft 365 apps for writing, data analysis, and workflow automation.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8127,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.6104,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Mem",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "icon": "🧍",
     "websiteUrl": "https://get.mem.ai/",
+    "videoUrl": "https://youtu.be/wBoBobOGu2M",
     "tags": [
       "calendar",
       "calendar management",
@@ -731,44 +704,48 @@
       "time blocking",
       "automation"
     ],
-    "videoUrl": "https://youtu.be/wBoBobOGu2M",
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "icon": "🧍",
     "desc": "AI-driven note-taking app that auto-organizes information and surfaces context intelligently.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.376,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.4934,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
-    "name": "Marbalism",
+    "name": "Marblism",
+    "websiteUrl": "https://www.marblism.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=t1pT4c0v6OQ",
+    "tags": [
+      "app builder",
+      "no-code",
+      "coding",
+      "developer tools",
+      "documentation",
+      "integrations",
+      "knowledge base"
+    ],
     "category": "Business & Productivity",
     "pricing": "Paid",
     "tier": "Editor's Pick",
     "icon": "📊",
-    "websiteUrl": "https://www.marblism.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI-powered full-stack app generator that builds production-ready SaaS apps from prompts.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5298,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.099,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Make",
-    "category": "Business & Productivity",
-    "pricing": "Freemium",
-    "icon": "📊",
     "websiteUrl": "https://www.make.com/en",
+    "videoUrl": "https://www.youtube.com/watch?v=ADpijI_TqnE",
     "tags": [
       "automation",
       "workflows",
@@ -778,22 +755,22 @@
       "process automation",
       "task automation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=ADpijI_TqnE",
+    "category": "Business & Productivity",
+    "pricing": "Freemium",
+    "icon": "📊",
     "desc": "Visual automation builder for creating complex workflows across apps.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.6672,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.3284,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Lindy",
-    "category": "General Purpose",
-    "pricing": "Free Trial",
-    "icon": "🧍",
     "websiteUrl": "https://www.lindy.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=1ytymcI7fSk",
     "tags": [
       "scheduling",
       "automation",
@@ -801,109 +778,109 @@
       "process automation",
       "task automation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=1ytymcI7fSk",
+    "category": "General Purpose",
+    "pricing": "Free Trial",
+    "icon": "🧍",
     "desc": "AI executive assistant that automates email, scheduling, and workflows.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.004,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.057,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Leonardo",
+    "websiteUrl": "https://leonardo.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=-f9rxj2goYM",
+    "tags": [
+      "image generation",
+      "video generator",
+      "text-to-image",
+      "graphic design"
+    ],
     "category": "Image & Design",
     "pricing": "Freemium",
     "icon": "🎨",
-    "websiteUrl": "https://leonardo.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=-f9rxj2goYM",
     "desc": "AI art platform for generating game assets, concept art, and production-ready visuals.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2002,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.0671,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Immersive Saga",
+    "websiteUrl": "https://theimmersivesaga.com/",
+    "tags": [
+      "writing assistant",
+      "brainstorming"
+    ],
     "category": "Writing & Content",
     "pricing": "Paid",
     "icon": "✍️",
-    "websiteUrl": "https://theimmersivesaga.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI storytelling engine that creates interactive, branching narrative experiences.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.9182,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.2744,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Ideogram",
+    "websiteUrl": "https://ideogram.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=USSpwbe3Rxk",
+    "tags": [
+      "text-to-image",
+      "image editor",
+      "image generation"
+    ],
     "category": "Image & Design",
     "pricing": "Freemium",
     "icon": "🎨",
-    "websiteUrl": "https://ideogram.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=USSpwbe3Rxk",
     "desc": "AI image generator specializing in accurate text rendering within images.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.931,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.874,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Hubspot CRM",
+    "websiteUrl": "https://www.hubspot.com/products/crm/ai-crm",
+    "tags": [
+      "lead generation",
+      "lead management",
+      "sales analytics",
+      "email marketing",
+      "crm",
+      "workflow automation",
+      "sales automation",
+      "pipeline management"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Freemium",
     "icon": "📈",
-    "websiteUrl": "https://www.hubspot.com/products/crm/ai-crm",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Free-to-start CRM offering sales, marketing, and service automation tools.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8474,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.3115,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Gumloop",
-    "category": "Knowledge & Research",
-    "pricing": "Freemium",
-    "tier": "Editor's Pick",
-    "icon": "📚",
     "websiteUrl": "https://gumloop.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=pNjZhhG00yk",
     "tags": [
       "automation",
       "workflows",
@@ -912,22 +889,23 @@
       "process automation",
       "task automation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=pNjZhhG00yk",
+    "category": "Knowledge & Research",
+    "pricing": "Freemium",
+    "tier": "Editor's Pick",
+    "icon": "📚",
     "desc": "AI-powered workflow builder for automating research and data tasks.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2866,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.9446,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Grammarly",
-    "category": "Writing & Content",
-    "pricing": "Freemium",
-    "icon": "✍️",
     "websiteUrl": "https://www.grammarly.com/",
+    "videoUrl": "https://youtu.be/NcCQPOAKNV8",
     "tags": [
       "brainstorming",
       "writing assistant",
@@ -935,132 +913,146 @@
       "collaboration",
       "productivity"
     ],
+    "category": "Writing & Content",
+    "pricing": "Freemium",
+    "icon": "✍️",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.7307,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.5457,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Google Gemini",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "tier": "Editor's Pick",
-    "icon": "🧍",
     "websiteUrl": "https://gemini.google.com/app",
+    "videoUrl": "https://www.youtube.com/watch?v=_fuimO6ErKI",
     "tags": [
-      "assistant",
+      "ai assistant",
       "image generation",
       "analysis",
       "task automation",
       "coding",
       "brainstorming",
       "writing assistant",
-      "workflow automation"
+      "workflow automation",
+      "integrations"
     ],
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "tier": "Editor's Pick",
+    "icon": "🧍",
     "desc": "Google’s multimodal AI assistant integrated with Workspace for writing, analysis, and research.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.9897,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.735,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Google AI Studio",
+    "websiteUrl": "https://aistudio.google.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=IHOJUJjZbzc",
+    "tags": [
+      "developer tools",
+      "prompt engineering",
+      "lightweight model",
+      "experimental",
+      "workflows",
+      "coding"
+    ],
     "category": "AI Workspace",
     "pricing": "Freemium",
     "tier": "Editor's Pick",
     "icon": "🗂",
-    "websiteUrl": "https://aistudio.google.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Google's platform for building and testing apps with Gemini models.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.279,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.7556,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Gong",
+    "websiteUrl": "https://www.gong.io/",
+    "videoUrl": "https://www.youtube.com/watch?v=rx4Te6c9tEs",
+    "tags": [
+      "crm",
+      "analysis",
+      "revenue operations",
+      "data visualization",
+      "data analysis",
+      "customer segmentation",
+      "lead management",
+      "sales analytics"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Paid",
     "icon": "📈",
-    "websiteUrl": "https://www.gong.io/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=rx4Te6c9tEs",
     "desc": "Revenue intelligence platform that analyzes sales calls and customer interactions.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8584,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.2053,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Github Copilot",
-    "category": "Coding & Developing",
-    "pricing": "Freemium",
-    "icon": "💻",
     "websiteUrl": "https://github.com/features/copilot",
+    "videoUrl": "https://www.youtube.com/watch?v=3_i03fGXs9U&list=PL0lo9MOBetEHEHi9h0k_lPn0XZdEeYZDS&index=2&pp=iAQB",
     "tags": [
       "coding",
-      "assistant",
+      "ai assistant",
       "workspace",
       "automation",
       "collaboration"
     ],
+    "category": "Coding & Developing",
+    "pricing": "Freemium",
+    "icon": "💻",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5518,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.755,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Flux.2",
+    "websiteUrl": "https://bfl.ai/",
+    "tags": [
+      "ai assistant",
+      "graphic design",
+      "image editor",
+      "image generation",
+      "video generator",
+      "video editor",
+      "text-to-video"
+    ],
     "category": "Image & Design",
     "pricing": "Paid",
     "icon": "🎨",
-    "websiteUrl": "https://bfl.ai/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "Advanced open-weight image generation model focused on photorealism and flexibility.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.973,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.8325,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Firecrawl",
-    "category": "Knowledge & Research",
-    "pricing": "Free Trial",
-    "icon": "📚",
     "websiteUrl": "https://firecrawl.dev/",
+    "videoUrl": "https://www.youtube.com/watch?v=I6pVSStmALo",
     "tags": [
       "web scraping",
       "data extraction",
@@ -1068,23 +1060,22 @@
       "automation",
       "collaboration"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=I6pVSStmALo",
+    "category": "Knowledge & Research",
+    "pricing": "Free Trial",
+    "icon": "📚",
     "desc": "AI-focused web scraping and structured data extraction tool.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.8674,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.0051,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Eleven Labs",
-    "category": "Video & Audio",
-    "pricing": "Freemium",
-    "tier": "Editor's Pick",
-    "icon": "🎬",
     "websiteUrl": "https://elevenlabs.io/",
+    "videoUrl": "https://www.youtube.com/watch?v=QB7uqR3f_po",
     "tags": [
       "text-to-speech",
       "voice cloning",
@@ -1092,6 +1083,10 @@
       "automation",
       "collaboration"
     ],
+    "category": "Video & Audio",
+    "pricing": "Freemium",
+    "tier": "Editor's Pick",
+    "icon": "🎬",
     "affiliateUrl": "https://try.elevenlabs.io/9bus82n11ex2",
     "desc": "AI voice generation platform for realistic text-to-speech and voice cloning.",
     "iconBg": "#2a2e45",
@@ -1099,36 +1094,38 @@
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.4224,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.9485,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Descript",
+    "websiteUrl": "https://www.descript.com/",
+    "videoUrl": "https://youtu.be/WX-8EqxhLfQ",
+    "tags": [
+      "ai assistant",
+      "graphic design",
+      "image editor",
+      "image generation",
+      "video generator",
+      "video editor",
+      "text-to-video"
+    ],
     "category": "Video & Audio",
     "pricing": "Freemium",
     "icon": "🎬",
-    "websiteUrl": "https://www.descript.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
     "desc": "AI audio and video editor that allows editing media by editing text transcripts.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.1335,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.9543,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Dall-E3",
-    "category": "Image & Design",
-    "pricing": "Freemium",
-    "icon": "🎨",
     "websiteUrl": "https://openai.com/index/dall-e-3",
+    "videoUrl": "https://www.youtube.com/watch?v=sqQrN0iZBs0",
     "tags": [
       "text-to-image",
       "text-to-video",
@@ -1137,69 +1134,76 @@
       "media production",
       "content publishing"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=sqQrN0iZBs0",
+    "category": "Image & Design",
+    "pricing": "Freemium",
+    "icon": "🎨",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.944,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.5369,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Clay",
+    "websiteUrl": "https://www.clay.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=v31hKg-WSCc",
+    "tags": [
+      "analysis",
+      "crm",
+      "customer segmentation",
+      "data organization",
+      "database",
+      "lead generation",
+      "lead management",
+      "outbound prospecting",
+      "pipeline management",
+      "web research"
+    ],
     "category": "Sales, Marketing & CRM",
     "pricing": "Freemium",
     "icon": "📈",
-    "websiteUrl": "https://www.clay.com/",
-    "tags": [
-      "automation",
-      "collaboration",
-      "productivity",
-      "optimization"
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=v31hKg-WSCc",
     "desc": "AI-powered lead enrichment and outbound personalization platform.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.507,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.5615,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Claude AI",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "icon": "🧍",
     "websiteUrl": "https://claude.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=AJpK3YTTKZ4",
     "tags": [
-      "assistant",
+      "ai assistant",
       "image generation",
       "analysis",
       "task automation",
       "coding",
       "brainstorming",
       "writing assistant",
-      "workflow automation"
+      "workflow automation",
+      "integrations"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=AJpK3YTTKZ4",
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "icon": "🧍",
     "desc": "Project-based workspace in Claude for organizing long-form reasoning and documents.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.7769,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.043,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Circleback",
-    "category": "General Purpose",
-    "pricing": "Paid",
-    "icon": "🧍",
     "websiteUrl": "https://circleback.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=J4QVaQ5rQTw",
     "tags": [
       "meeting assistant",
       "transcription",
@@ -1207,72 +1211,76 @@
       "assistant",
       "automation"
     ],
+    "category": "General Purpose",
+    "pricing": "Paid",
+    "icon": "🧍",
     "desc": "AI meeting assistant for recording, transcribing, and summarizing calls.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.2778,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.144,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "ChatGPT",
-    "category": "General Purpose",
-    "pricing": "Freemium",
-    "tier": "Best-in-class",
-    "icon": "🧍",
     "websiteUrl": "https://chatgpt.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=boJG84Jcf-4",
     "tags": [
-      "assistant",
+      "ai assistant",
       "image generation",
       "analysis",
       "task automation",
       "coding",
       "brainstorming",
       "writing assistant",
-      "workflow automation"
+      "workflow automation",
+      "integrations"
     ],
+    "category": "General Purpose",
+    "pricing": "Freemium",
+    "tier": "Best-in-class",
+    "icon": "🧍",
     "desc": "Advanced conversational AI for writing, coding, research, brainstorming, and task automation.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.1091,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.5723,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Cassidy AI",
-    "category": "Business & Productivity",
-    "pricing": "Freemium",
-    "icon": "📊",
     "websiteUrl": "https://cassidy.ai/",
+    "videoUrl": "https://www.youtube.com/watch?v=5U2yaaBC7HU",
     "tags": [
-      "automation",
-      "assistant",
+      "ai assistant",
       "knowledge base",
       "workflow automation",
       "process automation",
-      "task automation"
+      "task automation",
+      "research",
+      "information retrieval",
+      "documentation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=5U2yaaBC7HU",
+    "category": "Business & Productivity",
+    "pricing": "Freemium",
+    "icon": "📊",
     "desc": "Platform for building internal AI copilots trained on company data.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.0227,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.7327,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "CapCut",
-    "category": "Video & Audio",
-    "pricing": "Free Trial",
-    "tier": "Best-in-class",
-    "icon": "🎬",
     "websiteUrl": "https://www.capcut.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=-kbO9giKLXY",
     "tags": [
       "video editor",
       "content organization",
@@ -1283,22 +1291,23 @@
       "content creation",
       "copywriting"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=-kbO9giKLXY",
+    "category": "Video & Audio",
+    "pricing": "Free Trial",
+    "tier": "Best-in-class",
+    "icon": "🎬",
     "desc": "AI-enhanced video editing app for social media creators and marketers.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.0925,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.2468,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Canva AI Image Generator",
-    "category": "Image & Design",
-    "pricing": "Free",
-    "icon": "🎨",
     "websiteUrl": "https://www.canva.com/ai-image-generator",
+    "videoUrl": "https://www.youtube.com/watch?v=ibiIMF3aoEM",
     "tags": [
       "image generation",
       "graphic design",
@@ -1309,21 +1318,19 @@
       "media production",
       "content publishing"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=ibiIMF3aoEM",
+    "category": "Image & Design",
+    "pricing": "Free",
+    "icon": "🎨",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569573.5435,
-    "createdAt": "2026-03-03T13:12:49.573Z"
+    "id": 1772551298253.8484,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Bookswriter",
-    "category": "Writing & Content",
-    "pricing": "Free",
-    "tier": "Editor's Pick",
-    "icon": "✍️",
     "websiteUrl": "https://bookswriter.xyz/en/",
     "tags": [
       "writing assistant",
@@ -1332,20 +1339,21 @@
       "automation",
       "collaboration"
     ],
+    "category": "Writing & Content",
+    "pricing": "Free",
+    "tier": "Editor's Pick",
+    "icon": "✍️",
     "desc": "AI book-writing assistant that helps authors generate, outline, and expand long-form content.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.5784,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.4656,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Bing AI Creations",
-    "category": "Image & Design",
-    "pricing": "Free",
-    "icon": "🎨",
     "websiteUrl": "https://www.bing.com/images/",
     "tags": [
       "image generation",
@@ -1354,21 +1362,21 @@
       "automation",
       "collaboration"
     ],
+    "category": "Image & Design",
+    "pricing": "Free",
+    "icon": "🎨",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.7214,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.0315,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Attio",
-    "category": "Sales, Marketing & CRM",
-    "pricing": "Freemium",
-    "tier": "Editor's Pick",
-    "icon": "📈",
     "websiteUrl": "https://attio.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=VSYQLmGf3To",
     "tags": [
       "crm",
       "automation",
@@ -1379,22 +1387,23 @@
       "crm integration",
       "customer management"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=VSYQLmGf3To",
+    "category": "Sales, Marketing & CRM",
+    "pricing": "Freemium",
+    "tier": "Editor's Pick",
+    "icon": "📈",
     "desc": "Modern CRM platform enhanced with AI for sales workflows.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.0654,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.3987,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Apollo",
-    "category": "Sales, Marketing & CRM",
-    "pricing": "Freemium",
-    "icon": "📈",
     "websiteUrl": "https://www.apollo.io/",
+    "videoUrl": "https://youtu.be/Bnr5Xqzr-Ec?si=Zav7oB8FBBKinKx0",
     "tags": [
       "automation",
       "data extraction",
@@ -1405,74 +1414,75 @@
       "lead generation",
       "crm integration"
     ],
-    "videoUrl": "https://youtu.be/Bnr5Xqzr-Ec?si=Zav7oB8FBBKinKx0",
+    "category": "Sales, Marketing & CRM",
+    "pricing": "Freemium",
+    "icon": "📈",
     "desc": "With Apollo Workflows you can manage and scale your end-to-end GTM motion with smart automation and customization",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.6445,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.0208,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Akiflow",
-    "category": "General Purpose",
-    "pricing": "Free Trial",
-    "icon": "🧍",
     "websiteUrl": "https://akiflow.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=Wo_LHwf600U",
     "tags": [
       "calendar",
-      "assistant",
+      "ai assistant",
       "automation",
       "integrations",
-      "meeting assistant",
+      "meeting ai assistant",
       "workflow automation",
       "process automation",
       "task automation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=Wo_LHwf600U",
+    "category": "General Purpose",
+    "pricing": "Free Trial",
+    "icon": "🧍",
     "desc": "Task management and time-blocking app that unifies calendars, tasks, and productivity workflows.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.49,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.1533,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Airtop",
-    "category": "Business & Productivity",
-    "pricing": "Freemium",
-    "icon": "📊",
     "websiteUrl": "https://airtop.ai/",
+    "videoUrl": "https://youtu.be/PMb8hX8VfvQ",
     "tags": [
-      "assistant",
+      "ai assistant",
       "task automation",
       "no-code",
       "web automation",
       "workflow automation",
       "process automation",
       "task management",
-      "workflow organization"
+      "workflow organization",
+      "integrations"
     ],
-    "videoUrl": "https://youtu.be/PMb8hX8VfvQ",
+    "category": "Business & Productivity",
+    "pricing": "Freemium",
+    "icon": "📊",
     "desc": "Airtop's library of AI browser automations, agents and scrapers help you build workflows in minutes, not hours, saving you time, reducing manual effort, and improving your efficiency.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.6787,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.8276,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   },
   {
     "name": "Airtable AI",
-    "category": "Knowledge & Research",
-    "pricing": "Freemium",
-    "icon": "📚",
     "websiteUrl": "https://airtable.com/",
+    "videoUrl": "https://www.youtube.com/watch?v=UcZfSIegPNw",
     "tags": [
       "database",
       "automation",
@@ -1483,14 +1493,16 @@
       "workflow automation",
       "process automation"
     ],
-    "videoUrl": "https://www.youtube.com/watch?v=UcZfSIegPNw",
+    "category": "Knowledge & Research",
+    "pricing": "Freemium",
+    "icon": "📚",
     "desc": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required.",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "pros": [],
     "cons": [],
-    "id": 1772543569572.265,
-    "createdAt": "2026-03-03T13:12:49.572Z"
+    "id": 1772551298253.8818,
+    "createdAt": "2026-03-03T15:21:38.253Z"
   }
 ]
