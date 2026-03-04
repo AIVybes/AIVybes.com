@@ -1075,41 +1075,61 @@
   <aside class="sidebar">
     <div class="sidebar-section">
       <div class="sidebar-title">Categories</div>
-      <a class="category-item active" href="#" onclick="filterByCategory('All'); return false;">
+      <a class="category-item active" href="javascript:void(0)" onclick="filterByCategory('All')">
         <span class="cat-name">All Tools</span>
-        <span class="cat-count">500</span>
+        <span class="cat-count">0</span>
       </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Business & Productivity'); return false;">
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('AI Assistant')">
+        <span class="cat-name">AI Assistant</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('AI Development & Workspace')">
+        <span class="cat-name">AI Development & Workspace</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Business & Productivity')">
         <span class="cat-name">Business & Productivity</span>
-        <span class="cat-count">89</span>
+        <span class="cat-count">0</span>
       </a>
-      <a class="category-item" href="#" onclick="filterByCategory('General Purpose'); return false;">
-        <span class="cat-name">General Purpose</span>
-        <span class="cat-count">67</span>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Chatbots / AI Chat')">
+        <span class="cat-name">Chatbots / AI Chat</span>
+        <span class="cat-count">0</span>
       </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Image & Design'); return false;">
-        <span class="cat-name">Image & Design</span>
-        <span class="cat-count">54</span>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Coding & Development')">
+        <span class="cat-name">Coding & Development</span>
+        <span class="cat-count">0</span>
       </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Knowledge & Research'); return false;">
-        <span class="cat-name">Knowledge & Research</span>
-        <span class="cat-count">43</span>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Education')">
+        <span class="cat-name">Education</span>
+        <span class="cat-count">0</span>
       </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Sales, Marketing & CRM'); return false;">
-        <span class="cat-name">Sales, Marketing & CRM</span>
-        <span class="cat-count">38</span>
-      </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Video & Audio'); return false;">
-        <span class="cat-name">Video & Audio</span>
-        <span class="cat-count">72</span>
-      </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Writing & Content'); return false;">
-        <span class="cat-name">Writing & Content</span>
-        <span class="cat-count">51</span>
-      </a>
-      <a class="category-item" href="#" onclick="filterByCategory('Experimental'); return false;">
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Experimental')">
         <span class="cat-name">Experimental</span>
-        <span class="cat-count">29</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Image & Design')">
+        <span class="cat-name">Image & Design</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Knowledge & Research')">
+        <span class="cat-name">Knowledge & Research</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Sales, Marketing & CRM')">
+        <span class="cat-name">Sales, Marketing & CRM</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Audio & Video')">
+        <span class="cat-name">Audio & Video</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Web Scraping')">
+        <span class="cat-name">Web Scraping</span>
+        <span class="cat-count">0</span>
+      </a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Writing & Content')">
+        <span class="cat-name">Writing & Content</span>
+        <span class="cat-count">0</span>
       </a>
     </div>
     <div class="sidebar-section">
@@ -1556,15 +1576,20 @@ function filterTools() {
 
 function updateCounts() {
   const cats = {
-    'All Tools':        tools.length,
-    'Business & Productivity':          tools.filter(t => t.category === 'Business & Productivity').length,
-    'General Purpose': tools.filter(t => t.category === 'General Purpose').length,
-    'Image & Design':           tools.filter(t => t.category === 'Image & Design').length,
-    'Knowledge & Research':            tools.filter(t => t.category === 'Knowledge & Research').length,
-    'Sales, Marketing & CRM':    tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
-    'Video & Audio':     tools.filter(t => t.category === 'Video & Audio').length,
-    'Writing & Content':        tools.filter(t => t.category === 'Writing & Content').length,
-    'Experimental':         tools.filter(t => t.category === 'Experimental').length,
+    'All Tools':                  tools.length,
+    'AI Assistant':               tools.filter(t => t.category === 'AI Assistant').length,
+    'AI Development & Workspace': tools.filter(t => t.category === 'AI Development & Workspace').length,
+    'Business & Productivity':    tools.filter(t => t.category === 'Business & Productivity').length,
+    'Chatbots / AI Chat':         tools.filter(t => t.category === 'Chatbots / AI Chat').length,
+    'Coding & Development':       tools.filter(t => t.category === 'Coding & Development').length,
+    'Education':                  tools.filter(t => t.category === 'Education').length,
+    'Experimental':               tools.filter(t => t.category === 'Experimental').length,
+    'Image & Design':             tools.filter(t => t.category === 'Image & Design').length,
+    'Knowledge & Research':       tools.filter(t => t.category === 'Knowledge & Research').length,
+    'Sales, Marketing & CRM':     tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
+    'Audio & Video':              tools.filter(t => t.category === 'Audio & Video').length,
+    'Web Scraping':               tools.filter(t => t.category === 'Web Scraping').length,
+    'Writing & Content':          tools.filter(t => t.category === 'Writing & Content').length,
   };
   document.querySelectorAll('.category-item').forEach(item => {
     const nameEl = item.querySelector('.cat-name');
