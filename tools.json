@@ -20,7 +20,7 @@
       "Knowledge Worker"
     ],
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/writehybrid.com",
+    "logo": "https://img.logo.dev/writehybrid.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F5F3FF",
     "status": "active",
     "pricing": "Freemium",
@@ -28,8 +28,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.2544,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.8154,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "Safenew AI",
@@ -53,15 +53,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/safewrite.ai",
+    "logo": "https://img.logo.dev/safewrite.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.3691,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.7378,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "WriteinaClick",
@@ -86,16 +86,16 @@
     ],
     "pricing": "Free",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/writeinaclick.com",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/writeinaclick.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://www.youtube.com/watch?v=nKuGa_VGpvY",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.0894,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.2517,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "Outfica",
@@ -119,15 +119,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/outfica.com",
+    "logo": "https://img.logo.dev/outfica.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.139,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.4495,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "TextToHuman",
@@ -151,15 +151,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/texttohuman.com",
+    "logo": "https://img.logo.dev/texttohuman.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.0984,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.412,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "Nextify.ai",
@@ -184,15 +184,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/nextify.ai",
+    "logo": "https://img.logo.dev/nextify.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642597.196,
-    "createdAt": "2026-03-05T00:14:02.597Z"
+    "id": 1772671579230.0908,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "FalcoCut",
@@ -216,15 +216,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/falcocut.ai",
+    "logo": "https://img.logo.dev/falcocut.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.6973,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579230.8142,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "Filmpitch",
@@ -249,15 +249,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/filmpitch.ai",
+    "logo": "https://img.logo.dev/filmpitch.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.4824,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579230.7065,
+    "createdAt": "2026-03-05T00:46:19.230Z"
   },
   {
     "name": "Dechecker",
@@ -281,15 +281,15 @@
     ],
     "pricing": "Free",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/dechecker.ai",
+    "logo": "https://img.logo.dev/dechecker.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.8928,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.8574,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Lullaby.ink",
@@ -312,15 +312,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/lullaby.ink",
+    "logo": "https://img.logo.dev/lullaby.ink?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.503,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.733,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Syllaby.io",
@@ -345,15 +345,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/syllaby.io",
+    "logo": "https://img.logo.dev/syllaby.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.558,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.0774,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Typli.ai",
@@ -378,15 +378,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/typli.ai",
+    "logo": "https://img.logo.dev/typli.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.9868,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.2795,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "River",
@@ -409,15 +409,15 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/rivereditor.com",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/rivereditor.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.2488,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.9502,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Immersive Saga",
@@ -441,15 +441,15 @@
     ],
     "pricing": "Paid",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/theimmersivesaga.com",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/theimmersivesaga.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7395,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.7437,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Novarrium",
@@ -473,15 +473,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/novarrium.com",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/novarrium.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.5796,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.569,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Plotdrive",
@@ -505,15 +505,15 @@
     ],
     "pricing": "Paid",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/plotdrive.com",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/plotdrive.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.348,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.9775,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "SidekickWriter",
@@ -538,15 +538,15 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/sidekickwriter.com",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/sidekickwriter.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.579,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.219,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Bookswriter",
@@ -571,16 +571,16 @@
     ],
     "pricing": "Free",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/bookswriter.xyz",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/bookswriter.xyz?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "tier": "Editor's Pick",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.8848,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.9773,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "AdMakeAI",
@@ -605,15 +605,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/admakeai.com",
+    "logo": "https://img.logo.dev/admakeai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7021,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.976,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Pixalytica",
@@ -637,15 +637,15 @@
     ],
     "pricing": "Free",
     "icon": "🤖",
-    "logo": "https://logo.clearbit.com/pixalytica.com",
+    "logo": "https://img.logo.dev/pixalytica.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7974,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.7378,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Firecrawl",
@@ -669,7 +669,7 @@
     ],
     "pricing": "Free Trial",
     "icon": "📚",
-    "logo": "https://logo.clearbit.com/firecrawl.dev",
+    "logo": "https://img.logo.dev/firecrawl.dev?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "videoUrl": "https://www.youtube.com/watch?v=I6pVSStmALo",
     "status": "active",
@@ -677,8 +677,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7021,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.9526,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Apollo",
@@ -705,16 +705,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/apollo.io",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/apollo.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1b262c",
     "videoUrl": "https://youtu.be/Bnr5Xqzr-Ec?si=Zav7oB8FBBKinKx0",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.956,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.67,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Leadde AI",
@@ -739,15 +739,15 @@
     ],
     "pricing": "Free",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/leadde.ai",
+    "logo": "https://img.logo.dev/leadde.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.4226,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.377,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Holo AI",
@@ -770,15 +770,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/tryholo.ai",
+    "logo": "https://img.logo.dev/tryholo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7844,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.414,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Shopify SimGym",
@@ -801,15 +801,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/apps.shopify.com",
+    "logo": "https://img.logo.dev/apps.shopify.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.1719,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.6658,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Gong",
@@ -836,16 +836,16 @@
     ],
     "pricing": "Paid",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/gong.io",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/gong.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://www.youtube.com/watch?v=rx4Te6c9tEs",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.8828,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.7312,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Pipedrive",
@@ -871,15 +871,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/pipedrive.com",
+    "logo": "https://img.logo.dev/pipedrive.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.347,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.1833,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Attio",
@@ -906,8 +906,8 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/attio.com",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/attio.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://www.youtube.com/watch?v=VSYQLmGf3To",
     "tier": "Editor's Pick",
     "status": "active",
@@ -915,8 +915,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.6406,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.661,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "ActiveCampaign",
@@ -943,16 +943,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/activecampaign.com",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/activecampaign.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://youtu.be/BYjHNTSQQvE?si=J7CT_s3ccK59xTnk",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.2017,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.084,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Azoma",
@@ -976,15 +976,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/azoma.ai",
+    "logo": "https://img.logo.dev/azoma.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.158,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.3145,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Hubspot CRM",
@@ -1011,15 +1011,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/hubspot.com",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/hubspot.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.2737,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.3958,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "TGDesk",
@@ -1042,15 +1042,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/tg.wadesk.io",
+    "logo": "https://img.logo.dev/tg.wadesk.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.7388,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.7285,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "InfronAI",
@@ -1075,15 +1075,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/infron.ai",
+    "logo": "https://img.logo.dev/infron.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.8574,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.3286,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Atomic Mail",
@@ -1107,15 +1107,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/atomicmail.io",
+    "logo": "https://img.logo.dev/atomicmail.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642596.8423,
-    "createdAt": "2026-03-05T00:14:02.596Z"
+    "id": 1772671579229.4265,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Semrush One",
@@ -1141,15 +1141,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/semrush.com",
+    "logo": "https://img.logo.dev/semrush.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.5652,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.0134,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "CreateWAlink",
@@ -1173,15 +1173,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/link.wadesk.io",
+    "logo": "https://img.logo.dev/link.wadesk.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.9895,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.4792,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "PostWizard AI",
@@ -1206,15 +1206,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/postwizard.ai",
+    "logo": "https://img.logo.dev/postwizard.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.666,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.71,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "SketchBubble AI",
@@ -1238,15 +1238,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/sketchbubble.com",
+    "logo": "https://img.logo.dev/sketchbubble.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.4653,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.1929,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Zoho CRM",
@@ -1272,16 +1272,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/zoho.com",
-    "iconBg": "#1b262c",
+    "logo": "https://img.logo.dev/zoho.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://youtu.be/0yVgZWgR2dQ",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.3772,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.8892,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Aimy Ads",
@@ -1305,15 +1305,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/aimyads.ai",
+    "logo": "https://img.logo.dev/aimyads.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.4827,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.5383,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Outreach",
@@ -1339,16 +1339,16 @@
     ],
     "pricing": "Paid",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/outreach.io",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/outreach.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://youtu.be/fRbqXD6I8Pk",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.791,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.4026,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Clay",
@@ -1374,16 +1374,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/clay.com",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/clay.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=v31hKg-WSCc",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2693,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.9246,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "AIclicks",
@@ -1407,15 +1407,15 @@
     ],
     "pricing": "Freemium",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/aiclicks.io",
+    "logo": "https://img.logo.dev/aiclicks.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.3494,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.1797,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "Salesforce Einstein",
@@ -1441,7 +1441,7 @@
     ],
     "pricing": "Paid",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/salesforce.com",
+    "logo": "https://img.logo.dev/salesforce.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "videoUrl": "https://www.youtube.com/watch?v=DcsWagwkvNA",
     "status": "active",
@@ -1449,8 +1449,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.0247,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.7102,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "AdsTurbo AI Ads",
@@ -1474,15 +1474,15 @@
     ],
     "pricing": "Free",
     "icon": "🤖",
-    "logo": "https://logo.clearbit.com/adsturbo.ai",
+    "logo": "https://img.logo.dev/adsturbo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.6155,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579229.0254,
+    "createdAt": "2026-03-05T00:46:19.229Z"
   },
   {
     "name": "ZenMux",
@@ -1505,7 +1505,7 @@
       "Student / Academic Researcher"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/zenmux.ai",
+    "logo": "https://img.logo.dev/zenmux.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -1513,8 +1513,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2712,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.7583,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Prism OpenAI",
@@ -1539,15 +1539,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/openai.com",
+    "logo": "https://img.logo.dev/openai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.098,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.629,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "BigIdeasDB",
@@ -1570,15 +1570,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/bigideasdb.com",
+    "logo": "https://img.logo.dev/bigideasdb.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.9153,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.0427,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Rankin AI",
@@ -1603,15 +1603,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/rankinai.io",
+    "logo": "https://img.logo.dev/rankinai.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.0852,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.3044,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Appark",
@@ -1634,15 +1634,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/appark.ai",
+    "logo": "https://img.logo.dev/appark.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.7979,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.459,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Gumloop",
@@ -1667,8 +1667,8 @@
     ],
     "pricing": "Freemium",
     "icon": "📚",
-    "logo": "https://logo.clearbit.com/gumloop.com",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/gumloop.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=pNjZhhG00yk",
     "tier": "Editor's Pick",
     "status": "active",
@@ -1676,8 +1676,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.5105,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.5227,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Zite",
@@ -1700,15 +1700,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📚",
-    "logo": "https://logo.clearbit.com/zite.com",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/zite.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.9475,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.033,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Perplexity",
@@ -1733,16 +1733,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/perplexity.ai",
-    "iconBg": "#0f3460",
+    "logo": "https://img.logo.dev/perplexity.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "videoUrl": "https://www.youtube.com/watch?v=hrggcbweDjc",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.5637,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.4077,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Nano Banana 2",
@@ -1765,15 +1765,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/gemini.google",
+    "logo": "https://img.logo.dev/gemini.google?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.9854,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.7756,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "VISBOOM",
@@ -1796,7 +1796,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/visboom.com",
+    "logo": "https://img.logo.dev/visboom.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -1804,8 +1804,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.4304,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.0408,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "PXZ Image Generator",
@@ -1830,15 +1830,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/pxz.ai",
+    "logo": "https://img.logo.dev/pxz.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.1162,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.8901,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Caricature Maker",
@@ -1862,15 +1862,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/caricaturemaker.net",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/caricaturemaker.net?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.5845,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.013,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Nano Imagine",
@@ -1893,15 +1893,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🖌️",
-    "logo": "https://logo.clearbit.com/nanoimagine.art",
+    "logo": "https://img.logo.dev/nanoimagine.art?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.1965,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.5803,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Image Translate AI",
@@ -1926,15 +1926,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/imagetranslate.ai",
+    "logo": "https://img.logo.dev/imagetranslate.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.561,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.7822,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "AI Vector",
@@ -1958,15 +1958,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/aivector.ai",
+    "logo": "https://img.logo.dev/aivector.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.494,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.6006,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Modelfy 3D",
@@ -1989,15 +1989,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/modelfy.art",
+    "logo": "https://img.logo.dev/modelfy.art?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.9983,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.8381,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Mockuplabs.ai",
@@ -2021,15 +2021,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/mockuplabs.ai",
+    "logo": "https://img.logo.dev/mockuplabs.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.6748,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.6565,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Vidmage",
@@ -2051,7 +2051,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/vidmage.ai",
+    "logo": "https://img.logo.dev/vidmage.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -2059,8 +2059,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.925,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.3835,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Face Swap AI",
@@ -2084,15 +2084,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎓",
-    "logo": "https://logo.clearbit.com/faceswapai.com",
+    "logo": "https://img.logo.dev/faceswapai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.115,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.1162,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Live3D AI Face Swap",
@@ -2116,15 +2116,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎓",
-    "logo": "https://logo.clearbit.com/live3d.io",
+    "logo": "https://img.logo.dev/live3d.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2673,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.0303,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Sketchflow.ai",
@@ -2148,15 +2148,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/sketchflow.ai",
+    "logo": "https://img.logo.dev/sketchflow.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.0352,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.584,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Shutterstock",
@@ -2180,15 +2180,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/shutterstock.com",
+    "logo": "https://img.logo.dev/shutterstock.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.3193,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.828,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "FaceFinder",
@@ -2211,15 +2211,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/facefinder.id",
+    "logo": "https://img.logo.dev/facefinder.id?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.379,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.7998,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Remove Watermarks MarkGone",
@@ -2243,15 +2243,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/removewatermarks.com",
+    "logo": "https://img.logo.dev/removewatermarks.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2068,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.6501,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "PixPretty AI Photo Editor",
@@ -2276,15 +2276,15 @@
     ],
     "pricing": "Free",
     "icon": "🤖",
-    "logo": "https://logo.clearbit.com/pixpretty.tenorshare.ai",
+    "logo": "https://img.logo.dev/pixpretty.tenorshare.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.8113,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.609,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "BeautyPlus",
@@ -2309,15 +2309,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/beautyplus.com",
+    "logo": "https://img.logo.dev/beautyplus.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2092,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.2166,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Midjourney",
@@ -2341,15 +2341,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/midjourney.com",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/midjourney.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642595.2808,
-    "createdAt": "2026-03-05T00:14:02.595Z"
+    "id": 1772671579228.9724,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Klodsy",
@@ -2372,15 +2372,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/klodsy.com",
+    "logo": "https://img.logo.dev/klodsy.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.451,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.2488,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Instories",
@@ -2405,15 +2405,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/instories.com",
+    "logo": "https://img.logo.dev/instories.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.6245,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.583,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Sketch To",
@@ -2438,15 +2438,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/sketchto.com",
+    "logo": "https://img.logo.dev/sketchto.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.4922,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.6782,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "UX Pilot AI",
@@ -2470,15 +2470,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/uxpilot.ai",
+    "logo": "https://img.logo.dev/uxpilot.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.7412,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.0361,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Pixazo",
@@ -2501,15 +2501,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/pixazo.ai",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/pixazo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.7285,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.114,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "HitPaw AI",
@@ -2534,15 +2534,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/online.hitpaw.com",
+    "logo": "https://img.logo.dev/online.hitpaw.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.0166,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.9788,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Image to Image AI",
@@ -2566,16 +2566,16 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/imagetoimageai.ai",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/imagetoimageai.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://youtu.be/NcCQPOAKNV8",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.383,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.5786,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "JoyFun AI",
@@ -2599,15 +2599,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/joyfun.ai",
+    "logo": "https://img.logo.dev/joyfun.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.437,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.2146,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Face Shape Detector",
@@ -2630,15 +2630,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/faceshapedetector.ai",
+    "logo": "https://img.logo.dev/faceshapedetector.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.3271,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.166,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "MusicArt",
@@ -2662,15 +2662,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎓",
-    "logo": "https://logo.clearbit.com/musicart.ai",
+    "logo": "https://img.logo.dev/musicart.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.3674,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.0178,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "PhotoCat Image Extender",
@@ -2693,15 +2693,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/photocat.com",
+    "logo": "https://img.logo.dev/photocat.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.51,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.53,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "EnhancePhoto AI",
@@ -2725,15 +2725,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/enhancephoto.ai",
+    "logo": "https://img.logo.dev/enhancephoto.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.196,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.0032,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Airbrush",
@@ -2757,15 +2757,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/airbrush.com",
+    "logo": "https://img.logo.dev/airbrush.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.3372,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.0833,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Photo Editor AI",
@@ -2789,15 +2789,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/photoeditorai.io",
+    "logo": "https://img.logo.dev/photoeditorai.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.418,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.8665,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Png AI",
@@ -2821,15 +2821,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/png.ai",
+    "logo": "https://img.logo.dev/png.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.7122,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.9292,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Photiu",
@@ -2854,15 +2854,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/photiu.ai",
+    "logo": "https://img.logo.dev/photiu.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.4094,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.231,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "AVCLabs",
@@ -2888,15 +2888,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/avclabs.com",
+    "logo": "https://img.logo.dev/avclabs.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.9004,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.9922,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Didoo AI",
@@ -2919,15 +2919,15 @@
     ],
     "pricing": "Free",
     "icon": "🖌️",
-    "logo": "https://logo.clearbit.com/didoo.ai",
+    "logo": "https://img.logo.dev/didoo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.7961,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.7534,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Deevid AI Image",
@@ -2951,15 +2951,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/deevid.ai",
+    "logo": "https://img.logo.dev/deevid.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.9695,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.951,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "Deep Swap AI",
@@ -2983,16 +2983,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/deepswapai.com",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/deepswapai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://www.youtube.com/watch?v=sqQrN0iZBs0",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.0237,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579228.6853,
+    "createdAt": "2026-03-05T00:46:19.228Z"
   },
   {
     "name": "DatePhotosAI",
@@ -3016,15 +3016,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/datephotos.ai",
+    "logo": "https://img.logo.dev/datephotos.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.3315,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.5977,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Weshop AI",
@@ -3047,7 +3047,7 @@
       "Marketing Manager"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/weshop.ai",
+    "logo": "https://img.logo.dev/weshop.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -3055,8 +3055,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.6653,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.016,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Meta SAM 3D",
@@ -3080,15 +3080,15 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/ai.meta.com",
+    "logo": "https://img.logo.dev/ai.meta.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.5337,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.34,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "iPage.AI",
@@ -3111,15 +3111,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/ipage.ai",
+    "logo": "https://img.logo.dev/ipage.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.6,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.8232,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "ColorPage Lab",
@@ -3142,15 +3142,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/aicoloringpage.org",
+    "logo": "https://img.logo.dev/aicoloringpage.org?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.708,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.1738,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Colorart",
@@ -3174,15 +3174,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🤖",
-    "logo": "https://logo.clearbit.com/colorart.ai",
+    "logo": "https://img.logo.dev/colorart.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.409,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.8855,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Cartoonize AI",
@@ -3205,16 +3205,16 @@
       "Agency Creative"
     ],
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/cartoonize.ai",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/cartoonize.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.8577,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.5261,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Yolly AI",
@@ -3223,7 +3223,7 @@
     "description": "All-in-one AI video and image generator. Create cinema-grade 4K videos with sound and high-resolution images in seconds using world-leading AI models.",
     "category": "Image & Design",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/yolly.ai",
+    "logo": "https://img.logo.dev/yolly.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -3231,8 +3231,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.4243,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.2358,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Reve",
@@ -3255,7 +3255,7 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/app.reve.com",
+    "logo": "https://img.logo.dev/app.reve.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=uxEk3tksSLs",
     "status": "active",
@@ -3263,8 +3263,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.0383,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.349,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AI Virtual Staging",
@@ -3288,15 +3288,15 @@
     ],
     "pricing": "Paid",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/aivirtualstaging.net",
+    "logo": "https://img.logo.dev/aivirtualstaging.net?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.9988,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.2407,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "SocialSight",
@@ -3320,15 +3320,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/socialsight.ai",
+    "logo": "https://img.logo.dev/socialsight.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.55,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.6116,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AnyLogoGenerator",
@@ -3352,15 +3352,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/anylogo.ai",
+    "logo": "https://img.logo.dev/anylogo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642594.8296,
-    "createdAt": "2026-03-05T00:14:02.594Z"
+    "id": 1772671579227.2375,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Ideogram",
@@ -3385,16 +3385,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/ideogram.ai",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/ideogram.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://www.youtube.com/watch?v=USSpwbe3Rxk",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.905,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.9824,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AI Image Editor",
@@ -3418,15 +3418,15 @@
     ],
     "pricing": "Free",
     "icon": "⚙️",
-    "logo": "https://logo.clearbit.com/aiimgeditor.ai",
+    "logo": "https://img.logo.dev/aiimgeditor.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.2883,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.775,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Microsoft Designer",
@@ -3452,16 +3452,16 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/designer.microsoft.com",
-    "iconBg": "#1b262c",
+    "logo": "https://img.logo.dev/designer.microsoft.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "tier": "Best-in-Class",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.92,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.9995,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Recraft",
@@ -3487,16 +3487,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/recraft.ai",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/recraft.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://youtu.be/ns30Qj4WTwk",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.5896,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.192,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AI Color Analysis",
@@ -3519,15 +3519,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/aicoloranalysis.ai",
+    "logo": "https://img.logo.dev/aicoloranalysis.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.0386,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.928,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AI Background Remover",
@@ -3552,15 +3552,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🖌️",
-    "logo": "https://logo.clearbit.com/aibackgroundremover.io",
+    "logo": "https://img.logo.dev/aibackgroundremover.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.2195,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.7954,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Leonardo",
@@ -3586,16 +3586,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/leonardo.ai",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/leonardo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=-f9rxj2goYM",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.3792,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.588,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Flux.2",
@@ -3621,15 +3621,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/bfl.ai",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/bfl.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7136,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.9392,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Waypoint-1 Overworld",
@@ -3650,7 +3650,7 @@
       "Solo Content Creator"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/overworld.stream",
+    "logo": "https://img.logo.dev/overworld.stream?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -3658,8 +3658,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.924,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.9553,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Freudly AI Therapist",
@@ -3683,15 +3683,15 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/freudly.ai",
+    "logo": "https://img.logo.dev/freudly.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.4531,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.1133,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Visual Field Test",
@@ -3712,7 +3712,7 @@
       "Entrepreneur / Indie Hacker"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/visualfieldtest.com",
+    "logo": "https://img.logo.dev/visualfieldtest.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -3720,8 +3720,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7026,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.2595,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Moltbook",
@@ -3745,15 +3745,15 @@
     ],
     "pricing": "Free",
     "icon": "🤖",
-    "logo": "https://logo.clearbit.com/moltbook.com",
+    "logo": "https://img.logo.dev/moltbook.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.3994,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.4585,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Voila Voice io",
@@ -3777,7 +3777,7 @@
       "Knowledge Worker"
     ],
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/voilavoice.io",
+    "logo": "https://img.logo.dev/voilavoice.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#FDF2F8",
     "status": "active",
     "pricing": "Freemium",
@@ -3785,8 +3785,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9927,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.273,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Math AI",
@@ -3810,15 +3810,15 @@
     ],
     "pricing": "Free",
     "icon": "🖌️",
-    "logo": "https://logo.clearbit.com/mathaisolver.ai",
+    "logo": "https://img.logo.dev/mathaisolver.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.433,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.6719,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Findtube.AI",
@@ -3842,15 +3842,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/findtube.ai",
+    "logo": "https://img.logo.dev/findtube.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.0298,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.5415,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Learn Place AI Assistant",
@@ -3875,15 +3875,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/learnplace.ai",
+    "logo": "https://img.logo.dev/learnplace.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.637,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.663,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Grain AI",
@@ -3908,15 +3908,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/grain99.cc",
+    "logo": "https://img.logo.dev/grain99.cc?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.8813,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.5237,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Edubrain AI",
@@ -3941,15 +3941,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/edubrain.ai",
+    "logo": "https://img.logo.dev/edubrain.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.288,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.9675,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Mexty",
@@ -3973,15 +3973,15 @@
     ],
     "pricing": "Free",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/mexty.ai",
+    "logo": "https://img.logo.dev/mexty.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9912,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.8977,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "YouWare",
@@ -4004,7 +4004,7 @@
       "Startup Founder"
     ],
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/youware.com",
+    "logo": "https://img.logo.dev/youware.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#ECFDF5",
     "status": "active",
     "pricing": "Freemium",
@@ -4012,8 +4012,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.5957,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.3848,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Vibecode",
@@ -4038,15 +4038,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/vibecodeapp.com",
+    "logo": "https://img.logo.dev/vibecodeapp.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.012,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.8945,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Codeflying",
@@ -4070,15 +4070,15 @@
     ],
     "pricing": "Paid",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/codeflying.app",
+    "logo": "https://img.logo.dev/codeflying.app?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7021,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.6418,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "GPT-5.3-Codex",
@@ -4103,15 +4103,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/openai.com",
+    "logo": "https://img.logo.dev/openai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9138,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.5,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Landing Page AI Builder",
@@ -4135,15 +4135,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/landing-page.io",
+    "logo": "https://img.logo.dev/landing-page.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.4526,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.5813,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Websites.ly",
@@ -4165,7 +4165,7 @@
       "Freelance Designer"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/websites.ly",
+    "logo": "https://img.logo.dev/websites.ly?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -4173,8 +4173,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.6006,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.016,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Claude Code",
@@ -4199,15 +4199,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/anthropic.com",
+    "logo": "https://img.logo.dev/anthropic.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.3765,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.4136,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Marblism",
@@ -4232,8 +4232,8 @@
     ],
     "pricing": "Paid",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/marblism.com",
-    "iconBg": "#1b262c",
+    "logo": "https://img.logo.dev/marblism.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://www.youtube.com/watch?v=t1pT4c0v6OQ",
     "tier": "Editor's Pick",
     "status": "active",
@@ -4241,8 +4241,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.322,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.5994,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "AI Landing Page",
@@ -4266,15 +4266,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/ailandingpage.ai",
+    "logo": "https://img.logo.dev/ailandingpage.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9434,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.3328,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Qwen",
@@ -4300,15 +4300,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/qwen.ai",
+    "logo": "https://img.logo.dev/qwen.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.847,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.6406,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Claude AI",
@@ -4335,16 +4335,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/claude.ai",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/claude.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=AJpK3YTTKZ4",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7947,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.3777,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Manus Browser Operator",
@@ -4368,15 +4368,15 @@
     ],
     "pricing": "Free",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/manus.im",
+    "logo": "https://img.logo.dev/manus.im?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.5808,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.695,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Kimi",
@@ -4402,15 +4402,15 @@
     ],
     "pricing": "Paid",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/kimi.com",
+    "logo": "https://img.logo.dev/kimi.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7905,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.0725,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Grok",
@@ -4435,15 +4435,15 @@
     ],
     "pricing": "Paid",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/grok.com",
+    "logo": "https://img.logo.dev/grok.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7346,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.3503,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Google Gemini",
@@ -4470,8 +4470,8 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/gemini.google.com",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/gemini.google.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://www.youtube.com/watch?v=_fuimO6ErKI",
     "tier": "Editor's Pick",
     "status": "active",
@@ -4479,8 +4479,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.7349,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579227.1917,
+    "createdAt": "2026-03-05T00:46:19.227Z"
   },
   {
     "name": "Ernie Bot",
@@ -4506,15 +4506,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/ernie.baidu.com",
+    "logo": "https://img.logo.dev/ernie.baidu.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9487,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.32,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "DeepSeek",
@@ -4540,15 +4540,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/chat.deepseek.com",
+    "logo": "https://img.logo.dev/chat.deepseek.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.8582,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.5925,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Amazon Nova",
@@ -4574,15 +4574,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/nova.amazon.com",
+    "logo": "https://img.logo.dev/nova.amazon.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.0242,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.0234,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Microsoft Copilot",
@@ -4609,8 +4609,8 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/copilot.microsoft.com",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/copilot.microsoft.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2a2e45",
     "videoUrl": "https://www.youtube.com/watch?v=6hu7hYLiu08&list=PLaD473vhWj8A040W4uj1LReeY7ekFPU4k",
     "tier": "Best-in-Class",
     "status": "active",
@@ -4618,8 +4618,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.2524,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.3604,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "ChatGPT",
@@ -4646,8 +4646,8 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/chatgpt.com",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/chatgpt.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://www.youtube.com/watch?v=boJG84Jcf-4",
     "tier": "Best-in-class",
     "status": "active",
@@ -4655,8 +4655,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.8484,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.581,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Wellows",
@@ -4678,7 +4678,7 @@
       "Product Manager"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/wellows.com",
+    "logo": "https://img.logo.dev/wellows.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -4686,8 +4686,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.0522,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.0247,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Make",
@@ -4713,16 +4713,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/make.com",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/make.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://www.youtube.com/watch?v=ADpijI_TqnE",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.3147,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.1553,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Upmetrics AI",
@@ -4747,15 +4747,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/upmetrics.co",
+    "logo": "https://img.logo.dev/upmetrics.co?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.442,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.9465,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "TaxTools AI",
@@ -4779,15 +4779,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/taxtools.ai",
+    "logo": "https://img.logo.dev/taxtools.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.6904,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.3933,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Refly.ai",
@@ -4812,15 +4812,15 @@
     ],
     "pricing": "Free",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/refly.ai",
+    "logo": "https://img.logo.dev/refly.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.004,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.6667,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Listagrow AI",
@@ -4844,15 +4844,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/listagrow.com",
+    "logo": "https://img.logo.dev/listagrow.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.4058,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.4714,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "n8n",
@@ -4879,16 +4879,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/n8n.io",
-    "iconBg": "#0f3460",
+    "logo": "https://img.logo.dev/n8n.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1b262c",
     "videoUrl": "https://youtu.be/46fd56yw-8Y",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.164,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.2356,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Rosie AI",
@@ -4912,15 +4912,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/heyrosie.com",
+    "logo": "https://img.logo.dev/heyrosie.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.5234,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.6523,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Taylor CPAI by Deduction",
@@ -4945,15 +4945,15 @@
     ],
     "pricing": "Free",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/deduction.com",
+    "logo": "https://img.logo.dev/deduction.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.6768,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.9287,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Kogents AI",
@@ -4978,15 +4978,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/kogents.ai",
+    "logo": "https://img.logo.dev/kogents.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.6807,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.735,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Relay.app",
@@ -5011,16 +5011,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/relay.app",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/relay.app?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://youtu.be/XQt47wxozL8",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9658,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.1167,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Machine Translation",
@@ -5044,15 +5044,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/machinetranslation.com",
+    "logo": "https://img.logo.dev/machinetranslation.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.9087,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.175,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Diagrimo",
@@ -5076,15 +5076,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/tenorshare.ai",
+    "logo": "https://img.logo.dev/tenorshare.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.996,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.7285,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Dealism",
@@ -5109,15 +5109,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/dealism.ai",
+    "logo": "https://img.logo.dev/dealism.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.8616,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.6028,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "BlabbyAI Speech to text",
@@ -5142,15 +5142,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/blabby.ai",
+    "logo": "https://img.logo.dev/blabby.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642593.4775,
-    "createdAt": "2026-03-05T00:14:02.593Z"
+    "id": 1772671579226.0576,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Airtable AI",
@@ -5177,16 +5177,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📚",
-    "logo": "https://logo.clearbit.com/airtable.com",
-    "iconBg": "#0f3460",
+    "logo": "https://img.logo.dev/airtable.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://www.youtube.com/watch?v=UcZfSIegPNw",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0254,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.892,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Warmup Tool",
@@ -5210,7 +5210,7 @@
       "Marketing Manager"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/warmer.wadesk.io",
+    "logo": "https://img.logo.dev/warmer.wadesk.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -5218,8 +5218,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.634,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.059,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Atoms",
@@ -5242,15 +5242,15 @@
     ],
     "pricing": "Free",
     "icon": "💼",
-    "logo": "https://logo.clearbit.com/atoms.dev",
+    "logo": "https://img.logo.dev/atoms.dev?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4282,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.1343,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Airtop",
@@ -5277,7 +5277,7 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/airtop.ai",
+    "logo": "https://img.logo.dev/airtop.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "videoUrl": "https://youtu.be/PMb8hX8VfvQ",
     "status": "active",
@@ -5285,8 +5285,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4592,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.042,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AiPPT.com",
@@ -5310,15 +5310,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/aippt.com",
+    "logo": "https://img.logo.dev/aippt.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0933,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.5042,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AIGNE DocSmith",
@@ -5343,15 +5343,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/docsmith.aigne.io",
+    "logo": "https://img.logo.dev/docsmith.aigne.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.1008,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.2827,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Super",
@@ -5375,16 +5375,16 @@
     ],
     "pricing": "Paid",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/super.work",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/super.work?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://www.youtube.com/watch?v=BaR4eeuCpYY",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.8728,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.181,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "HumanFlow",
@@ -5408,15 +5408,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/humanflow.app",
+    "logo": "https://img.logo.dev/humanflow.app?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.461,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.7344,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Seedance 2.0",
@@ -5439,15 +5439,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/seed.bytedance.com",
+    "logo": "https://img.logo.dev/seed.bytedance.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.078,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.0881,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "GoEnhance Image to Video AI",
@@ -5470,15 +5470,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/app.goenhance.ai",
+    "logo": "https://img.logo.dev/app.goenhance.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.6086,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.2017,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Apple Creator Studio",
@@ -5502,15 +5502,15 @@
     ],
     "pricing": "Freemium",
     "icon": "✍️",
-    "logo": "https://logo.clearbit.com/apple.com",
+    "logo": "https://img.logo.dev/apple.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.729,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.529,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Runway Gen-4.5",
@@ -5535,15 +5535,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/runwayml.com",
+    "logo": "https://img.logo.dev/runwayml.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.209,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.9685,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Wan2.6",
@@ -5567,7 +5567,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/create.wan.video",
+    "logo": "https://img.logo.dev/create.wan.video?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -5575,8 +5575,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0725,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.9202,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AirMusic",
@@ -5599,15 +5599,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/airmusic.ai",
+    "logo": "https://img.logo.dev/airmusic.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0042,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8503,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "OpenMusic AI",
@@ -5630,15 +5630,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/openmusic.ai",
+    "logo": "https://img.logo.dev/openmusic.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.1675,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.5127,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "insMind Image to Video",
@@ -5660,7 +5660,7 @@
       "Agency Creative"
     ],
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/insmind.com",
+    "logo": "https://img.logo.dev/insmind.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "pricing": "Freemium",
@@ -5668,8 +5668,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.5986,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8318,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Product Link To Video",
@@ -5694,15 +5694,15 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/admaker.ai",
+    "logo": "https://img.logo.dev/admaker.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.5867,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.636,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AI Song Creator App",
@@ -5726,15 +5726,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/aisongcreator.app",
+    "logo": "https://img.logo.dev/aisongcreator.app?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.6973,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.665,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Chatterbox Turbo",
@@ -5759,16 +5759,16 @@
     ],
     "pricing": "Free",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/resemble.ai",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/resemble.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "videoUrl": "https://www.youtube.com/watch?v=ibiIMF3aoEM",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0454,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.1353,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Video Watermark Remover",
@@ -5791,15 +5791,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/videowatermarkremover.ai",
+    "logo": "https://img.logo.dev/videowatermarkremover.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.8093,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.868,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "ReelMate AI",
@@ -5824,15 +5824,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/reelmate.ai",
+    "logo": "https://img.logo.dev/reelmate.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.1736,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.1545,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "MuseVideo",
@@ -5855,15 +5855,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎓",
-    "logo": "https://logo.clearbit.com/musevideo.ai",
+    "logo": "https://img.logo.dev/musevideo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.6504,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.3591,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Nemovideo",
@@ -5886,15 +5886,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/nemovideo.com",
+    "logo": "https://img.logo.dev/nemovideo.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.092,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.2512,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Lyria 3",
@@ -5917,15 +5917,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/deepmind.google",
+    "logo": "https://img.logo.dev/deepmind.google?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.94,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.2107,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Lip Sync AI",
@@ -5948,15 +5948,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/lipsyncai.org",
+    "logo": "https://img.logo.dev/lipsyncai.org?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.644,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.194,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Kirkify AI",
@@ -5979,15 +5979,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/kirkifyai.ai",
+    "logo": "https://img.logo.dev/kirkifyai.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.9175,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.6123,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Kamo-1 Kinetix",
@@ -6011,15 +6011,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/kinetix.tech",
+    "logo": "https://img.logo.dev/kinetix.tech?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4392,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.0723,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Imgtovid AI",
@@ -6041,7 +6041,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/imgtovid.ai",
+    "logo": "https://img.logo.dev/imgtovid.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "pricing": "Freemium",
@@ -6049,8 +6049,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4858,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.117,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "LitVideo",
@@ -6073,15 +6073,15 @@
     ],
     "pricing": "Free",
     "icon": "⚙️",
-    "logo": "https://logo.clearbit.com/litmedia.ai",
+    "logo": "https://img.logo.dev/litmedia.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.1946,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.7961,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Kutt AI",
@@ -6104,15 +6104,15 @@
     ],
     "pricing": "Free",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/kutt.ai",
+    "logo": "https://img.logo.dev/kutt.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.5354,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8518,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Song Maker AI",
@@ -6134,7 +6134,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/song-maker.ai",
+    "logo": "https://img.logo.dev/song-maker.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -6142,8 +6142,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.6565,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.0208,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "MakeBestMusic",
@@ -6166,15 +6166,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/makebestmusic.com",
+    "logo": "https://img.logo.dev/makebestmusic.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0093,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8777,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "HitPaw VikPea",
@@ -6199,15 +6199,15 @@
     ],
     "pricing": "Paid",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/hitpaw.com",
+    "logo": "https://img.logo.dev/hitpaw.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.7688,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.4084,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "PXZ Video Generator",
@@ -6231,15 +6231,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/pxz.ai",
+    "logo": "https://img.logo.dev/pxz.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.6191,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8093,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Vora",
@@ -6262,7 +6262,7 @@
       "Solo Content Creator"
     ],
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/fineshare.com",
+    "logo": "https://img.logo.dev/fineshare.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F5F3FF",
     "status": "active",
     "pricing": "Freemium",
@@ -6270,8 +6270,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.9187,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.525,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Vadu AI",
@@ -6294,15 +6294,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/vadu.ai",
+    "logo": "https://img.logo.dev/vadu.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.9194,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.155,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Text to Song",
@@ -6325,15 +6325,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/texttosong.ai",
+    "logo": "https://img.logo.dev/texttosong.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.8262,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.6516,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Create Music AI",
@@ -6356,15 +6356,15 @@
     ],
     "pricing": "Freemium",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/createmusicai.ai",
+    "logo": "https://img.logo.dev/createmusicai.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.1167,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.4165,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "vidflux",
@@ -6386,7 +6386,7 @@
       "Agency Creative"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/vidflux.ai",
+    "logo": "https://img.logo.dev/vidflux.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -6394,8 +6394,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.3245,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.386,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "MusicAI",
@@ -6418,15 +6418,15 @@
     ],
     "pricing": "Free",
     "icon": "🖌️",
-    "logo": "https://logo.clearbit.com/musicai.ai",
+    "logo": "https://img.logo.dev/musicai.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.8787,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.6113,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Lip Sync Studio",
@@ -6449,15 +6449,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/lipsync.studio",
+    "logo": "https://img.logo.dev/lipsync.studio?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4675,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.125,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "ReelMuse AI",
@@ -6482,15 +6482,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/reelmuse.ai",
+    "logo": "https://img.logo.dev/reelmuse.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.3018,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.0818,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "GoCrazyAI",
@@ -6513,15 +6513,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/gocrazyai.com",
+    "logo": "https://img.logo.dev/gocrazyai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.414,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.8062,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "DeVoice",
@@ -6545,15 +6545,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/devoice.io",
+    "logo": "https://img.logo.dev/devoice.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4604,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.2349,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AI Song Creator Pro",
@@ -6576,15 +6576,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/aisongcreator.pro",
+    "logo": "https://img.logo.dev/aisongcreator.pro?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4412,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.708,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Lyrics to Song AI",
@@ -6607,15 +6607,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/lyricstosong.io",
+    "logo": "https://img.logo.dev/lyricstosong.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.2427,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.329,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "BeatViz AI",
@@ -6637,7 +6637,7 @@
       "Video Editor / Filmmaker"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/beatviz.ai",
+    "logo": "https://img.logo.dev/beatviz.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "pricing": "Freemium",
@@ -6645,8 +6645,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.3,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.4758,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "AIimageToVideo.pro",
@@ -6669,15 +6669,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "📈",
-    "logo": "https://logo.clearbit.com/aiimagetovideo.pro",
+    "logo": "https://img.logo.dev/aiimagetovideo.pro?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0232,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.7852,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Wispr Flow",
@@ -6702,16 +6702,16 @@
     ],
     "pricing": "Free",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/wisprflow.ai",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/wisprflow.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=BEWYvMbKAyw",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.8774,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.4636,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "CapCut",
@@ -6737,8 +6737,8 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/capcut.com",
-    "iconBg": "#0f3460",
+    "logo": "https://img.logo.dev/capcut.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://www.youtube.com/watch?v=-kbO9giKLXY",
     "tier": "Best-in-class",
     "status": "active",
@@ -6746,8 +6746,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.47,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579226.0793,
+    "createdAt": "2026-03-05T00:46:19.226Z"
   },
   {
     "name": "Eleven Labs",
@@ -6773,8 +6773,8 @@
     ],
     "pricing": "Freemium",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/elevenlabs.io",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/elevenlabs.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://www.youtube.com/watch?v=QB7uqR3f_po",
     "tier": "Editor's Pick",
     "affiliateUrl": "https://try.elevenlabs.io/9bus82n11ex2",
@@ -6783,8 +6783,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0852,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.1453,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Opus Clip",
@@ -6809,16 +6809,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/opus.pro",
-    "iconBg": "#0f3460",
+    "logo": "https://img.logo.dev/opus.pro?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://youtu.be/xoW5l2px7sg",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.0452,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.9587,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Imini AI",
@@ -6842,15 +6842,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/imini.com",
+    "logo": "https://img.logo.dev/imini.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.472,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.566,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Submagic",
@@ -6875,15 +6875,15 @@
     ],
     "pricing": "Paid",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/submagic.co",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/submagic.co?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.7231,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.5984,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Descript",
@@ -6910,16 +6910,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/descript.com",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/descript.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://youtu.be/WX-8EqxhLfQ",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.5142,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.495,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Runway",
@@ -6944,16 +6944,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "🎬",
-    "logo": "https://logo.clearbit.com/runwayml.com",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/runwayml.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "videoUrl": "https://youtu.be/fTqgWkHiN0k",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.2087,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.014,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "2 VIDEO",
@@ -6976,15 +6976,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎥",
-    "logo": "https://logo.clearbit.com/2.video",
+    "logo": "https://img.logo.dev/2.video?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642592.4014,
-    "createdAt": "2026-03-05T00:14:02.592Z"
+    "id": 1772671579225.0823,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Huggingface",
@@ -7009,15 +7009,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/huggingface.co",
+    "logo": "https://img.logo.dev/huggingface.co?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.83,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.3152,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Momen",
@@ -7041,15 +7041,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/momen.app",
+    "logo": "https://img.logo.dev/momen.app?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.546,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.4534,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Devstral2 Mistral",
@@ -7074,15 +7074,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/mistral.ai",
+    "logo": "https://img.logo.dev/mistral.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.8699,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.2642,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "AnyToURL",
@@ -7105,15 +7105,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/anytourl.com",
+    "logo": "https://img.logo.dev/anytourl.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2996,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.013,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "LingBot-World",
@@ -7138,15 +7138,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/technology.robbyant.com",
+    "logo": "https://img.logo.dev/technology.robbyant.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.0803,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.5637,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Cassidy AI",
@@ -7173,16 +7173,16 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/cassidy.ai",
-    "iconBg": "#1b262c",
+    "logo": "https://img.logo.dev/cassidy.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "videoUrl": "https://www.youtube.com/watch?v=5U2yaaBC7HU",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.0957,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.9849,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Relevance AI",
@@ -7208,15 +7208,15 @@
     ],
     "pricing": "Freemium",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/relevanceai.com",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/relevanceai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#16213e",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2563,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.6216,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Zapier",
@@ -7242,16 +7242,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "📊",
-    "logo": "https://logo.clearbit.com/zapier.com",
-    "iconBg": "#2a2e45",
+    "logo": "https://img.logo.dev/zapier.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://www.youtube.com/watch?v=hgLaOBSr9oE",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2305,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.3457,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Google AI Studio",
@@ -7277,7 +7277,7 @@
     ],
     "pricing": "Freemium",
     "icon": "🗂",
-    "logo": "https://logo.clearbit.com/aistudio.google.com",
+    "logo": "https://img.logo.dev/aistudio.google.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "videoUrl": "https://www.youtube.com/watch?v=IHOJUJjZbzc",
     "tier": "Editor's Pick",
@@ -7286,8 +7286,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5872,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.435,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Generor",
@@ -7310,15 +7310,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/generor.com",
+    "logo": "https://img.logo.dev/generor.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.6484,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.0532,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Cocoon",
@@ -7341,15 +7341,15 @@
     ],
     "pricing": "Paid",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/cocoon.org",
+    "logo": "https://img.logo.dev/cocoon.org?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5261,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.8174,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Gologin Cloud Browser",
@@ -7373,15 +7373,15 @@
     ],
     "pricing": "Free",
     "icon": "💬",
-    "logo": "https://logo.clearbit.com/gologin.com",
+    "logo": "https://img.logo.dev/gologin.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.6519,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.138,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "myNeutron AI Memory",
@@ -7406,15 +7406,15 @@
     ],
     "pricing": "Paid",
     "icon": "💻",
-    "logo": "https://logo.clearbit.com/myneutron.ai",
+    "logo": "https://img.logo.dev/myneutron.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.9744,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.827,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Nexos.ai",
@@ -7438,7 +7438,7 @@
       "Startup Founder"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/nexos.ai",
+    "logo": "https://img.logo.dev/nexos.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F8FAFC",
     "status": "active",
     "pricing": "Freemium",
@@ -7446,8 +7446,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.1497,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.3684,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "VOMO AI",
@@ -7471,7 +7471,7 @@
       "Enterprise Ops Lead"
     ],
     "icon": "⚙️",
-    "logo": "https://logo.clearbit.com/vomo.ai",
+    "logo": "https://img.logo.dev/vomo.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#F3F4F6",
     "status": "active",
     "pricing": "Freemium",
@@ -7479,8 +7479,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.1904,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.391,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Akiflow",
@@ -7506,16 +7506,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/akiflow.com",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/akiflow.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2a2e45",
     "videoUrl": "https://www.youtube.com/watch?v=Wo_LHwf600U",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5068,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.8389,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Reclaim",
@@ -7539,7 +7539,7 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/reclaim.ai",
+    "logo": "https://img.logo.dev/reclaim.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "videoUrl": "https://youtu.be/jFGoj916jUE",
     "status": "active",
@@ -7547,8 +7547,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.455,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.2847,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "OpenClaw",
@@ -7572,15 +7572,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎨",
-    "logo": "https://logo.clearbit.com/openclaw.ai",
+    "logo": "https://img.logo.dev/openclaw.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.3564,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.062,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Final Round AI",
@@ -7604,15 +7604,15 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/finalroundai.com",
+    "logo": "https://img.logo.dev/finalroundai.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2c2c54",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.4817,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.978,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Noiz Agent",
@@ -7637,15 +7637,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/agent.noiz.ai",
+    "logo": "https://img.logo.dev/agent.noiz.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#1f2937",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.1565,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.8936,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "ClickUp Agents",
@@ -7670,15 +7670,15 @@
     ],
     "pricing": "Paid",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/clickup.com",
+    "logo": "https://img.logo.dev/clickup.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3b3b98",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2188,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.8599,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "ATS Resume Checker",
@@ -7701,7 +7701,7 @@
       "Startup Founder"
     ],
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/tripleten.com",
+    "logo": "https://img.logo.dev/tripleten.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#2a2e45",
     "status": "active",
     "pricing": "Freemium",
@@ -7709,8 +7709,8 @@
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.3406,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.894,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "UPCV",
@@ -7734,15 +7734,15 @@
     ],
     "pricing": "Freemium",
     "icon": "🎵",
-    "logo": "https://logo.clearbit.com/upcv.io",
+    "logo": "https://img.logo.dev/upcv.io?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#3a3f5a",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.089,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.3738,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Superhuman",
@@ -7767,16 +7767,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/superhuman.com",
-    "iconBg": "#16213e",
+    "logo": "https://img.logo.dev/superhuman.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3b3b98",
     "videoUrl": "https://youtu.be/DjR8G1bE5ss",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.39,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.8105,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Mem",
@@ -7802,16 +7802,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/get.mem.ai",
-    "iconBg": "#3a3f5a",
+    "logo": "https://img.logo.dev/get.mem.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2a2e45",
     "videoUrl": "https://youtu.be/wBoBobOGu2M",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5588,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.9487,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Saner",
@@ -7835,16 +7835,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/saner.ai",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/saner.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2c2c54",
     "videoUrl": "https://www.youtube.com/watch?v=ijv0a93RsY8",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5608,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.9878,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Otter",
@@ -7870,16 +7870,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/otter.ai",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/otter.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1f2937",
     "videoUrl": "https://youtu.be/fBUiu3_pTac",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.0103,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.375,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Circleback",
@@ -7905,16 +7905,16 @@
     ],
     "pricing": "Paid",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/circleback.ai",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/circleback.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#0f3460",
     "videoUrl": "https://www.youtube.com/watch?v=J4QVaQ5rQTw",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5234,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.1885,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Lindy",
@@ -7939,16 +7939,16 @@
     ],
     "pricing": "Free Trial",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/lindy.ai",
-    "iconBg": "#1f2937",
+    "logo": "https://img.logo.dev/lindy.ai?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#2a2e45",
     "videoUrl": "https://www.youtube.com/watch?v=1ytymcI7fSk",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.5415,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.1313,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Motion",
@@ -7973,15 +7973,15 @@
     ],
     "pricing": "Free Trial",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/usemotion.com",
-    "iconBg": "#3b3b98",
+    "logo": "https://img.logo.dev/usemotion.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#1b262c",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2783,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.7192,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Notion AI",
@@ -8007,16 +8007,16 @@
     ],
     "pricing": "Freemium",
     "icon": "🧍",
-    "logo": "https://logo.clearbit.com/notion.so",
-    "iconBg": "#2c2c54",
+    "logo": "https://img.logo.dev/notion.so?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
+    "iconBg": "#3a3f5a",
     "videoUrl": "https://www.youtube.com/watch?v=FElBbgnNtVA",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.9856,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.3545,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   },
   {
     "name": "Agent TARS",
@@ -8041,14 +8041,14 @@
     ],
     "pricing": "Free",
     "icon": "🏢",
-    "logo": "https://logo.clearbit.com/agent-tars.com",
+    "logo": "https://img.logo.dev/agent-tars.com?token=pk_B7J4wmSaQDmnJxbBjgtFFg",
     "iconBg": "#0f3460",
     "status": "active",
     "rating": 4,
     "tags": [],
     "pros": [],
     "cons": [],
-    "id": 1772669642591.2026,
-    "createdAt": "2026-03-05T00:14:02.591Z"
+    "id": 1772671579225.4236,
+    "createdAt": "2026-03-05T00:46:19.225Z"
   }
 ]
