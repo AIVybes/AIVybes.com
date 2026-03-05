@@ -91,6 +91,76 @@
     font-weight: 500 !important;
   }
 
+  /* ── BEST FOR DROPDOWN ── */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+  }
+  .nav-dropdown-trigger:hover { color: var(--ink); }
+  .nav-dropdown-trigger svg {
+    transition: transform 0.2s;
+  }
+  .nav-dropdown.open .nav-dropdown-trigger svg {
+    transform: rotate(180deg);
+  }
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    min-width: 220px;
+    z-index: 600;
+    padding: 0.5rem 0;
+  }
+  .nav-dropdown.open .nav-dropdown-menu {
+    display: block;
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.82rem;
+    color: var(--ink);
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .nav-dropdown-menu a:hover {
+    background: var(--surface);
+    color: var(--accent);
+  }
+  .nav-dropdown-menu a .persona-count {
+    float: right;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--surface);
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+  }
+
   /* ── HERO ── */
   .hero {
     display: grid;
@@ -435,6 +505,51 @@
   .sort-btn.active, .sort-btn:hover {
     background: var(--ink);
     color: var(--paper);
+  }
+
+  .persona-filter-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .persona-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .persona-select {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.4rem 2rem 0.4rem 0.8rem;
+    background: var(--tag-bg);
+    border: 1px solid transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+    transition: all 0.2s;
+    color: var(--ink);
+    max-width: 220px;
+  }
+  .persona-select:hover, .persona-select:focus {
+    background-color: var(--ink);
+    color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23fff'/%3E%3C/svg%3E");
+    outline: none;
+  }
+  .persona-select.active {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23fff'/%3E%3C/svg%3E");
   }
 
   /* Filter Tags */
@@ -1004,6 +1119,17 @@
   <a class="nav-logo" href="#"><span>AI</span>Vybes</a>
   <ul class="nav-links">
     <li><a href="#directory">Directory</a></li>
+    <li class="nav-dropdown" id="bestForDropdown">
+      <button class="nav-dropdown-trigger" onclick="toggleBestFor(event)">
+        Best For
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="nav-dropdown-menu" id="bestForMenu">
+        <!-- populated by JS -->
+      </div>
+    </li>
     <li><a href="#newsletter" class="nav-cta">Newsletter</a></li>
   </ul>
 </nav>
@@ -1152,6 +1278,25 @@
     <div class="tools-header">
       <h2 class="tools-heading">AI Tools Directory</h2>
       <div class="sort-bar">
+        <div class="persona-filter-wrap">
+          <span class="persona-label">Best for</span>
+          <select class="persona-select" id="personaSelect" onchange="filterByPersona(this.value)">
+            <option value="">Everyone</option>
+            <option value="Solo Content Creator">Creators</option>
+            <option value="Marketing Manager">Marketers</option>
+            <option value="Software Developer">Developers</option>
+            <option value="Freelance Designer">Designers</option>
+            <option value="Student / Academic Researcher">Students</option>
+            <option value="Startup Founder">Startups</option>
+            <option value="Sales Development Rep (SDR)">Sales Teams</option>
+            <option value="Agency Creative">Agencies</option>
+            <option value="eCommerce Operator">eCommerce</option>
+            <option value="No-Code Builder">No-Coders</option>
+            <option value="Knowledge Worker">Knowledge Workers</option>
+            <option value="Enterprise Ops Lead">Enterprise</option>
+            <option value="Customer Support Lead">Support Teams</option>
+          </select>
+        </div>
         <button class="sort-btn active" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↑</button>
       </div>
     </div>
@@ -1370,13 +1515,14 @@
 let tools = [];
 let activeFilter = 'All';
 let activeCategory = 'All';
+let activePersona = '';
 let searchQuery = '';
 let sortAZ = 'asc'; // default A-Z
 
 // Load tools from tools.json — the only file you ever need to update
 async function loadTools() {
   try {
-    const res = await fetch('tools.json');
+    const res = await fetch(`tools.json?v=${Date.now()}`);
     if (!res.ok) throw new Error('not found');
     tools = await res.json();
   } catch(e) {
@@ -1390,6 +1536,7 @@ async function loadTools() {
   updateCounts();
   renderHeroCards();
   renderTools();
+  buildBestForMenu();
 }
 
 function renderHeroCards() {
@@ -1412,7 +1559,7 @@ function renderHeroCards() {
       <div class="fc-badge">★ Editor's Pick</div>
       <div class="fc-icon" style="background:${t.logobg||t.iconBg||'#eee'}">
         ${t.logo
-          ? `<img src="${t.logo}" alt="${t.name} logo" onerror="this.parentElement.innerHTML='${(t.icon||'🔧').replace(/'/g,"&#39;")}'"/>`
+          ? `<img src="${logoUrl(t)}" alt="${t.name} logo" onerror="this.src='${t.logo}'; this.onerror=function(){this.parentElement.innerHTML='${(t.icon||'🔧').replace(/'/g,"&#39;")}'}"/>`
           : (t.icon||'🔧')
         }
       </div>
@@ -1424,6 +1571,17 @@ function renderHeroCards() {
       </div>
     </div>`;
   }).join('');
+}
+
+function filterByPersona(persona) {
+  activePersona = persona;
+  const select = document.getElementById('personaSelect');
+  if (persona) {
+    select.classList.add('active');
+  } else {
+    select.classList.remove('active');
+  }
+  renderTools();
 }
 
 function toggleSortAZ() {
@@ -1455,7 +1613,11 @@ function renderTools() {
 
     const matchCat = activeCategory === 'All' || t.category === activeCategory;
 
-    return matchSearch && matchFilter && matchCat;
+    const matchPersona = activePersona === '' ||
+      t.primary_persona === activePersona ||
+      (t.secondary_persona || '').split(',').map(s => s.trim()).includes(activePersona);
+
+    return matchSearch && matchFilter && matchCat && matchPersona;
   });
 
   // Apply A-Z / Z-A sort if active
@@ -1476,7 +1638,7 @@ function renderTools() {
       <div class="tc-top">
         <div class="tc-icon" style="background:${t.logobg||t.iconBg||'#eee'}">
           ${t.logo
-            ? `<img src="${t.logo}" alt="${t.name} logo" onerror="this.parentElement.innerHTML='${(t.icon||'🔧').replace(/'/g,"&#39;")}'"/>`
+            ? `<img src="${logoUrl(t)}" alt="${t.name} logo" onerror="this.src='${t.logo}'; this.onerror=function(){this.parentElement.innerHTML='${(t.icon||'🔧').replace(/'/g,"&#39;")}'}"/>`
             : (t.icon||'🔧')
           }
         </div>
@@ -1517,6 +1679,7 @@ function filterByCategory(cat) {
   // Reset both filters cleanly
   activeCategory = cat;
   activeFilter = 'All';
+  activePersona = '';
   // Update sidebar active highlight
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.category-item').forEach(c => {
@@ -1535,29 +1698,27 @@ function filterByCategory(cat) {
 }
 
 function filterByTagFromCard(event, tag) {
-  event.stopPropagation(); // don't open the modal
+  event.stopPropagation();
 
-  // If clicking the already-active tag, clear the filter
   if (activeFilter === tag) {
     activeFilter = 'All';
     activeCategory = 'All';
+    activePersona = '';
     renderTools();
-    // Clear all active tag highlights
     document.querySelectorAll('.tc-tag').forEach(el => el.classList.remove('tag-active'));
     return;
   }
 
   activeFilter = tag;
   activeCategory = 'All';
+  activePersona = '';
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   renderTools();
 
-  // Highlight every tag pill with this name across all cards
   document.querySelectorAll('.tc-tag').forEach(el => {
     el.classList.toggle('tag-active', el.textContent === tag);
   });
 
-  // Smooth scroll to the directory section
   document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -1571,6 +1732,7 @@ function filterByTag(tag) {
 
 function filterTools() {
   searchQuery = document.getElementById('searchInput').value;
+  activePersona = '';
   renderTools();
 }
 
@@ -1600,6 +1762,17 @@ function updateCounts() {
   });
 }
 
+function logoUrl(t) {
+  if (!t.logo && !t.websiteUrl) return null;
+  // Extract domain from websiteUrl or fall back to parsing the stored logo URL
+  let domain = '';
+  try {
+    const base = t.websiteUrl || t.logo;
+    domain = new URL(base).hostname.replace('www.', '');
+  } catch(e) { return t.logo; }
+  return `https://logo.clearbit.com/${domain}`;
+}
+
 function getYouTubeEmbedUrl(url) {
   if (!url) return null;
   // Match youtube.com/watch?v=ID or youtu.be/ID
@@ -1610,10 +1783,10 @@ function getYouTubeEmbedUrl(url) {
 
 function openModal(index) {
   const t = tools[index];
-  const iconEl = document.getElementById('m-icon');
   iconEl.style.background = t.logobg || t.iconBg || '#eee';
-  if (t.logo) {
-    iconEl.innerHTML = `<img src="${t.logo}" alt="${t.name} logo" onerror="this.parentElement.innerHTML='${(t.icon||'🔧')}'; this.parentElement.style.fontSize='1.8rem'"/>`;
+  if (t.logo || t.websiteUrl) {
+    const src = logoUrl(t);
+    iconEl.innerHTML = `<img src="${src}" alt="${t.name} logo" onerror="this.src='${t.logo}'; this.onerror=function(){this.parentElement.innerHTML='${t.icon||'🔧'}'; this.parentElement.style.fontSize='1.8rem'}"/>`;
   } else {
     iconEl.textContent = t.icon || '🔧';
   }
@@ -1672,6 +1845,59 @@ document.querySelectorAll('.sort-btn').forEach(btn => {
 });
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── BEST FOR DROPDOWN ──
+const BEST_FOR_PERSONAS = [
+  { label: 'Creators',         persona: 'Solo Content Creator' },
+  { label: 'Marketers',        persona: 'Marketing Manager' },
+  { label: 'Developers',       persona: 'Software Developer' },
+  { label: 'Designers',        persona: 'Freelance Designer' },
+  { label: 'Students',         persona: 'Student / Academic Researcher' },
+  { label: 'Startups',         persona: 'Startup Founder' },
+  { label: 'Sales Teams',      persona: 'Sales Development Rep (SDR)' },
+  { label: 'Agencies',         persona: 'Agency Creative' },
+  { label: 'eCommerce',        persona: 'eCommerce Operator' },
+  { label: 'No-Coders',        persona: 'No-Code Builder' },
+  { label: 'Knowledge Workers',persona: 'Knowledge Worker' },
+  { label: 'Growth Hackers',   persona: 'Growth Hacker' },
+];
+
+function buildBestForMenu() {
+  const menu = document.getElementById('bestForMenu');
+  if (!menu) return;
+  menu.innerHTML = BEST_FOR_PERSONAS.map(({ label, persona }) => {
+    const count = tools.filter(t =>
+      t.primary_persona === persona ||
+      (t.secondary_persona || '').includes(persona)
+    ).length;
+    return `<a href="#directory" onclick="filterByPersona('${persona}'); closeBestFor();">
+      Best for ${label}
+      <span class="persona-count">${count}</span>
+    </a>`;
+  }).join('');
+}
+
+function filterByPersona(persona) {
+  activePersona = persona;
+  activeCategory = 'All';
+  activeFilter = 'All';
+  // Deactivate sidebar category highlights
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  renderTools();
+  document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function toggleBestFor(e) {
+  e.stopPropagation();
+  document.getElementById('bestForDropdown').classList.toggle('open');
+}
+
+function closeBestFor() {
+  document.getElementById('bestForDropdown').classList.remove('open');
+}
+
+// Close on outside click
+document.addEventListener('click', () => closeBestFor());
 
 loadTools();
 </script>
