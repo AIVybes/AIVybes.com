@@ -94,6 +94,8 @@
   /* ── BEST FOR DROPDOWN ── */
   .nav-dropdown {
     position: relative;
+    display: flex;
+    align-items: center;
   }
   .nav-dropdown-trigger {
     display: flex;
@@ -1266,10 +1268,12 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Top Lists</div>
-      <a class="category-item" href="#"><span class="cat-name">Best for Students</span></a>
-      <a class="category-item" href="#"><span class="cat-name">Best for Creators</span></a>
-      <a class="category-item" href="#"><span class="cat-name">Best for Business</span></a>
-      <a class="category-item" href="#"><span class="cat-name">New This Week</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Solo Content Creator')"><span class="cat-name">Best for Creators</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Marketing Manager')"><span class="cat-name">Best for Marketers</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Software Developer')"><span class="cat-name">Best for Developers</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Student / Academic Researcher')"><span class="cat-name">Best for Students</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Startup Founder')"><span class="cat-name">Best for Startups</span></a>
+      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('No-Code Builder')"><span class="cat-name">Best for No-Coders</span></a>
     </div>
   </aside>
 
@@ -1573,17 +1577,6 @@ function renderHeroCards() {
   }).join('');
 }
 
-function filterByPersona(persona) {
-  activePersona = persona;
-  const select = document.getElementById('personaSelect');
-  if (persona) {
-    select.classList.add('active');
-  } else {
-    select.classList.remove('active');
-  }
-  renderTools();
-}
-
 function toggleSortAZ() {
   sortAZ = sortAZ === 'asc' ? 'desc' : 'asc';
   const btn = document.getElementById('sortAZBtn');
@@ -1770,7 +1763,7 @@ function logoUrl(t) {
     const base = t.websiteUrl || t.logo;
     domain = new URL(base).hostname.replace('www.', '');
   } catch(e) { return t.logo; }
-  return `https://logo.clearbit.com/${domain}`;
+  return `https://img.logo.dev/${domain}?token=pk_public&size=128&format=png`;
 }
 
 function getYouTubeEmbedUrl(url) {
@@ -1881,6 +1874,9 @@ function filterByPersona(persona) {
   activePersona = persona;
   activeCategory = 'All';
   activeFilter = 'All';
+  // Sync the directory select dropdown
+  const select = document.getElementById('personaSelect');
+  if (select) select.value = persona;
   // Deactivate sidebar category highlights
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   renderTools();
