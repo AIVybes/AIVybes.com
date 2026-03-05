@@ -1149,17 +1149,6 @@
   <a class="nav-logo" href="#"><span>AI</span>Vybes</a>
   <ul class="nav-links">
     <li><a href="#directory">Directory</a></li>
-    <li class="nav-dropdown" id="bestForDropdown">
-      <button class="nav-dropdown-trigger" onclick="toggleBestFor(event)">
-        Best For
-        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <div class="nav-dropdown-menu" id="bestForMenu">
-        <!-- populated by JS -->
-      </div>
-    </li>
     <li><a href="#newsletter" class="nav-cta">Newsletter</a></li>
   </ul>
 </nav>
@@ -1306,25 +1295,6 @@
           <span class="persona-label">Best for</span>
           <select class="persona-select" id="personaSelect" onchange="filterByPersona(this.value)">
             <option value="">Everyone</option>
-            <option value="Freelance Designer">Designers</option>
-            <option value="Knowledge Worker">Knowledge Workers</option>
-            <option value="Software Developer">Developers</option>
-            <option value="Video Editor / Filmmaker">Video Editors</option>
-            <option value="Marketing Manager">Marketers</option>
-            <option value="Social Media Manager">Social Media</option>
-            <option value="Musician / Audio Producer">Musicians</option>
-            <option value="Solo Content Creator">Creators</option>
-            <option value="Sales Development Rep (SDR)">Sales Teams</option>
-            <option value="Startup Founder">Startups</option>
-            <option value="eCommerce Operator">eCommerce</option>
-            <option value="Student / Academic Researcher">Students</option>
-            <option value="Agency Creative">Agencies</option>
-            <option value="No-Code Builder">No-Coders</option>
-            <option value="Growth Hacker">Growth Hackers</option>
-            <option value="Enterprise Ops Lead">Enterprise</option>
-            <option value="Customer Support Lead">Support Teams</option>
-            <option value="Product Manager">Product Managers</option>
-            <option value="Recruiter">Recruiters</option>
           </select>
         </div>
         <button class="sort-btn active" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↑</button>
@@ -1909,38 +1879,28 @@ document.querySelectorAll('.sort-btn').forEach(btn => {
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 // ── BEST FOR DROPDOWN ──
-const BEST_FOR_PERSONAS = [
-  { label: 'Designers',        persona: 'Freelance Designer' },
-  { label: 'Knowledge Workers',persona: 'Knowledge Worker' },
-  { label: 'Developers',       persona: 'Software Developer' },
-  { label: 'Video Editors',    persona: 'Video Editor / Filmmaker' },
-  { label: 'Marketers',        persona: 'Marketing Manager' },
-  { label: 'Social Media',     persona: 'Social Media Manager' },
-  { label: 'Musicians',        persona: 'Musician / Audio Producer' },
-  { label: 'Creators',         persona: 'Content Creator' },
-  { label: 'Sales Teams',      persona: 'Sales Development Rep (SDR)' },
-  { label: 'Startups',         persona: 'Startup Founder' },
-  { label: 'eCommerce',        persona: 'eCommerce Operator' },
-  { label: 'Students',         persona: 'Student / Academic Researcher' },
-];
-
 function buildBestForMenu() {
-  const menu = document.getElementById('bestForMenu');
-  if (!menu) return;
-  menu.innerHTML = BEST_FOR_PERSONAS.map(({ label, persona }) => {
-    const count = tools.filter(t => {
-      const primary = Array.isArray(t.primary_persona)
-        ? t.primary_persona.join(', ')
-        : (t.primary_persona || '');
-      const secondary = t.secondary_persona || '';
-      return primary.trim() === persona ||
-        secondary.split(',').map(s => s.trim()).includes(persona);
-    }).length;
-    return `<a href="javascript:void(0)" onclick="event.stopPropagation(); filterByPersona('${persona}'); closeBestFor();">
-      Best for ${label}
-      <span class="persona-count">${count}</span>
-    </a>`;
-  }).join('');
+  // Derive personas directly from tools data, sorted by count descending
+  const counts = {};
+  tools.forEach(t => {
+    const primary = Array.isArray(t.primary_persona)
+      ? t.primary_persona.join(', ')
+      : (t.primary_persona || '');
+    if (primary.trim()) counts[primary.trim()] = (counts[primary.trim()] || 0) + 1;
+  });
+
+  const sorted = Object.entries(counts)
+    .filter(([, n]) => n >= 3)
+    .sort((a, b) => b[1] - a[1]);
+
+  // Update the select dropdown
+  const select = document.getElementById('personaSelect');
+  if (select) {
+    select.innerHTML = '<option value="">Everyone</option>' +
+      sorted.map(([persona, n]) =>
+        `<option value="${persona}">${persona} (${n})</option>`
+      ).join('');
+  }
 }
 
 function filterByPersona(persona) {
@@ -1957,17 +1917,8 @@ function filterByPersona(persona) {
   document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function toggleBestFor(e) {
-  e.stopPropagation();
-  document.getElementById('bestForDropdown').classList.toggle('open');
-}
 
-function closeBestFor() {
-  document.getElementById('bestForDropdown').classList.remove('open');
-}
 
-// Close on outside click
-document.addEventListener('click', () => closeBestFor());
 
 loadTools();
 </script>
