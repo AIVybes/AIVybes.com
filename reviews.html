@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tool Reviews — AIVybes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0a0a0f;
+      --paper: #f5f2ed;
+      --accent: #e8462a;
+      --gold: #c8a84b;
+      --muted: #8a8780;
+      --border: #e2ded8;
+      --tag-bg: #eceae5;
+      --surface: #f0ede8;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 500;
+      background: rgba(245,242,237,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 0 5%; height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; font-size: 1.4rem;
+      letter-spacing: -0.03em; color: var(--ink); text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+    .nav-cta {
+      background: var(--ink); color: var(--paper) !important;
+      padding: 0.5rem 1.2rem; border-radius: 2px; font-weight: 500 !important;
+    }
+
+    /* ── HERO ── */
+    .reviews-hero {
+      background: var(--ink); color: var(--paper);
+      padding: 5rem 10% 4rem;
+      border-bottom: 2px solid var(--gold);
+    }
+    .reviews-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+    .reviews-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900; line-height: 1.05;
+      margin-bottom: 1.2rem;
+    }
+    .reviews-headline em { color: var(--gold); font-style: italic; }
+    .reviews-sub {
+      color: rgba(245,242,237,0.6);
+      font-size: 1rem; line-height: 1.7;
+      max-width: 560px; margin-bottom: 2.5rem;
+    }
+
+    /* ── SEARCH ── */
+    .reviews-search-wrap {
+      display: flex; gap: 0; max-width: 560px;
+    }
+    .reviews-search-input {
+      flex: 1;
+      background: rgba(245,242,237,0.08);
+      border: 1.5px solid rgba(245,242,237,0.25);
+      border-right: none;
+      color: var(--paper);
+      padding: 1rem 1.4rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem; outline: none;
+      transition: border-color 0.2s;
+    }
+    .reviews-search-input::placeholder { color: rgba(245,242,237,0.3); }
+    .reviews-search-input:focus { border-color: var(--accent); }
+    .reviews-search-btn {
+      background: var(--accent); color: white;
+      border: 1.5px solid var(--accent);
+      padding: 1rem 1.8rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; letter-spacing: 0.1em;
+      text-transform: uppercase; cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .reviews-search-btn:hover { background: var(--gold); border-color: var(--gold); }
+
+    /* ── AUTOCOMPLETE ── */
+    .autocomplete-wrap {
+      position: relative;
+      flex: 1;
+    }
+    .autocomplete-wrap .reviews-search-input {
+      width: 100%;
+    }
+    .autocomplete-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      background: var(--ink);
+      border: 1.5px solid rgba(245,242,237,0.2);
+      border-top: none;
+      z-index: 100;
+      max-height: 280px;
+      overflow-y: auto;
+      display: none;
+    }
+    .autocomplete-dropdown.open { display: block; }
+    .ac-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.75rem 1.2rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      border-bottom: 1px solid rgba(245,242,237,0.06);
+    }
+    .ac-item:last-child { border-bottom: none; }
+    .ac-item:hover, .ac-item.highlighted { background: rgba(245,242,237,0.08); }
+    .ac-name {
+      color: var(--paper);
+      font-size: 0.9rem;
+    }
+    .ac-name mark {
+      background: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .ac-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: rgba(245,242,237,0.35);
+      letter-spacing: 0.05em;
+    }
+    .ac-yt-row {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding: 0.75rem 1.2rem;
+      cursor: pointer;
+      color: rgba(245,242,237,0.5);
+      font-size: 0.82rem;
+      border-top: 1px solid rgba(245,242,237,0.1);
+      transition: background 0.15s;
+    }
+    .ac-yt-row:hover { background: rgba(245,242,237,0.06); color: var(--paper); }
+    .ac-yt-icon { color: #ff4444; font-size: 1rem; }
+
+    /* ── ACTIVE FILTER PILL ── */
+    .filter-pill-wrap {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 0 10%; margin-top: 1.5rem;
+      min-height: 2.5rem;
+    }
+    .filter-pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: white;
+      padding: 0.35rem 0.9rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .filter-pill button {
+      background: none; border: none; color: white;
+      cursor: pointer; font-size: 0.9rem; line-height: 1;
+      opacity: 0.7; padding: 0;
+    }
+    .filter-pill button:hover { opacity: 1; }
+    .filter-clear {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; color: var(--muted);
+      background: none; border: none; cursor: pointer;
+      text-decoration: underline; padding: 0;
+    }
+    .filter-clear:hover { color: var(--ink); }
+
+    /* ── MAIN LAYOUT ── */
+    .reviews-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 0;
+      min-height: 60vh;
+    }
+
+    /* ── SIDEBAR ── */
+    .reviews-sidebar {
+      border-right: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      position: sticky; top: 64px;
+      height: calc(100vh - 64px);
+      overflow-y: auto;
+    }
+    .sidebar-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .tool-filter-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.82rem; cursor: pointer;
+      color: var(--muted); text-decoration: none;
+      transition: all 0.15s; border-radius: 2px;
+      margin-bottom: 2px;
+    }
+    .tool-filter-item:hover { background: var(--tag-bg); color: var(--ink); }
+    .tool-filter-item.active { background: var(--ink); color: var(--paper); }
+    .tool-filter-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem; opacity: 0.5;
+    }
+    .tool-filter-item.active .tool-filter-count { opacity: 0.6; }
+
+    /* ── REVIEWS GRID ── */
+    .reviews-area { padding: 2.5rem 3rem; }
+    .reviews-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--ink);
+    }
+    .reviews-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; color: var(--muted);
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .yt-search-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #ff0000; color: white;
+      border: none; padding: 0.5rem 1.2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .yt-search-btn:hover { opacity: 0.85; }
+    .yt-icon { font-size: 1rem; }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ── REVIEW CARD ── */
+    .review-card {
+      background: white;
+      border: 1.5px solid var(--border);
+      transition: border-color 0.2s, transform 0.2s;
+      display: flex; flex-direction: column;
+      text-decoration: none; color: var(--ink);
+    }
+    .review-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    /* Thumbnail (non-embed) */
+    .rc-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: var(--ink);
+      overflow: hidden;
+    }
+    .rc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .rc-thumb-placeholder {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* Embed card */
+    .review-card--embed { cursor: default; }
+    .rc-embed-wrap {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #000;
+      overflow: hidden;
+    }
+    .rc-embed-thumb {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .rc-embed-thumb:hover { opacity: 0.85; }
+    .rc-embed-play {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none;
+    }
+    .rc-embed-wrap:hover .rc-embed-play { pointer-events: auto; cursor: pointer; }
+    .rc-play-btn {
+      width: 58px; height: 58px;
+      background: rgba(0,0,0,0.7);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: white;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: background 0.2s, transform 0.15s;
+    }
+    .rc-embed-wrap:hover .rc-play-btn {
+      background: #ff0000;
+      border-color: #ff0000;
+      transform: scale(1.08);
+    }
+    .rc-duration {
+      position: absolute; bottom: 0.5rem; right: 0.5rem;
+      background: rgba(0,0,0,0.8); color: white;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem; padding: 0.15rem 0.4rem;
+      pointer-events: none;
+    }
+    .rc-live-badge {
+      position: absolute; top: 0.5rem; left: 0.5rem;
+      background: var(--accent); color: white;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0.2rem 0.5rem;
+      pointer-events: none;
+    }
+
+    /* Play button (non-embed fallback) */
+    .rc-play {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: white;
+      border: 2px solid rgba(255,255,255,0.3);
+      transition: background 0.2s;
+    }
+    .review-card:hover .rc-play { background: var(--accent); border-color: var(--accent); }
+
+    .rc-body { padding: 1.2rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+    .rc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem; font-weight: 700; line-height: 1.35;
+    }
+    .rc-meta {
+      font-size: 0.75rem; color: var(--muted);
+      display: flex; gap: 0.75rem; align-items: center;
+    }
+    .rc-channel { font-weight: 500; color: var(--ink); }
+    .rc-tools {
+      display: flex; flex-wrap: wrap; gap: 0.4rem;
+      margin-top: auto; padding-top: 0.75rem;
+    }
+    .rc-tool-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--tag-bg); color: var(--muted);
+      padding: 0.2rem 0.5rem;
+      cursor: pointer; transition: all 0.15s;
+    }
+    .rc-tool-tag:hover, .rc-tool-tag.active { background: var(--ink); color: var(--paper); }
+
+    /* ── LOADING STATE ── */
+    .reviews-loading {
+      grid-column: 1/-1;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1rem; padding: 4rem; color: var(--muted);
+    }
+    .loading-spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── EMPTY STATE ── */
+    .reviews-empty {
+      grid-column: 1/-1;
+      padding: 4rem; text-align: center; color: var(--muted);
+    }
+    .empty-yt-icon {
+      font-size: 2.5rem; margin-bottom: 1rem; opacity: 0.3;
+    }
+    .reviews-empty h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--ink);
+    }
+    .reviews-empty p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .empty-yt-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #ff0000; color: white; text-decoration: none;
+      padding: 0.8rem 1.8rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .empty-yt-btn:hover { opacity: 0.85; }
+
+    /* ── FOOTER ── */
+    .reviews-footer {
+      text-align: center; padding: 3rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem; color: var(--muted);
+    }
+    .reviews-footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .reviews-layout { grid-template-columns: 1fr; }
+      .reviews-sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+      .reviews-area { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html"><span>AI</span>Vybes</a>
+  <ul class="nav-links">
+    <li><a href="index.html#directory">Directory</a></li>
+    <li><a href="reviews.html" class="active">Reviews</a></li>
+    <li><a href="index.html#newsletter" class="nav-cta">Newsletter</a></li>
+  </ul>
+</nav>
+
+<div class="reviews-hero">
+  <div class="reviews-eyebrow">Reviews from the Web</div>
+  <h1 class="reviews-headline">Watch real people<br><em>test</em> the tools.</h1>
+  <p class="reviews-sub">Curated YouTube reviews for every AI tool in our directory. Search by tool name or browse by category.</p>
+  <div class="reviews-search-wrap">
+    <div class="autocomplete-wrap">
+      <input class="reviews-search-input" id="heroSearch" type="text"
+        placeholder="Search reviews for any tool…"
+        oninput="handleSearch(this.value)"
+        onkeydown="handleSearchKey(event)"
+        autocomplete="off">
+      <div class="autocomplete-dropdown" id="acDropdown"></div>
+    </div>
+    <button class="reviews-search-btn" onclick="openYouTube()">Search YouTube →</button>
+  </div>
+</div>
+
+<div class="filter-pill-wrap" id="filterPillWrap"></div>
+
+<div class="reviews-layout">
+  <aside class="reviews-sidebar">
+    <div class="sidebar-title">Filter by Tool</div>
+    <div id="toolFilterList"></div>
+  </aside>
+
+  <div class="reviews-area">
+    <div class="reviews-header">
+      <span class="reviews-count" id="reviewsCount">Loading…</span>
+      <a class="yt-search-btn" id="ytSearchLink" href="https://www.youtube.com/results?search_query=AI+tool+review" target="_blank" rel="noopener">
+        <span class="yt-icon">▶</span> Search YouTube
+      </a>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+  </div>
+</div>
+
+<div class="reviews-footer">
+  <a href="index.html">← Back to Directory</a> &nbsp;·&nbsp; AIVybes — The Independent AI Tools Authority
+</div>
+
+<script>
+let reviews = [];
+let tools = [];
+let activeToolFilter = '';
+let searchQuery = '';
+
+async function init() {
+  try {
+    const [rRes, tRes] = await Promise.all([
+      fetch(`reviews.json?v=${Date.now()}`),
+      fetch(`tools.json?v=${Date.now()}`)
+    ]);
+    reviews = rRes.ok ? await rRes.json() : [];
+    tools   = tRes.ok ? await tRes.json() : [];
+  } catch(e) {
+    reviews = []; tools = [];
+  }
+
+  // Check for ?tool= param in URL
+  const params = new URLSearchParams(window.location.search);
+  const toolParam = params.get('tool');
+  if (toolParam) {
+    activeToolFilter = toolParam;
+    const input = document.getElementById('heroSearch');
+    if (input) input.value = toolParam;
+  }
+
+  buildSidebar();
+  render();
+}
+
+function buildSidebar() {
+  // Count reviews per tool slug
+  const counts = {};
+  reviews.forEach(r => {
+    (r.tools || []).forEach(slug => {
+      counts[slug] = (counts[slug] || 0) + 1;
+    });
+  });
+
+  // Get tool names from tools.json for display
+  const toolNames = {};
+  tools.forEach(t => { toolNames[t.slug] = t.name; });
+
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  const list = document.getElementById('toolFilterList');
+  list.innerHTML = sorted.map(([slug, count]) => {
+    const name = toolNames[slug] || slug;
+    return `<a class="tool-filter-item ${activeToolFilter === slug ? 'active' : ''}"
+      href="javascript:void(0)"
+      onclick="setToolFilter('${slug}')">
+      <span>${name}</span>
+      <span class="tool-filter-count">${count}</span>
+    </a>`;
+  }).join('');
+}
+
+function setToolFilter(slug) {
+  activeToolFilter = activeToolFilter === slug ? '' : slug;
+  searchQuery = '';
+  document.getElementById('heroSearch').value = '';
+  buildSidebar();
+  render();
+}
+
+let acIndex = -1;
+
+function handleSearch(val) {
+  searchQuery = val.toLowerCase().trim();
+  activeToolFilter = '';
+  acIndex = -1;
+  buildSidebar();
+  render();
+  showAutocomplete(val);
+}
+
+function showAutocomplete(val) {
+  const dropdown = document.getElementById('acDropdown');
+  const q = val.trim().toLowerCase();
+
+  if (!q) { dropdown.classList.remove('open'); return; }
+
+  // Match tool names from tools.json
+  const matches = tools.filter(t =>
+    t.name.toLowerCase().includes(q) ||
+    (t.slug || '').toLowerCase().includes(q)
+  ).slice(0, 8);
+
+  let html = matches.map((t, i) => {
+    // Bold the matching part
+    const regex = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+    const highlighted = t.name.replace(regex, '<mark>$1</mark>');
+    const reviewCount = reviews.filter(r => (r.tools||[]).includes(t.slug)).length;
+    const meta = reviewCount > 0 ? `${reviewCount} review${reviewCount > 1 ? 's' : ''}` : 'No reviews yet';
+    return `<div class="ac-item" data-slug="${t.slug}" data-name="${t.name}" onmousedown="selectTool('${t.slug}', '${t.name.replace(/'/g,"\\'")}')">
+      <span class="ac-name">${highlighted}</span>
+      <span class="ac-meta">${meta}</span>
+    </div>`;
+  }).join('');
+
+  // Always show YouTube fallback at bottom
+  html += `<div class="ac-yt-row" onmousedown="openYouTube()">
+    <span class="ac-yt-icon">▶</span>
+    Search YouTube for "<strong>${val}</strong>"
+  </div>`;
+
+  dropdown.innerHTML = html;
+  dropdown.classList.add('open');
+}
+
+function handleSearchKey(e) {
+  const dropdown = document.getElementById('acDropdown');
+  const items = dropdown.querySelectorAll('.ac-item');
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    acIndex = Math.min(acIndex + 1, items.length - 1);
+    items.forEach((el, i) => el.classList.toggle('highlighted', i === acIndex));
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    acIndex = Math.max(acIndex - 1, -1);
+    items.forEach((el, i) => el.classList.toggle('highlighted', i === acIndex));
+  } else if (e.key === 'Enter') {
+    if (acIndex >= 0 && items[acIndex]) {
+      const slug = items[acIndex].dataset.slug;
+      const name = items[acIndex].dataset.name;
+      selectTool(slug, name);
+    } else {
+      openYouTube();
+    }
+    dropdown.classList.remove('open');
+  } else if (e.key === 'Escape') {
+    dropdown.classList.remove('open');
+  }
+}
+
+function selectTool(slug, name) {
+  activeToolFilter = slug;
+  searchQuery = '';
+  document.getElementById('heroSearch').value = name;
+  document.getElementById('acDropdown').classList.remove('open');
+  buildSidebar();
+  render();
+}
+
+// Close dropdown on outside click
+document.addEventListener('click', e => {
+  if (!e.target.closest('.autocomplete-wrap')) {
+    document.getElementById('acDropdown').classList.remove('open');
+  }
+});
+document.addEventListener('click', e => {
+  if (!e.target.closest('.autocomplete-wrap')) {
+    document.getElementById('acDropdown').classList.remove('open');
+  }
+});
+
+// ── CONFIG ──────────────────────────────────────────────
+const YT_API_KEY = 'YOUR_YOUTUBE_API_KEY_HERE'; // Get free key at console.cloud.google.com
+// ────────────────────────────────────────────────────────
+
+function getYouTubeId(url) {
+  if (!url) return null;
+  const m = url.match(/(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})/);
+  return m ? m[1] : null;
+}
+
+function buildEmbedCard(r, isLive = false) {
+  const videoId = getYouTubeId(r.youtubeUrl);
+  const tags = (r.tools || []).map(slug =>
+    `<span class="rc-tool-tag ${activeToolFilter === slug ? 'active' : ''}"
+      onclick="event.stopPropagation(); setToolFilter('${slug}')">${getToolName(slug)}</span>`
+  ).join('');
+  const date = r.publishDate
+    ? new Date(r.publishDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+    : '';
+  const liveBadge = isLive ? `<span class="rc-live-badge">Live</span>` : '';
+
+  if (videoId) {
+    // Embed iframe — click thumbnail to load, avoids autoplay on page load
+    return `
+    <div class="review-card review-card--embed">
+      <div class="rc-embed-wrap" id="embed-${videoId}">
+        <img class="rc-embed-thumb" src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg"
+          alt="${r.title}" loading="lazy"
+          onclick="loadEmbed('${videoId}')">
+        <div class="rc-embed-play" onclick="loadEmbed('${videoId}')">
+          <div class="rc-play-btn">▶</div>
+        </div>
+        ${r.duration ? `<span class="rc-duration">${r.duration}</span>` : ''}
+        ${liveBadge}
+      </div>
+      <div class="rc-body">
+        <div class="rc-title">${r.title}</div>
+        <div class="rc-meta">
+          <span class="rc-channel">${r.channel || ''}</span>
+          ${date ? `<span>${date}</span>` : ''}
+        </div>
+        <div class="rc-tools">${tags}</div>
+      </div>
+    </div>`;
+  } else {
+    // No video ID yet — show placeholder thumbnail only
+    return `
+    <a class="review-card" href="https://www.youtube.com/results?search_query=${encodeURIComponent(r.title)}" target="_blank" rel="noopener">
+      <div class="rc-thumb">
+        <div class="rc-thumb-placeholder"><div class="rc-play">▶</div></div>
+      </div>
+      <div class="rc-body">
+        <div class="rc-title">${r.title}</div>
+        <div class="rc-meta">
+          <span class="rc-channel">${r.channel || ''}</span>
+          ${date ? `<span>${date}</span>` : ''}
+        </div>
+        <div class="rc-tools">${tags}</div>
+      </div>
+    </a>`;
+  }
+}
+
+function loadEmbed(videoId) {
+  const wrap = document.getElementById(`embed-${videoId}`);
+  if (!wrap) return;
+  wrap.innerHTML = `<iframe
+    src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="position:absolute;inset:0;width:100%;height:100%"></iframe>`;
+}
+
+async function fetchYouTubeResults(query) {
+  if (!YT_API_KEY || YT_API_KEY === 'YOUR_YOUTUBE_API_KEY_HERE') return null;
+  try {
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query + ' review')}&type=video&maxResults=8&key=${YT_API_KEY}`
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    return (data.items || []).map(item => ({
+      id: item.id.videoId,
+      title: item.snippet.title,
+      channel: item.snippet.channelTitle,
+      publishDate: item.snippet.publishedAt,
+      youtubeUrl: `https://www.youtube.com/watch?v=${item.id.videoId}`,
+      thumbnailUrl: item.snippet.thumbnails?.medium?.url || '',
+      tools: [activeToolFilter].filter(Boolean),
+      duration: ''
+    }));
+  } catch(e) { return null; }
+}
+
+async function render() {
+  let filtered = reviews.filter(r => {
+    if (activeToolFilter) return (r.tools || []).includes(activeToolFilter);
+    if (searchQuery) {
+      return r.title.toLowerCase().includes(searchQuery) ||
+        r.channel.toLowerCase().includes(searchQuery) ||
+        (r.tools || []).some(s => s.includes(searchQuery));
+    }
+    return true;
+  });
+
+  // Update YT search link
+  const label = activeToolFilter ? getToolName(activeToolFilter) : searchQuery || 'AI tools';
+  document.getElementById('ytSearchLink').href =
+    `https://www.youtube.com/results?search_query=${encodeURIComponent(label + ' review 2026')}`;
+
+  renderPills();
+
+  const grid = document.getElementById('reviewsGrid');
+
+  if (filtered.length) {
+    document.getElementById('reviewsCount').textContent =
+      `${filtered.length} curated review${filtered.length !== 1 ? 's' : ''}${activeToolFilter ? ` for ${getToolName(activeToolFilter)}` : searchQuery ? ` matching "${searchQuery}"` : ''}`;
+    grid.innerHTML = filtered.map(r => buildEmbedCard(r, false)).join('');
+    return;
+  }
+
+  // ── No curated results — try YouTube API ──
+  if (activeToolFilter || searchQuery) {
+    const q = activeToolFilter ? getToolName(activeToolFilter) : searchQuery;
+
+    // Show loading state
+    document.getElementById('reviewsCount').textContent = `Searching YouTube for "${q}"…`;
+    grid.innerHTML = `<div class="reviews-loading"><div class="loading-spinner"></div><p>Fetching live reviews…</p></div>`;
+
+    const liveResults = await fetchYouTubeResults(q);
+
+    if (liveResults && liveResults.length) {
+      document.getElementById('reviewsCount').textContent =
+        `${liveResults.length} live results for "${q}" — not yet curated`;
+      grid.innerHTML = liveResults.map(r => buildEmbedCard(r, true)).join('');
+      return;
+    }
+
+    // API not configured or failed — show no-key state
+    document.getElementById('reviewsCount').textContent = `No curated reviews for "${q}"`;
+    grid.innerHTML = `
+      <div class="reviews-empty">
+        <div class="empty-yt-icon">▶</div>
+        <h3>No curated reviews yet</h3>
+        <p>We haven't added reviews for <strong>${q}</strong> yet.<br>
+        ${!YT_API_KEY || YT_API_KEY === 'YOUR_YOUTUBE_API_KEY_HERE'
+          ? 'Add a YouTube API key to show live results here automatically.'
+          : 'No results found on YouTube.'}</p>
+        <a class="empty-yt-btn" href="https://www.youtube.com/results?search_query=${encodeURIComponent(q + ' review AI tool 2026')}" target="_blank" rel="noopener">
+          ▶ &nbsp;Watch "${q}" reviews on YouTube
+        </a>
+      </div>`;
+    return;
+  }
+
+  // Blank state (no filter applied)
+  document.getElementById('reviewsCount').textContent = '0 reviews';
+  grid.innerHTML = '';
+}
+
+function renderPills() {
+  const wrap = document.getElementById('filterPillWrap');
+  if (!activeToolFilter && !searchQuery) { wrap.innerHTML = ''; return; }
+  const label = activeToolFilter ? getToolName(activeToolFilter) : `"${searchQuery}"`;
+  wrap.innerHTML = `
+    <span class="filter-pill">
+      ${label}
+      <button onclick="clearFilter()">×</button>
+    </span>
+    <button class="filter-clear" onclick="clearFilter()">Clear</button>`;
+}
+
+function clearFilter() {
+  activeToolFilter = '';
+  searchQuery = '';
+  document.getElementById('heroSearch').value = '';
+  buildSidebar();
+  render();
+}
+
+function getToolName(slug) {
+  const t = tools.find(t => t.slug === slug);
+  return t ? t.name : slug;
+}
+
+function openYouTube() {
+  const q = document.getElementById('heroSearch').value.trim();
+  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent((q || 'AI tool') + ' review 2026')}`;
+  window.open(url, '_blank', 'noopener');
+}
+
+init();
+</script>
+</body>
+</html>
