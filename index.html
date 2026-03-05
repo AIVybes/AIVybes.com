@@ -1306,19 +1306,25 @@
           <span class="persona-label">Best for</span>
           <select class="persona-select" id="personaSelect" onchange="filterByPersona(this.value)">
             <option value="">Everyone</option>
-            <option value="Solo Content Creator">Creators</option>
-            <option value="Marketing Manager">Marketers</option>
-            <option value="Software Developer">Developers</option>
             <option value="Freelance Designer">Designers</option>
-            <option value="Student / Academic Researcher">Students</option>
-            <option value="Startup Founder">Startups</option>
-            <option value="Sales Development Rep (SDR)">Sales Teams</option>
-            <option value="Agency Creative">Agencies</option>
-            <option value="eCommerce Operator">eCommerce</option>
-            <option value="No-Code Builder">No-Coders</option>
             <option value="Knowledge Worker">Knowledge Workers</option>
+            <option value="Software Developer">Developers</option>
+            <option value="Video Editor / Filmmaker">Video Editors</option>
+            <option value="Marketing Manager">Marketers</option>
+            <option value="Social Media Manager">Social Media</option>
+            <option value="Musician / Audio Producer">Musicians</option>
+            <option value="Solo Content Creator">Creators</option>
+            <option value="Sales Development Rep (SDR)">Sales Teams</option>
+            <option value="Startup Founder">Startups</option>
+            <option value="eCommerce Operator">eCommerce</option>
+            <option value="Student / Academic Researcher">Students</option>
+            <option value="Agency Creative">Agencies</option>
+            <option value="No-Code Builder">No-Coders</option>
+            <option value="Growth Hacker">Growth Hackers</option>
             <option value="Enterprise Ops Lead">Enterprise</option>
             <option value="Customer Support Lead">Support Teams</option>
+            <option value="Product Manager">Product Managers</option>
+            <option value="Recruiter">Recruiters</option>
           </select>
         </div>
         <button class="sort-btn active" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↑</button>
@@ -1904,29 +1910,33 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 // ── BEST FOR DROPDOWN ──
 const BEST_FOR_PERSONAS = [
-  { label: 'Creators',         persona: 'Solo Content Creator' },
-  { label: 'Marketers',        persona: 'Marketing Manager' },
-  { label: 'Developers',       persona: 'Software Developer' },
   { label: 'Designers',        persona: 'Freelance Designer' },
-  { label: 'Students',         persona: 'Student / Academic Researcher' },
-  { label: 'Startups',         persona: 'Startup Founder' },
-  { label: 'Sales Teams',      persona: 'Sales Development Rep (SDR)' },
-  { label: 'Agencies',         persona: 'Agency Creative' },
-  { label: 'eCommerce',        persona: 'eCommerce Operator' },
-  { label: 'No-Coders',        persona: 'No-Code Builder' },
   { label: 'Knowledge Workers',persona: 'Knowledge Worker' },
-  { label: 'Growth Hackers',   persona: 'Growth Hacker' },
+  { label: 'Developers',       persona: 'Software Developer' },
+  { label: 'Video Editors',    persona: 'Video Editor / Filmmaker' },
+  { label: 'Marketers',        persona: 'Marketing Manager' },
+  { label: 'Social Media',     persona: 'Social Media Manager' },
+  { label: 'Musicians',        persona: 'Musician / Audio Producer' },
+  { label: 'Creators',         persona: 'Content Creator' },
+  { label: 'Sales Teams',      persona: 'Sales Development Rep (SDR)' },
+  { label: 'Startups',         persona: 'Startup Founder' },
+  { label: 'eCommerce',        persona: 'eCommerce Operator' },
+  { label: 'Students',         persona: 'Student / Academic Researcher' },
 ];
 
 function buildBestForMenu() {
   const menu = document.getElementById('bestForMenu');
   if (!menu) return;
   menu.innerHTML = BEST_FOR_PERSONAS.map(({ label, persona }) => {
-    const count = tools.filter(t =>
-      t.primary_persona === persona ||
-      (t.secondary_persona || '').includes(persona)
-    ).length;
-    return `<a href="javascript:void(0)" onclick="filterByPersona('${persona}'); closeBestFor();">
+    const count = tools.filter(t => {
+      const primary = Array.isArray(t.primary_persona)
+        ? t.primary_persona.join(', ')
+        : (t.primary_persona || '');
+      const secondary = t.secondary_persona || '';
+      return primary.trim() === persona ||
+        secondary.split(',').map(s => s.trim()).includes(persona);
+    }).length;
+    return `<a href="javascript:void(0)" onclick="event.stopPropagation(); filterByPersona('${persona}'); closeBestFor();">
       Best for ${label}
       <span class="persona-count">${count}</span>
     </a>`;
