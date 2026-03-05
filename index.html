@@ -475,37 +475,54 @@
   .tools-area {}
 
   .tools-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 0.6rem 1.5rem;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid var(--ink);
   }
   .tools-header-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.75rem;
+    display: contents;
   }
   .tools-header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 0.75rem;
+    display: contents;
   }
-  .pricing-bar {
-    display: flex;
-    gap: 0.4rem;
-  }
-
   .tools-heading {
+    grid-column: 1;
+    grid-row: 1;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 2rem;
+    margin: 0;
+  }
+  .persona-filter-wrap {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  .pricing-bar {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .sort-bar {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    gap: 0.4rem;
+    justify-content: flex-end;
+  }
+  #activeFilters {
+    grid-column: 1 / -1;
+    grid-row: 3;
   }
 
   .active-filters {
@@ -548,10 +565,6 @@
   }
   .clear-all-filters:hover { color: var(--ink); }
 
-  .sort-bar {
-    display: flex;
-    gap: 0.5rem;
-  }
   .sort-btn {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -568,12 +581,6 @@
     color: var(--paper);
   }
 
-  .persona-filter-wrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
   .persona-label {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
