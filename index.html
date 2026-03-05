@@ -1266,15 +1266,7 @@
       <a class="category-item" href="#" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
       <a class="category-item" href="#" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
     </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">Top Lists</div>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Solo Content Creator')"><span class="cat-name">Best for Creators</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Marketing Manager')"><span class="cat-name">Best for Marketers</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Software Developer')"><span class="cat-name">Best for Developers</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Student / Academic Researcher')"><span class="cat-name">Best for Students</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('Startup Founder')"><span class="cat-name">Best for Startups</span></a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByPersona('No-Code Builder')"><span class="cat-name">Best for No-Coders</span></a>
-    </div>
+
   </aside>
 
   <!-- TOOLS -->
@@ -1863,7 +1855,7 @@ function buildBestForMenu() {
       t.primary_persona === persona ||
       (t.secondary_persona || '').includes(persona)
     ).length;
-    return `<a href="#directory" onclick="filterByPersona('${persona}'); closeBestFor();">
+    return `<a href="javascript:void(0)" onclick="filterByPersona('${persona}'); closeBestFor();">
       Best for ${label}
       <span class="persona-count">${count}</span>
     </a>`;
