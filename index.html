@@ -585,6 +585,34 @@
     border: 1.5px solid var(--border);
   }
 
+  #pagination { margin-top: 1.5rem; }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .page-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 0.55rem 1.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .page-btn:disabled { opacity: 0.3; cursor: default; }
+  .page-btn:not(:disabled):hover { opacity: 0.8; }
+  .page-info {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+  }
+
   .tool-card {
     background: white;
     padding: 1.8rem;
@@ -1577,12 +1605,16 @@ function toggleSortAZ() {
   renderTools();
 }
 
+let currentPage = 1;
+const PAGE_SIZE = 15;
+
 function renderTools() {
   const grid = document.getElementById('toolsGrid');
   let filtered = tools.filter(t => {
     const ftags = Array.isArray(t.functional_tags)
       ? t.functional_tags
       : (t.functional_tags || '').split(',').map(s => s.trim()).filter(Boolean);
+
     const matchSearch = searchQuery === '' ||
       t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (t.category||'').toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -1598,21 +1630,36 @@ function renderTools() {
 
     const matchCat = activeCategory === 'All' || t.category === activeCategory;
 
+    const primary = Array.isArray(t.primary_persona)
+      ? t.primary_persona.join(', ')
+      : (t.primary_persona || '');
+    const secondary = t.secondary_persona || '';
     const matchPersona = activePersona === '' ||
-      t.primary_persona === activePersona ||
-      (t.secondary_persona || '').split(',').map(s => s.trim()).includes(activePersona);
+      primary.trim() === activePersona.trim() ||
+      secondary.split(',').map(s => s.trim()).includes(activePersona.trim());
 
     return matchSearch && matchFilter && matchCat && matchPersona;
   });
 
-  // Apply A-Z / Z-A sort if active
+  // Sort
   if (sortAZ === 'asc') {
     filtered = filtered.slice().sort((a, b) => a.name.localeCompare(b.name));
   } else if (sortAZ === 'desc') {
     filtered = filtered.slice().sort((a, b) => b.name.localeCompare(a.name));
   }
 
-  grid.innerHTML = filtered.map((t, i) => {
+  // Pagination
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = 1;
+  const pageItems = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;grid-column:1/-1">No tools found. Try a different search.</div>';
+    renderPagination(0, 0);
+    return;
+  }
+
+  grid.innerHTML = pageItems.map(t => {
     const idx = tools.indexOf(t);
     const desc = t.description || t.desc || '';
     const tagList = Array.isArray(t.functional_tags)
@@ -1643,9 +1690,31 @@ function renderTools() {
     </div>`;
   }).join('');
 
-  if (filtered.length === 0) {
-    grid.innerHTML = '<div style="padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;background:white;">No tools found. Try a different search.</div>';
+  renderPagination(totalPages, filtered.length);
+}
+
+function renderPagination(totalPages, total) {
+  let el = document.getElementById('pagination');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'pagination';
+    document.getElementById('toolsGrid').insertAdjacentElement('afterend', el);
   }
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+  const start = (currentPage - 1) * PAGE_SIZE + 1;
+  const end = Math.min(currentPage * PAGE_SIZE, total);
+  el.innerHTML = `
+    <div class="pagination">
+      <button class="page-btn" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>← Prev</button>
+      <span class="page-info">${start}–${end} of ${total} tools</span>
+      <button class="page-btn" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>
+    </div>`;
+}
+
+function goToPage(page) {
+  currentPage = page;
+  renderTools();
+  document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function setActiveFilter(el, filter) {
@@ -1661,10 +1730,10 @@ function setActiveFilter(el, filter) {
 }
 
 function filterByCategory(cat) {
-  // Reset both filters cleanly
   activeCategory = cat;
   activeFilter = 'All';
   activePersona = '';
+  currentPage = 1;
   // Update sidebar active highlight
   document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.category-item').forEach(c => {
@@ -1718,6 +1787,7 @@ function filterByTag(tag) {
 function filterTools() {
   searchQuery = document.getElementById('searchInput').value;
   activePersona = '';
+  currentPage = 1;
   renderTools();
 }
 
@@ -1768,6 +1838,7 @@ function getYouTubeEmbedUrl(url) {
 
 function openModal(index) {
   const t = tools[index];
+  const iconEl = document.getElementById('m-icon');
   iconEl.style.background = t.logobg || t.iconBg || '#eee';
   if (t.logo || t.websiteUrl) {
     const src = logoUrl(t);
@@ -1866,6 +1937,7 @@ function filterByPersona(persona) {
   activePersona = persona;
   activeCategory = 'All';
   activeFilter = 'All';
+  currentPage = 1;
   // Sync the directory select dropdown
   const select = document.getElementById('personaSelect');
   if (select) select.value = persona;
