@@ -477,7 +477,7 @@
   .tools-header {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 0.75rem;
     margin-bottom: 2rem;
@@ -487,12 +487,14 @@
   .tools-header-left {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 0.75rem;
   }
   .tools-header-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
     gap: 0.75rem;
   }
   .pricing-bar {
@@ -1582,10 +1584,16 @@ function renderHeroCards() {
 }
 
 function setPricing(el, pricing) {
-  activeFilter = pricing || 'All';
+  // Toggle off if already active
+  const newFilter = (activeFilter === (pricing || 'All') && pricing !== '') ? 'All' : (pricing || 'All');
+  activeFilter = newFilter;
   currentPage = 1;
   document.querySelectorAll('.pricing-bar .sort-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
+  if (newFilter === 'All') {
+    document.querySelector('.pricing-bar .sort-btn').classList.add('active');
+  } else {
+    el.classList.add('active');
+  }
   renderTools();
 }
 
@@ -1637,7 +1645,14 @@ function renderTools() {
   } else if (sortAZ === 'desc') {
     filtered = filtered.slice().sort((a, b) => b.name.localeCompare(a.name));
   } else if (sortAZ === 'popular') {
-    filtered = filtered.slice().sort((a, b) => (b.monthlyVisits || 0) - (a.monthlyVisits || 0));
+    filtered = filtered.slice().sort((a, b) => {
+      const av = a.monthlyVisits || 0;
+      const bv = b.monthlyVisits || 0;
+      if (av === 0 && bv === 0) return 0;
+      if (av === 0) return 1;
+      if (bv === 0) return -1;
+      return av - bv; // 1 = most popular, higher = less popular
+    });
   }
 
   // Pagination
@@ -1767,13 +1782,14 @@ function setActiveFilter(el, filter) {
 }
 
 function filterByCategory(cat) {
-  activeCategory = cat;
+  // Toggle off if already active
+  activeCategory = (activeCategory === cat) ? 'All' : cat;
   currentPage = 1;
   document.querySelectorAll('.category-item').forEach(c => {
     const name = c.querySelector('.cat-name');
     if (!name) return;
     const text = name.textContent.trim();
-    c.classList.toggle('active', cat === 'All' ? text === 'All Tools' : text === cat);
+    c.classList.toggle('active', activeCategory === 'All' ? text === 'All Tools' : text === activeCategory);
   });
   renderTools();
 }
