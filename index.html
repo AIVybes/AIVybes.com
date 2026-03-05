@@ -1609,10 +1609,13 @@ function renderTools() {
     const primary = Array.isArray(t.primary_persona)
       ? t.primary_persona.join(', ')
       : (t.primary_persona || '');
-    const secondary = t.secondary_persona || '';
+    const secondaryRaw = t.secondary_persona;
+    const secondaryList = Array.isArray(secondaryRaw)
+      ? secondaryRaw
+      : (secondaryRaw || '').split(',').map(s => s.trim()).filter(Boolean);
     const matchPersona = activePersona === '' ||
       primary.trim() === activePersona.trim() ||
-      secondary.split(',').map(s => s.trim()).includes(activePersona.trim());
+      secondaryList.includes(activePersona.trim());
 
     return matchSearch && matchFilter && matchCat && matchPersona;
   });
@@ -1889,9 +1892,13 @@ function buildBestForMenu() {
     if (primary.trim()) counts[primary.trim()] = (counts[primary.trim()] || 0) + 1;
   });
 
+  console.log('[AIVybes] Persona counts:', counts);
+
   const sorted = Object.entries(counts)
     .filter(([, n]) => n >= 3)
     .sort((a, b) => b[1] - a[1]);
+
+  console.log('[AIVybes] Personas in dropdown:', sorted.map(([p,n]) => `${p}(${n})`).join(', ') || 'NONE — not enough tools loaded');
 
   // Update the select dropdown
   const select = document.getElementById('personaSelect');
