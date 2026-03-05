@@ -476,11 +476,28 @@
 
   .tools-header {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 0.75rem;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid var(--ink);
+  }
+  .tools-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .tools-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+  }
+  .pricing-bar {
+    display: flex;
+    gap: 0.4rem;
   }
 
   .tools-heading {
@@ -488,6 +505,46 @@
     font-weight: 700;
     font-size: 2rem;
   }
+
+  .active-filters {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    font-family: 'DM Mono', monospace;
+  }
+  .active-filter-pill {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .active-filter-pill button {
+    background: none;
+    border: none;
+    color: var(--paper);
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0;
+    line-height: 1;
+    opacity: 0.7;
+  }
+  .active-filter-pill button:hover { opacity: 1; }
+  .clear-all-filters {
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0;
+  }
+  .clear-all-filters:hover { color: var(--ink); }
 
   .sort-bar {
     display: flex;
@@ -1220,85 +1277,36 @@
   <aside class="sidebar">
     <div class="sidebar-section">
       <div class="sidebar-title">Categories</div>
-      <a class="category-item active" href="javascript:void(0)" onclick="filterByCategory('All')">
-        <span class="cat-name">All Tools</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('AI Assistant')">
-        <span class="cat-name">AI Assistant</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('AI Development & Workspace')">
-        <span class="cat-name">AI Development & Workspace</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Business & Productivity')">
-        <span class="cat-name">Business & Productivity</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Chatbots / AI Chat')">
-        <span class="cat-name">Chatbots / AI Chat</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Coding & Development')">
-        <span class="cat-name">Coding & Development</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Education')">
-        <span class="cat-name">Education</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Experimental')">
-        <span class="cat-name">Experimental</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Image & Design')">
-        <span class="cat-name">Image & Design</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Knowledge & Research')">
-        <span class="cat-name">Knowledge & Research</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Sales, Marketing & CRM')">
-        <span class="cat-name">Sales, Marketing & CRM</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Audio & Video')">
-        <span class="cat-name">Audio & Video</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Web Scraping')">
-        <span class="cat-name">Web Scraping</span>
-        <span class="cat-count">0</span>
-      </a>
-      <a class="category-item" href="javascript:void(0)" onclick="filterByCategory('Writing & Content')">
-        <span class="cat-name">Writing & Content</span>
-        <span class="cat-count">0</span>
-      </a>
+      <div id="sidebarCategories"></div>
     </div>
-
   </aside>
 
   <!-- TOOLS -->
   <div class="tools-area">
     <div class="tools-header">
-      <h2 class="tools-heading">AI Tools Directory</h2>
-      <div class="sort-bar">
-        <button class="sort-btn active" onclick="setPricing(this, '')">All</button>
-        <button class="sort-btn" onclick="setPricing(this, 'Free')">Free</button>
-        <button class="sort-btn" onclick="setPricing(this, 'Freemium')">Freemium</button>
-        <button class="sort-btn" onclick="setPricing(this, 'Paid')">Paid</button>
+      <div class="tools-header-left">
+        <h2 class="tools-heading">AI Tools Directory</h2>
+        <div class="pricing-bar">
+          <button class="sort-btn active" onclick="setPricing(this, '')">All</button>
+          <button class="sort-btn" onclick="setPricing(this, 'Free')">Free</button>
+          <button class="sort-btn" onclick="setPricing(this, 'Freemium')">Freemium</button>
+          <button class="sort-btn" onclick="setPricing(this, 'Paid')">Paid</button>
+        </div>
+      </div>
+      <div class="tools-header-right">
         <div class="persona-filter-wrap">
           <span class="persona-label">Best for</span>
           <select class="persona-select" id="personaSelect" onchange="filterByPersona(this.value)">
             <option value="">Everyone</option>
           </select>
         </div>
-        <button class="sort-btn active" id="sortAZBtn" onclick="setSort(this, 'asc')">A–Z ↑</button>
-        <button class="sort-btn" onclick="setSort(this, 'desc')">Z–A ↓</button>
-        <button class="sort-btn" onclick="setSort(this, 'popular')">Popular</button>
+        <div class="sort-bar">
+          <button class="sort-btn active" id="sortAZBtn" onclick="setSort(this, 'asc')">A–Z ↑</button>
+          <button class="sort-btn" onclick="setSort(this, 'desc')">Z–A ↓</button>
+          <button class="sort-btn" onclick="setSort(this, 'popular')">Popular</button>
+        </div>
       </div>
+      <div id="activeFilters" class="active-filters"></div>
     </div>
     <div class="tools-grid" id="toolsGrid"></div>
   </div>
@@ -1575,22 +1583,15 @@ function renderHeroCards() {
 
 function setPricing(el, pricing) {
   activeFilter = pricing || 'All';
-  activePersona = '';
-  activeCategory = 'All';
   currentPage = 1;
-  document.querySelectorAll('.sort-bar .sort-btn').forEach(b => {
-    if (['All','Free','Freemium','Paid'].includes(b.textContent.trim())) b.classList.remove('active');
-  });
+  document.querySelectorAll('.pricing-bar .sort-btn').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
-  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   renderTools();
 }
 
 function setSort(el, mode) {
   sortAZ = mode;
-  document.querySelectorAll('.sort-bar .sort-btn').forEach(b => {
-    if (!['All','Free','Freemium','Paid'].includes(b.textContent.trim())) b.classList.remove('active');
-  });
+  document.querySelectorAll('.sort-bar .sort-btn').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   currentPage = 1;
   renderTools();
@@ -1612,12 +1613,7 @@ function renderTools() {
       (t.description||t.desc||'').toLowerCase().includes(searchQuery.toLowerCase()) ||
       ftags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
-    const matchFilter = activeFilter === 'All' ||
-      (activeFilter === 'New' && t.badge === 'New') ||
-      (activeFilter === 'Top' && t.badge === 'Top') ||
-      t.pricing === activeFilter ||
-      t.category === activeFilter ||
-      ftags.includes(activeFilter);
+    const matchPricing = activeFilter === 'All' || t.pricing === activeFilter;
 
     const matchCat = activeCategory === 'All' || t.category === activeCategory;
 
@@ -1632,7 +1628,7 @@ function renderTools() {
       primary.trim() === activePersona.trim() ||
       secondaryList.includes(activePersona.trim());
 
-    return matchSearch && matchFilter && matchCat && matchPersona;
+    return matchSearch && matchPricing && matchCat && matchPersona;
   });
 
   // Sort
@@ -1687,6 +1683,51 @@ function renderTools() {
   }).join('');
 
   renderPagination(totalPages, filtered.length);
+  renderActiveFilters();
+}
+
+function renderActiveFilters() {
+  const el = document.getElementById('activeFilters');
+  if (!el) return;
+  const pills = [];
+  if (activePersona) pills.push({ label: activePersona, clear: () => { activePersona = ''; const s = document.getElementById('personaSelect'); if(s) s.value = ''; } });
+  if (activeFilter !== 'All') pills.push({ label: activeFilter, clear: () => { activeFilter = 'All'; document.querySelectorAll('.pricing-bar .sort-btn').forEach(b => b.classList.remove('active')); const a = document.querySelector('.pricing-bar .sort-btn'); if(a) a.classList.add('active'); } });
+  if (activeCategory !== 'All') pills.push({ label: activeCategory, clear: () => { activeCategory = 'All'; document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active')); } });
+  if (searchQuery) pills.push({ label: `"${searchQuery}"`, clear: () => { searchQuery = ''; const s = document.getElementById('searchInput'); if(s) s.value = ''; } });
+
+  if (!pills.length) { el.innerHTML = ''; return; }
+
+  el.innerHTML = pills.map((p, i) =>
+    `<span class="active-filter-pill">${p.label}<button onclick="clearFilter(${i})">×</button></span>`
+  ).join('') +
+  (pills.length > 1 ? `<button class="clear-all-filters" onclick="clearAllFilters()">Clear all</button>` : '');
+
+  // Store clear functions for onclick
+  el._pills = pills;
+}
+
+function clearFilter(i) {
+  const el = document.getElementById('activeFilters');
+  if (el && el._pills && el._pills[i]) {
+    el._pills[i].clear();
+    currentPage = 1;
+    renderTools();
+  }
+}
+
+function clearAllFilters() {
+  activePersona = '';
+  activeFilter = 'All';
+  activeCategory = 'All';
+  searchQuery = '';
+  currentPage = 1;
+  const s = document.getElementById('personaSelect'); if(s) s.value = '';
+  const si = document.getElementById('searchInput'); if(si) si.value = '';
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.pricing-bar .sort-btn').forEach(b => b.classList.remove('active'));
+  const allPricing = document.querySelector('.pricing-bar .sort-btn');
+  if (allPricing) allPricing.classList.add('active');
+  renderTools();
 }
 
 function renderPagination(totalPages, total) {
@@ -1727,48 +1768,24 @@ function setActiveFilter(el, filter) {
 
 function filterByCategory(cat) {
   activeCategory = cat;
-  activeFilter = 'All';
-  activePersona = '';
   currentPage = 1;
-  // Update sidebar active highlight
-  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('.category-item').forEach(c => {
     const name = c.querySelector('.cat-name');
     if (!name) return;
     const text = name.textContent.trim();
-    if (cat === 'All' && text === 'All Tools') c.classList.add('active');
-    else if (text === cat) c.classList.add('active');
+    c.classList.toggle('active', cat === 'All' ? text === 'All Tools' : text === cat);
   });
-  // Reset filter tags back to All
-  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
-  const allTag = document.querySelector('.filter-tag');
-  if (allTag) allTag.classList.add('active');
   renderTools();
-  updateCounts();
 }
 
 function filterByTagFromCard(event, tag) {
   event.stopPropagation();
-
-  if (activeFilter === tag) {
-    activeFilter = 'All';
-    activeCategory = 'All';
-    activePersona = '';
-    renderTools();
-    document.querySelectorAll('.tc-tag').forEach(el => el.classList.remove('tag-active'));
-    return;
-  }
-
-  activeFilter = tag;
-  activeCategory = 'All';
-  activePersona = '';
-  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  activeFilter = activeFilter === tag ? 'All' : tag;
+  currentPage = 1;
   renderTools();
-
   document.querySelectorAll('.tc-tag').forEach(el => {
-    el.classList.toggle('tag-active', el.textContent === tag);
+    el.classList.toggle('tag-active', el.textContent === activeFilter);
   });
-
   document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -1782,35 +1799,36 @@ function filterByTag(tag) {
 
 function filterTools() {
   searchQuery = document.getElementById('searchInput').value;
-  activePersona = '';
   currentPage = 1;
   renderTools();
 }
 
 function updateCounts() {
-  const cats = {
-    'All Tools':                  tools.length,
-    'AI Assistant':               tools.filter(t => t.category === 'AI Assistant').length,
-    'AI Development & Workspace': tools.filter(t => t.category === 'AI Development & Workspace').length,
-    'Business & Productivity':    tools.filter(t => t.category === 'Business & Productivity').length,
-    'Chatbots / AI Chat':         tools.filter(t => t.category === 'Chatbots / AI Chat').length,
-    'Coding & Development':       tools.filter(t => t.category === 'Coding & Development').length,
-    'Education':                  tools.filter(t => t.category === 'Education').length,
-    'Experimental':               tools.filter(t => t.category === 'Experimental').length,
-    'Image & Design':             tools.filter(t => t.category === 'Image & Design').length,
-    'Knowledge & Research':       tools.filter(t => t.category === 'Knowledge & Research').length,
-    'Sales, Marketing & CRM':     tools.filter(t => t.category === 'Sales, Marketing & CRM').length,
-    'Audio & Video':              tools.filter(t => t.category === 'Audio & Video').length,
-    'Web Scraping':               tools.filter(t => t.category === 'Web Scraping').length,
-    'Writing & Content':          tools.filter(t => t.category === 'Writing & Content').length,
-  };
-  document.querySelectorAll('.category-item').forEach(item => {
-    const nameEl = item.querySelector('.cat-name');
-    const countEl = item.querySelector('.cat-count');
-    if (nameEl && countEl && cats[nameEl.textContent.trim()] !== undefined) {
-      countEl.textContent = cats[nameEl.textContent.trim()];
-    }
+  // Build category counts from data
+  const counts = {};
+  tools.forEach(t => {
+    const cat = (t.category || '').trim();
+    if (cat) counts[cat] = (counts[cat] || 0) + 1;
   });
+
+  // Sort alphabetically
+  const sorted = Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
+
+  const container = document.getElementById('sidebarCategories');
+  if (!container) return;
+
+  container.innerHTML =
+    // All Tools first
+    `<a class="category-item active" href="javascript:void(0)" onclick="filterByCategory('All')">
+      <span class="cat-name">All Tools</span>
+      <span class="cat-count">${tools.length}</span>
+    </a>` +
+    sorted.map(([cat, count]) =>
+      `<a class="category-item" href="javascript:void(0)" onclick="filterByCategory('${cat.replace(/'/g,"\\'")}')">
+        <span class="cat-name">${cat}</span>
+        <span class="cat-count">${count}</span>
+      </a>`
+    ).join('');
 }
 
 function logoUrl(t) {
@@ -1929,14 +1947,9 @@ function buildBestForMenu() {
 
 function filterByPersona(persona) {
   activePersona = persona;
-  activeCategory = 'All';
-  activeFilter = 'All';
   currentPage = 1;
-  // Sync the directory select dropdown
   const select = document.getElementById('personaSelect');
   if (select) select.value = persona;
-  // Deactivate sidebar category highlights
-  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
   renderTools();
   document.getElementById('directory').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
