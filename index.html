@@ -1277,12 +1277,6 @@
         <span class="cat-count">0</span>
       </a>
     </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">Pricing</div>
-      <a class="category-item" href="#" onclick="filterByTag('Free'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Free tools</span></a>
-      <a class="category-item" href="#" onclick="filterByTag('Freemium'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Freemium</span></a>
-      <a class="category-item" href="#" onclick="filterByTag('Paid'); this.closest('.sidebar').querySelectorAll('.category-item').forEach(c=>c.classList.remove('active')); this.classList.add('active'); return false;"><span class="cat-name">Paid only</span></a>
-    </div>
 
   </aside>
 
@@ -1291,13 +1285,19 @@
     <div class="tools-header">
       <h2 class="tools-heading">AI Tools Directory</h2>
       <div class="sort-bar">
+        <button class="sort-btn active" onclick="setPricing(this, '')">All</button>
+        <button class="sort-btn" onclick="setPricing(this, 'Free')">Free</button>
+        <button class="sort-btn" onclick="setPricing(this, 'Freemium')">Freemium</button>
+        <button class="sort-btn" onclick="setPricing(this, 'Paid')">Paid</button>
         <div class="persona-filter-wrap">
           <span class="persona-label">Best for</span>
           <select class="persona-select" id="personaSelect" onchange="filterByPersona(this.value)">
             <option value="">Everyone</option>
           </select>
         </div>
-        <button class="sort-btn active" id="sortAZBtn" onclick="toggleSortAZ()">A–Z ↑</button>
+        <button class="sort-btn active" id="sortAZBtn" onclick="setSort(this, 'asc')">A–Z ↑</button>
+        <button class="sort-btn" onclick="setSort(this, 'desc')">Z–A ↓</button>
+        <button class="sort-btn" onclick="setSort(this, 'popular')">Popular</button>
       </div>
     </div>
     <div class="tools-grid" id="toolsGrid"></div>
@@ -1573,11 +1573,26 @@ function renderHeroCards() {
   }).join('');
 }
 
-function toggleSortAZ() {
-  sortAZ = sortAZ === 'asc' ? 'desc' : 'asc';
-  const btn = document.getElementById('sortAZBtn');
-  btn.textContent = sortAZ === 'asc' ? 'A–Z ↑' : 'Z–A ↓';
-  btn.classList.add('active');
+function setPricing(el, pricing) {
+  activeFilter = pricing || 'All';
+  activePersona = '';
+  activeCategory = 'All';
+  currentPage = 1;
+  document.querySelectorAll('.sort-bar .sort-btn').forEach(b => {
+    if (['All','Free','Freemium','Paid'].includes(b.textContent.trim())) b.classList.remove('active');
+  });
+  el.classList.add('active');
+  document.querySelectorAll('.category-item').forEach(c => c.classList.remove('active'));
+  renderTools();
+}
+
+function setSort(el, mode) {
+  sortAZ = mode;
+  document.querySelectorAll('.sort-bar .sort-btn').forEach(b => {
+    if (!['All','Free','Freemium','Paid'].includes(b.textContent.trim())) b.classList.remove('active');
+  });
+  el.classList.add('active');
+  currentPage = 1;
   renderTools();
 }
 
@@ -1625,6 +1640,8 @@ function renderTools() {
     filtered = filtered.slice().sort((a, b) => a.name.localeCompare(b.name));
   } else if (sortAZ === 'desc') {
     filtered = filtered.slice().sort((a, b) => b.name.localeCompare(a.name));
+  } else if (sortAZ === 'popular') {
+    filtered = filtered.slice().sort((a, b) => (b.monthlyVisits || 0) - (a.monthlyVisits || 0));
   }
 
   // Pagination
@@ -1904,8 +1921,8 @@ function buildBestForMenu() {
   const select = document.getElementById('personaSelect');
   if (select) {
     select.innerHTML = '<option value="">Everyone</option>' +
-      sorted.map(([persona, n]) =>
-        `<option value="${persona}">${persona} (${n})</option>`
+      sorted.map(([persona]) =>
+        `<option value="${persona}">${persona}</option>`
       ).join('');
   }
 }
