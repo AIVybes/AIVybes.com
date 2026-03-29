@@ -854,15 +854,32 @@ async function fetchYouTubeResults(query) {
 }
 
 async function render() {
-  let filtered = reviews.filter(r => {
-    if (activeToolFilter) return (r.tools || []).includes(activeToolFilter);
-    if (searchQuery) {
-      return r.title.toLowerCase().includes(searchQuery) ||
-        r.channel.toLowerCase().includes(searchQuery) ||
-        (r.tools || []).some(s => s.includes(searchQuery));
-    }
-    return true;
-  });
+let filtered = reviews.filter(r => {
+  if (activeToolFilter) return (r.tools || []).includes(activeToolFilter);
+  if (searchQuery) {
+    return r.title.toLowerCase().includes(searchQuery) ||
+      r.channel.toLowerCase().includes(searchQuery) ||
+      (r.tools || []).some(s => s.includes(searchQuery));
+  }
+  return true;
+});
+
+// Build tool traffic map
+const toolTraffic = {};
+tools.forEach(t => {
+  toolTraffic[t.slug] = Number(t.monthlyVisits || 0);
+});
+
+// Ranking function
+function getReviewTrafficScore(review) {
+  if (!review.tools || !review.tools.length) return 0;
+  return Math.max(...review.tools.map(slug => toolTraffic[slug] || 0));
+}
+
+// Sort reviews
+filtered.sort((a, b) => {
+  return getReviewTrafficScore(b) - getReviewTrafficScore(a);
+});
 
   // Update YT search link
   const label = activeToolFilter ? getToolName(activeToolFilter) : searchQuery || 'AI tools';
