@@ -2408,7 +2408,7 @@ const DB_FIELDS = [
 // Fuzzy match CSV columns → db fields
 const AUTO_MAP = {
   name:               ['name','tool','title','tool name','product','product name','app'],
-  slug:               ['slug','slug in directory','url slug','handle','identifier','id'],
+  slug:               ['slug'],
   category:           ['category','type','section','kind','genre'],
   pricing:            ['pricing','price','cost','plan'],
   tier:               ['tier','badge','label','pick','editor','editors pick',"editor's pick",'featured label'],
@@ -2427,7 +2427,7 @@ const AUTO_MAP = {
   primary_persona:    ['primary persona', 'persona', 'main persona', 'main user', 'primary user'],
   secondary_persona:  ['secondary persona', 'secondary users', 'other personas', 'also for'],
   pricingDetail:      ['pricing detail','pricing details','price detail','price info','pricing info','plan details'],
-  monthlyVisits:      ['monthlyvisits','monthly visits','monthly traffic','visits','traffic','monthly users','ai tool ranking','ai_tool_ranking'],
+  ai_tool_ranking:    ['monthlyvisits','monthly visits','monthly traffic','visits','traffic','monthly users'],
 };
 
 let csvRawData = [];   // array of row objects keyed by original headers
