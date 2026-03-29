@@ -2474,7 +2474,9 @@ function autoMapHeaders(headers) {
     const lower = h.toLowerCase().replace(/[_\-]/g, ' ').trim();
     let matched = '';
     for (const [field, aliases] of Object.entries(AUTO_MAP)) {
-      if (aliases.includes(lower) || aliases.some(a => lower.includes(a))) {
+      const hasExactMatch = aliases.includes(lower);
+      const hasSafePartialMatch = aliases.some(a => a.length >= 5 && lower.includes(a));
+      if (hasExactMatch || hasSafePartialMatch) {
         // Don't double-map
         if (!Object.values(mapping).includes(field)) {
           matched = field;
