@@ -1,5 +1,37 @@
 [
   {
+    "name": "Image Describer",
+    "websiteUrl": "https://imagedescriber.dev",
+    "slug": "image-describer",
+    "description": "Analyze images to generate detailed descriptions, accessibility alt text, prompts, and extracted text for content and design workflows.",
+    "category": "Image Generation & Editing",
+    "functional_tags": [
+      "image analysis",
+      "alt text",
+      "OCR",
+      "accessibility"
+    ],
+    "primary_persona": [
+      "Content Creator"
+    ],
+    "secondary_persona": [
+      "Designer",
+      "Digital Marketer"
+    ],
+    "pricing": "Freemium",
+    "icon": "ID",
+    "logo": "https://imagedescriber.dev/logo.png",
+    "logobg": "#F3F4F6",
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 0,
+    "tags": [],
+    "pros": [],
+    "cons": [],
+    "id": 1784779000000,
+    "createdAt": "2026-07-23T03:56:40.000Z"
+  },
+  {
     "name": "Bardeen AI",
     "websiteUrl": "https://www.bardeen.ai",
     "slug": "bardeen-ai",
