@@ -1,5 +1,37 @@
 [
   {
+    "name": "Blur Background",
+    "websiteUrl": "https://blurbackground.vip",
+    "slug": "blur-background",
+    "description": "Blur or remove image backgrounds in the browser to create clean, privacy-friendly photos without installing desktop software.",
+    "category": "Image Generation & Editing",
+    "functional_tags": [
+      "background blur",
+      "background removal",
+      "photo editing",
+      "privacy"
+    ],
+    "primary_persona": [
+      "Content Creator"
+    ],
+    "secondary_persona": [
+      "Designer",
+      "Digital Marketer"
+    ],
+    "pricing": "Free",
+    "icon": "BB",
+    "logo": "https://blurbackground.vip/brand-logo.png",
+    "logobg": "#F3F4F6",
+    "iconBg": "#2a2e45",
+    "status": "active",
+    "rating": 0,
+    "tags": [],
+    "pros": [],
+    "cons": [],
+    "id": 1784853331000,
+    "createdAt": "2026-07-24T00:35:31.000Z"
+  },
+  {
     "name": "Bardeen AI",
     "websiteUrl": "https://www.bardeen.ai",
     "slug": "bardeen-ai",
