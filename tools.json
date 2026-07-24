@@ -13531,5 +13531,37 @@
     "cons": [],
     "id": 1774722554955.3762,
     "createdAt": "2026-03-28T18:29:14.955Z"
+  },
+  {
+    "name": "Vedic Astrology Chart",
+    "websiteUrl": "https://vedicastrologychart.net",
+    "slug": "vedic-astrology-chart",
+    "description": "Generate a browser-based sidereal Vedic astrology birth chart with planetary positions, houses, nakshatras, and Panchanga details.",
+    "category": "Research & Knowledge",
+    "functional_tags": [
+      "vedic astrology",
+      "birth chart",
+      "sidereal astrology",
+      "nakshatra",
+      "panchanga"
+    ],
+    "primary_persona": [
+      "Researcher"
+    ],
+    "secondary_persona": [
+      "Student",
+      "Educator"
+    ],
+    "pricing": "Free",
+    "icon": "VA",
+    "logobg": "#FFF7ED",
+    "iconBg": "#7C2D12",
+    "status": "active",
+    "rating": 0,
+    "tags": [],
+    "pros": [],
+    "cons": [],
+    "id": 1784862774000,
+    "createdAt": "2026-07-24T03:12:54.000Z"
   }
 ]
