@@ -13531,5 +13531,36 @@
     "cons": [],
     "id": 1774722554955.3762,
     "createdAt": "2026-03-28T18:29:14.955Z"
+  },
+  {
+    "name": "Video Upscaler",
+    "websiteUrl": "https://videoupscaler.video",
+    "slug": "video-upscaler",
+    "description": "Upscale and enhance video resolution in the browser with AI, improving clarity for low-resolution footage without installing desktop software.",
+    "category": "Video Generation & Editing",
+    "functional_tags": [
+      "video upscaling",
+      "video enhancement",
+      "resolution enhancement",
+      "browser tool"
+    ],
+    "primary_persona": [
+      "Content Creator"
+    ],
+    "secondary_persona": [
+      "Video Editor",
+      "Marketer"
+    ],
+    "pricing": "Freemium",
+    "icon": "VU",
+    "logobg": "#EFF6FF",
+    "iconBg": "#1D4ED8",
+    "status": "active",
+    "rating": 0,
+    "tags": [],
+    "pros": [],
+    "cons": [],
+    "id": 1784946000000,
+    "createdAt": "2026-07-25T14:20:00.000Z"
   }
 ]
