@@ -13531,5 +13531,36 @@
     "cons": [],
     "id": 1774722554955.3762,
     "createdAt": "2026-03-28T18:29:14.955Z"
+  },
+  {
+    "name": "Sharpniq",
+    "websiteUrl": "https://unblurimage.me",
+    "slug": "sharpniq",
+    "description": "Unblur and restore photos in the browser with AI-assisted image enhancement, a free local-processing option, and an optional cloud workflow.",
+    "category": "Image Generation & Editing",
+    "functional_tags": [
+      "image deblurring",
+      "photo restoration",
+      "image enhancement",
+      "browser tool"
+    ],
+    "primary_persona": [
+      "Content Creator"
+    ],
+    "secondary_persona": [
+      "Freelance Designer",
+      "Marketer"
+    ],
+    "pricing": "Freemium",
+    "icon": "SN",
+    "logobg": "#ECFEFF",
+    "iconBg": "#0F766E",
+    "status": "active",
+    "rating": 0,
+    "tags": [],
+    "pros": [],
+    "cons": [],
+    "id": 1786268782263,
+    "createdAt": "2026-08-09T09:46:22.263Z"
   }
 ]
